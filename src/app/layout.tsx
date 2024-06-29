@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import AnimatedCursor from "react-animated-cursor";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><AnimatedCursor
+        innerSize={10}
+        outerSize={75}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+
+        innerStyle={{
+          backgroundColor: 'white',
+          backgroundBlendMode: 'difference',
+          mixBlendMode: 'difference',
+        }}
+        outerStyle={{
+          border: '3px solid white',
+          mixBlendMode: 'difference',
+          backgroundBlendMode: 'difference'
+        }}
+      />
+        {children}</body>
     </html>
   );
 }

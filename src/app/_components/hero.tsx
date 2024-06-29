@@ -1,0 +1,97 @@
+"use client"
+import { useRef, useState } from "react";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { BsStack } from "react-icons/bs";
+import { CiBellOn } from "react-icons/ci";
+import { TiTick } from "react-icons/ti";
+
+export function Hero() {
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const handlePlayPause = () => {
+        const videoElement = videoRef.current;
+        if (videoElement) {
+            if (videoElement.paused) {
+                videoElement.play();
+                setIsPlaying(true);
+            } else {
+                videoElement.pause();
+                setIsPlaying(false);
+            }
+        }
+    };
+
+    return (
+        <div className="flex flex-col justify-end items-center px-16 text-base font-medium leading-5 max-md:px-5">
+            <div className="flex flex-col items-center mt-10 w-full max-w-[1040px] max-md:mt-10 max-md:max-w-full">
+                <div className="flex flex-col justify-center p-0.5 max-w-full text-xs font-bold text-white uppercase rounded-md w-[405px]">
+                    <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
+                        <CiBellOn size={32} />
+                        <div className="flex-auto my-auto">
+                            A FULL TEAM FOR THE SAME PRICE OF A SINGLE EMPLOYEE
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-12 text-7xl tracking-tighter text-orange-500 leading-[90px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">
+                    Your <span className="text-orange-500">All-In-One</span> Website
+                </div>
+                <div className="justify-center px-4 pt-4 pb-1 mt-5 max-w-full text-7xl tracking-tighter text-white w-[1017px] max-md:pr-7 max-md:max-w-full max-md:text-4xl">
+                    Solutions For your Business
+                </div>
+                <div className="mt-6 text-white leading-[150%] max-md:max-w-full">
+                    Get unlimited development requests with a simple all-inclusive monthly subscription. From ideation, to design, ...
+                </div>
+                <div className="mt-2.5 text-white leading-[150%] max-md:max-w-full">
+                    to development... We have all you need to bring your website ideas to life.
+                </div>
+                <div className="flex gap-5 justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
+                    <div className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
+                        <div className="grow my-auto">How does it work?</div>
+                        <div className="border-2 p-1">
+                            <BiRightArrowAlt size={32} />
+                        </div>
+                    </div>
+                    <div className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 bg-black rounded-md text-stone-100">
+                        <div className="grow my-auto">See Previous Work</div>
+                        <BsStack size={32} />
+                    </div>
+                </div>
+                <div className="flex gap-5 justify-between mt-10 text-sm text-neutral-400 max-md:flex-wrap">
+                    <div className="flex gap-1.5 justify-center py-1">
+                        <TiTick size={22} />
+                        <div className="flex-auto">Unlimited Tasks & Revisions</div>
+                    </div>
+                    <div className="flex gap-1.5 py-0.5">
+                        <TiTick size={22} />
+                        <div className="flex-auto">Monthly Subscription</div>
+                    </div>
+                    <div className="flex gap-1.5 py-0.5">
+                        <TiTick size={22} />
+                        <div className="flex-auto">24/7 support</div>
+                    </div>
+                    <div className="flex gap-1.5 py-0.5">
+                        <TiTick size={22} />
+                        <div className="flex-auto">Dedicated Developers Team</div>
+                    </div>
+                </div>
+                <div className="relative self-stretch mt-12 w-full aspect-[1.5] max-md:mt-10 max-md:max-w-full ">
+                    <video
+                        ref={videoRef}
+                        className="w-full h-full"
+                        preload="auto"
+                        muted
+                        autoPlay
+                        autoFocus
+                        loop
+                        onClick={handlePlayPause}
+                    >
+                        <source src="/v6.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+        </div>
+    );
+}
