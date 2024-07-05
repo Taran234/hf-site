@@ -12,7 +12,7 @@ import { Footer } from "./_components/footer";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden flex flex-col justify-center">
+    <div className="overflow-x-hidden md:scrollbar-hide flex flex-col justify-center">
       <div id="header">
         <Header />
       </div>

@@ -35,9 +35,9 @@ export function Hero() {
                     </div>
                 </div>
                 <div className="mt-12 md:text-6xl text-xl tracking-tighter md:px-16 px-4 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text  ">
-                    Your <span className="text-orange-500">All-In-One</span> Website
+                    Your <span className="text-orange-500 uppercase">All-In-One</span> Website
                 </div>
-                <div className="justify-center md:px-16 px-4 pt-4 pb-5  max-w-full text-5xl tracking-tighter text-left bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text  text-white  md:text-4xl">
+                <div className="justify-center md:text-6xl text-xl md:px-16 px-4 pt-4 pb-5  max-w-full  tracking-tighter text-left bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text  ">
                     Solutions For your Business
                 </div>
                 <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-md:max-w-full">

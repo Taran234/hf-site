@@ -7,15 +7,19 @@
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
   --cursor-color: 255, 255, 255;
+
+  --scrollbar-bg: 40, 40, 40;
+  /* Custom scrollbar background color */
+  --scrollbar-thumb: 249, 115, 22;
+  /* Custom scrollbar thumb color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --cursor-color: 255, 255, 255;
-  }
+button:hover {
+  cursor: none !important;
+}
+
+button:hover .animated-cursor {
+  display: none;
 }
 
 body {
@@ -23,6 +27,33 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+/* Custom Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+  height: 12px;
+  /* Height of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(var(--scrollbar-bg), 0.5);
+  /* Background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--scrollbar-thumb), 0.8);
+  /* Color of the scrollbar thumb */
+  border-radius: 6px;
+  /* Rounded corners of the scrollbar thumb */
+  border: 3px solid transparent;
+  /* Space around the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--scrollbar-thumb), 1);
+  /* Color when hovering over the scrollbar thumb */
 }
 
 @layer utilities {
