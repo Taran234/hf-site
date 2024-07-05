@@ -24,7 +24,7 @@ export function Header() {
 
 
 
-            <div className="flex md:gap-10 gap-5 justify-between self-stretch p-1.5 py-5  m-auto text-white max-md:flex-wrap">
+            <div className="flex md:gap-10 gap-5 justify-between self-stretch md:text-2xl text-sm p-1.5 py-5  m-auto text-white max-md:flex-wrap">
                 <Link href="#about" >
                     About
                 </Link>
@@ -44,9 +44,9 @@ export function Header() {
                     FAQ
                 </Link>
             </div>
-            <Link href="#footer" className="flex gap-3 justify-end self-stretch py-1.5 pr-1.5 pl-3 my-auto bg-orange-500 rounded-md text-stone-100">
-                <div className="grow my-auto">book a call</div>
-                <div className="border-2 p-1">
+            <Link href="#footer" className="flex gap-3 md:justify-end self-stretch py-1.5 pr-1.5 pl-3 m-auto bg-orange-500 rounded-md text-stone-100">
+                <div className="grow m-auto">book a call</div>
+                <div className="border-2 md:p-1">
                     <BiRightArrowAlt size={32} />
                 </div>
             </Link>

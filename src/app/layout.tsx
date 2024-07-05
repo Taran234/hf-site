@@ -7,10 +7,9 @@ import AnimatedCursor from "react-animated-cursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Harbourfront Web Designs",
-  description: "Toronto's Best One-Stop Solution for all Website Needs",
+  title: "Harbourfront Web Designs - Your All-In-One Website Solution",
+  description: "Transform your online presence with Harbourfront Web Designs, Toronto's premier one-stop solution for all your website needs. Get unlimited tasks, monthly subscriptions, 24/7 support, and a dedicated development team.",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
