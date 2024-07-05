@@ -1,31 +1,30 @@
 import * as React from "react";
+import { IoIosCreate } from "react-icons/io";
+import { MdOutlineScreenSearchDesktop } from "react-icons/md";
+import { SiCodewars } from "react-icons/si";
 
 export function Detail() {
     return (
-        <div className="flex flex-col px-16 mx-20 ">
-            <div className="w-full text-6xl font-medium tracking-tighter text-white leading-[66px] max-md:max-w-full max-md:text-4xl">
+        <div className="flex flex-col md:px-16 py-7 mx-auto max-w-6xl ">
+            <div className="w-full text-6xl font-medium tracking-tighter text-white leading-[66px]   max-md:text-4xl">
                 What we do best
             </div>
-            <div className="self-start mt-10 text-base leading-6 text-white max-md:max-w-full">
+            <div className="self-start mt-10 text-base leading-6 text-white  ">
                 We didn't just reinvent software development - we made it accessible,
                 efficient, and affordable. The era of traditional coding is{" "}
             </div>
-            <div className="self-start text-base leading-6 text-white max-md:max-w-full">
+            <div className="self-start text-base leading-6 text-white  ">
                 out. Experience the accelerated pace of development, achieving up to 4x
                 faster project completion, with your first task{" "}
             </div>
-            <div className="self-start text-base leading-6 text-white max-md:max-w-full">
+            <div className="self-start text-base leading-6 text-white  ">
                 completed within 72 hours.
             </div>
-            <div className="py-5 mt-2.5 w-full max-md:max-w-full">
+            <div className="py-5 mt-2.5 w-full  ">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-8 pt-8 pb-20 text-3xl font-medium leading-10 text-white rounded-2xl border-2 border-orange-500 border-solid max-md:px-5 max-md:mt-10">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f9c90941251ffbfd8b52766d6a0afed7ec99358ddb0ebc72cddac84279234fb?apiKey=15889098a2f64f5596f97e7e5322ac49&"
-                                className="aspect-[1.12] w-[45px]"
-                            />
+                            <MdOutlineScreenSearchDesktop size={35} />
                             <div className="mt-6">SEO</div>
                             <div>Optimization</div>
                             <div className="mt-8 text-base leading-6">
@@ -39,11 +38,8 @@ export function Detail() {
                     </div>
                     <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-8 py-10 text-base leading-6 text-white rounded-2xl border-2 border-emerald-400 border-solid max-md:px-5 max-md:mt-10">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/bcc55988e37e7d787f7dd38f3b9c0bd0881f90dbcdac878fe075e8f711c5c9c1?apiKey=15889098a2f64f5596f97e7e5322ac49&"
-                                className="aspect-[1.08] w-[43px]"
-                            />
+                            <IoIosCreate size={35} />
+
                             <div className="mt-6 text-3xl font-medium leading-10">
                                 Custom Business
                             </div>
@@ -76,11 +72,7 @@ export function Detail() {
                     </div>
                     <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-8 pt-8 pb-20 text-base leading-6 text-white rounded-2xl border-2 border-amber-400 border-solid max-md:px-5 max-md:mt-10">
-                            <img
-                                loading="lazy"
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1c9cabba3056764863ea4598b51ef6e784145a336f31e5fa11ffb4f3bd5d9ce?apiKey=15889098a2f64f5596f97e7e5322ac49&"
-                                className="aspect-[1.28] w-[51px]"
-                            />
+                            <SiCodewars size={35} />
                             <div className="mt-6 text-3xl font-medium leading-10">
                                 AI Solutions
                             </div>
@@ -110,7 +102,7 @@ export function Detail() {
                     </div>
                 </div>
             </div>
-            <div className="mt-36 w-full max-md:mt-10 max-md:max-w-full">
+            <div className="mt-36 w-full max-md:mt-10  ">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-4 pt-6 pb-7 w-full text-sm leading-5 text-white rounded-xl border border-solid shadow-sm bg-neutral-800 border-neutral-600 max-md:mt-5">
@@ -147,7 +139,7 @@ export function Detail() {
                     </div>
                 </div>
             </div>
-            <div className="px-0.5 mt-5 w-full max-md:max-w-full">
+            <div className="px-0.5 mt-5 w-full  ">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-4 pt-6 pb-7 w-full text-sm leading-5 text-white rounded-xl border border-solid shadow-sm bg-neutral-800 border-neutral-600 max-md:mt-5">
@@ -186,7 +178,7 @@ export function Detail() {
                     </div>
                 </div>
             </div>
-            <div className="px-px mt-5 w-full max-md:max-w-full">
+            <div className="px-px mt-5 w-full  ">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow px-4 pt-6 pb-7 w-full text-sm leading-5 text-white rounded-xl border border-solid shadow-sm bg-neutral-800 border-neutral-600 max-md:mt-5">

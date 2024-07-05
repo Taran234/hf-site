@@ -12,18 +12,39 @@ import { Footer } from "./_components/footer";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Partners />
-      <About />
-      <Howitworks />
-      <Detail />
-      <Pricing />
-      <OurWork />
-      <Faq />
-      <Footer />
-    </>
+    <div className="overflow-x-hidden flex flex-col justify-center">
+      <div id="header">
+        <Header />
+      </div>
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="partners">
+        <Partners />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="how-it-works">
+        <Howitworks />
+      </div>
+      <div id="detail">
+        <Detail />
+      </div>
+      <div id="pricing">
+        <Pricing />
+      </div>
+      <div id="our-work">
+        <OurWork />
+      </div>
+      <div id="faq">
+        <Faq />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
+    </div>
+
 
   );
 }

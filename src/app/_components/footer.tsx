@@ -2,7 +2,7 @@ import * as React from "react";
 
 export function Footer() {
     return (
-        <div className="flex justify-center items-center px-16 py-16 text-sm leading-5 text-white bg-orange-500 max-md:px-5">
+        <div className="flex justify-center items-center md:px-16 py-16 text-sm leading-5 text-white bg-orange-500 max-md:px-5">
             <div className="flex flex-col max-w-full">
                 <img
                     loading="lazy"

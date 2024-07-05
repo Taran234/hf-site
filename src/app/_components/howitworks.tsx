@@ -7,7 +7,7 @@ import { Step5 } from "./steps/step5";
 
 export function Howitworks() {
     return (
-        <div className="flex flex-col items-center p-5 mx-5">
+        <div className="flex flex-col items-center  mx-5">
             <Step1 />
             <Step2 />
             <Step3 />
