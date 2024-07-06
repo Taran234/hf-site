@@ -3,7 +3,7 @@ import * as React from "react";
 export function Pricing() {
     return (
         <div className="px-20 max-md:px-5 md:m-20 py-10">
-            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex md:gap-5 gap-10 max-md:flex-col">
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col grow items-center pt-px pb-3.5 w-full text-white rounded-md border border-sky-400 border-solid shadow-lg bg-zinc-900">
                         <div className="justify-center items-center self-stretch md:px-16 text-sm font-bold text-center uppercase whitespace-nowrap bg-black rounded-md border-b-2 border-sky-100 border-solid leading-[50px] max-md:px-5">
@@ -46,10 +46,10 @@ export function Pricing() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col  w-[33%] ">
+                <div className="flex flex-col ">
                     <div className="flex flex-col grow items-center pt-px pb-8 w-full text-white rounded-md border border-sky-400 border-solid shadow-lg bg-zinc-900 max-w-[400px]">
                         <div className="justify-center self-stretch px-14 text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-sky-100 border-solid leading-[50px] max-md:px-5">
-                            Logos & Graphic Design
+                            Website Design
                         </div>
                         <div className="mt-5 text-lg">INCLUDED!</div>
                         <div className="mt-1 text-7xl text-sky-400 max-md:text-4xl">Free</div>

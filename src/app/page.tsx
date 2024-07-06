@@ -12,8 +12,8 @@ import { Footer } from "./_components/footer";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden md:scrollbar-hide flex flex-col justify-center">
-      <div id="header">
+    <div>
+      <div id="header" className="sticky top-0 z-50">
         <Header />
       </div>
       <div id="hero">

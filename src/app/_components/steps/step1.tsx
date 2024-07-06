@@ -11,24 +11,24 @@ export function Step1() {
 
 
             <div className="flex flex-col justify-center px-0.5  mt-10 w-full ">
-                <div className="flex z-10 flex-col justify-center items-start pt-8 pr-20 pb-20 pl-8 mt-0 rounded-xl bg-neutral-900 ">
+                <div className="flex z-10 flex-col justify-center px-7 py-8 rounded-xl bg-neutral-900 ">
 
-                    <div className="flex justify-start py-3 bg-neutral-900 text-lg font-bold leading-4 uppercase">
+                    <div className="flex md:justify-start py-3 bg-neutral-900 md:text-lg text-sm font-bold leading-4 uppercase">
                         Step one
                     </div>
-                    <div className="self-left my-4 text-4xl font-medium leading-10 text-white text-center max-md:max-w-full">
+                    <div className="my-4 md:text-4xl text-xl font-medium leading-10 text-white ">
                         Book a discovery call
                     </div>
-                    <div className="flex flex-row">
-                        <div className="mt-5 text-2xl font-medium leading-10 mb-3 max-md:mb-10 w-2/4 justify-start">
+                    <div className="flex md:flex-row flex-col">
+                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 md:justify-start justify-center">
 
                             Schedule a Discovery Call with us to understand your business,{" "}
                             project idea, and clarify your vision. We'll examine your current{" "}
                             systems and create actionable next steps while answering any{" "}
                             questions you might have about our service.
                         </div>
-                        <div className="flex w-2/4 justify-end">
-                            <Image alt="Book a Call" width={400} height={400} src={'/texting.svg'} />
+                        <div className="flex md:w-2/4 md:justify-end justify-center">
+                            <Image alt="Book a Call" width={500} height={500} src={'/texting.svg'} />
                         </div>
 
                     </div>

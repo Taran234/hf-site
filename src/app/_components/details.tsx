@@ -5,7 +5,7 @@ import { SiCodewars } from "react-icons/si";
 
 export function Detail() {
     return (
-        <div className="flex flex-col md:px-16 py-7 mx-auto max-w-6xl ">
+        <div className="flex flex-col md:px-16 py-7 md:mx-auto max-w-6xl px-2">
             <div className="w-full text-6xl font-medium tracking-tighter text-white leading-[66px]   max-md:text-4xl">
                 What we do best
             </div>

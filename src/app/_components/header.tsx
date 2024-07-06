@@ -1,24 +1,44 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import * as React from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { useState } from "react";
-import { BsMenuButtonFill } from "react-icons/bs";
+import { useCallback, useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 
 export function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [scrollDirection, setScrollDirection] = useState<string | null>(null);
 
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
     };
 
+    const handleScroll = useCallback(() => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY) {
+            setScrollDirection("down");
+        } else {
+            setScrollDirection("up");
+        }
+        setLastScrollY(currentScrollY);
+    }, [lastScrollY]);
+
+    useEffect(() => {
+        const onScroll = () => {
+            requestAnimationFrame(handleScroll);
+        };
+        window.addEventListener("scroll", onScroll);
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+        };
+    }, [handleScroll]);
+
     return (
-        <div className="flex mt-5 justify-between items-center px-6 font-medium leading-4 capitalize max-md:flex-wrap">
+        <div className={` flex justify-between items-center px-6 font-medium leading-4 capitalize transition-transform duration-900 ${scrollDirection === 'down' ? '-translate-y-full' : 'bg-black translate-y-0'}`}>
             <div className="flex flex-row justify-start items-center md:gap-3 gap-2">
                 <Image
-                    alt="Logo Harbourfront web desings"
+                    alt="Logo Harbourfront web designs"
                     width={200}
                     height={200}
                     loading="lazy"
@@ -38,7 +58,6 @@ export function Header() {
             </div>
 
             <div className={`md:flex gap-5 justify-between self-stretch md:text-lg text-sm p-1.5 py-5 m-auto text-white max-md:flex-wrap ${isDrawerOpen ? 'block' : 'hidden'}`}>
-
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
                 <DrawerLink href="#services" onClick={toggleDrawer}>Services</DrawerLink>
@@ -65,9 +84,8 @@ export function Header() {
 
 function DrawerLink({ href, onClick, children }: any) {
     return (
-        <Link href={href} className="block py-2 px-4 text-white hover:text-amber-400">
+        <Link href={href} className="block py-2 px-4 text-white hover:text-amber-400" onClick={onClick}>
             {children}
-
         </Link>
     );
 }

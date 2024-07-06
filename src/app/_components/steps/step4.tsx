@@ -1,33 +1,27 @@
-import * as React from "react";
+import Image from "next/image";
 
 export function Step4() {
     return (
-        <div className="flex flex-col  text-base leading-6 text-white rounded-xl w-full md:max-w-4xl mx-auto">
-            <div className="flex flex-col justify-center px-0.5 py-px mt-24 w-full ">
-                <div className="flex z-10 flex-col justify-center items-start pt-8 pr-20 pb-20 pl-8 mt-0 rounded-xl bg-neutral-900 ">
-                    <div className="flex flex-col justify-center p-0.5  text-xs font-bold leading-4 uppercase rounded-md ">
-                        <div className="justify-center px-5 py-3 bg-neutral-900">
-                            Step FOUR
+        <div className="flex flex-col py-5 text-base leading-6 text-white rounded-xl w-full md:max-w-5xl mx-auto">
+
+            <div className="flex flex-col justify-center px-0.5 mt-10 w-full">
+                <div className="flex z-10 flex-col justify-center items-start px-7 py-8 rounded-xl bg-neutral-900">
+                    <div className="flex self-end py-3 bg-neutral-900 md:text-lg text-sm font-bold leading-4 uppercase">
+                        Step four
+                    </div>
+                    <div className="md:self-end my-4 md:text-4xl text-xl font-medium md:leading-10 text-white  ">
+                        Get Your FREE Custom Design
+                    </div>
+                    <div className="flex md:flex-row-reverse flex-col">
+                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-end text-white">
+                            Once Approved, receive a custom first design for free tailored to your project's details. We handle design uploads, functional outlines, and all information to guide seamless development.
                         </div>
-                    </div>
-                    <div className="mt-5 text-4xl font-medium leading-10  ">
-                        Request Unlimited Tasks & Revisions
-                    </div>
-                    <div className="mt-5 max-md:mr-2.5  ">
-                        We revise each tasks until you're 100% happy. Once you approve{" "}
-                    </div>
-                    <div className="max-md:mr-2.5  ">
-                        a task, we move onto the next and each week a new sprint will be{" "}
-                    </div>
-                    <div className="max-md:mr-2.5  ">
-                        created consisting of new tasks. If a task from a previous sprint is{" "}
-                    </div>
-                    <div className="mb-32 max-md:mr-2.5 max-md:mb-10  ">
-                        still 'in-progress' that task will roll over into the new sprint.
+                        <div className="flex md:w-2/4 justify-start items-center">
+                            <Image alt="Free Website Design" width={400} height={400} src={'/designers.svg'} />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-
