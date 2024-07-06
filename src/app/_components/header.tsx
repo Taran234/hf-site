@@ -35,7 +35,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between  md:px-6 md:py-4 p-3 font-medium leading-4 capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'bg-black translate-y-0'}`}>
+        <div className={`flex flex-row justify-between  md:px-6 md:py-1 p-3 font-medium leading-4 capitalize transition-transform duration-500 bg-black ${scrollDirection === 'down' ? '-translate-y-full' : ' translate-y-0'}`}>
             <div className="flex flex-row  md:gap-3 gap-2 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-400 text-transparent bg-clip-text">
                 <Image
                     alt="Logo Harbourfront web designs"
@@ -57,14 +57,14 @@ export function Header() {
                 </button>
             </div>
 
-            <div className={`md:hidden absolute top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-5  text-white bg-black ${isDrawerOpen ? 'block' : 'hidden'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-5  text-white bg-black ${isDrawerOpen ? 'block' : 'hidden'}`}>
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
-                <DrawerLink href="#services" onClick={toggleDrawer}>Services</DrawerLink>
+                <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>
                 <DrawerLink href="#our-work" onClick={toggleDrawer}>Our Works</DrawerLink>
                 <DrawerLink href="#pricing" onClick={toggleDrawer}>Pricing</DrawerLink>
                 <DrawerLink href="#faq" onClick={toggleDrawer}>FAQ</DrawerLink>
-                <Link href="#footer" className="md:hidden flex gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
+                <Link href="#footer" className="md:hidden flex flex-row justify-center items-center mx-auto gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
                     <div className="flex justify-center items-center">Contact us</div>
                     <div className="bg-amber-500 rounded-xl px-1 justify-center items-center flex">
                         <BiRightArrowAlt size={32} />
@@ -72,9 +72,9 @@ export function Header() {
                 </Link>
             </div>
 
-            <Link href="#footer" className="hidden md:flex gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
+            <Link href="#footer" className="hidden md:flex flex-row items-center justify-center mx-auto my-4 gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
                 <div className="flex justify-center items-center">Contact us</div>
-                <div className="bg-amber-500 rounded-xl px-1 justify-center items-center flex">
+                <div className="bg-amber-500 rounded-xl p-1 justify-center items-center flex">
                     <BiRightArrowAlt size={32} />
                 </div>
             </Link>

@@ -2,7 +2,11 @@ import * as React from "react";
 
 export function Pricing() {
     return (
-        <div className="flex max-w-5xl justify-center mx-auto pb-16">
+        <div className="flex flex-col max-w-5xl justify-center mx-auto pb-16">
+            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
+                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text my-7">Pricing</span>
+                <br />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 {/* E-Commerce Card */}
                 <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400 mt-12">
@@ -13,7 +17,7 @@ export function Pricing() {
                         <div className="text-lg mb-2">STARTING AT</div>
                         <div className="text-7xl text-sky-400 mb-4">$900</div>
                         <div className="flex flex-col space-y-2">
-                            <div>Free design 30% upfront after</div>
+                            <div>$300 up-front</div>
                             <div>Custom Designed</div>
                             <div>Custom Coded</div>
                             <div>Shopify Integration</div>

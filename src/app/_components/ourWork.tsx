@@ -3,12 +3,13 @@ import * as React from "react";
 export function OurWork() {
     return (
         <div className="flex flex-col mx-auto max-w-5xl">
-            <div className="self-center text-6xl font-medium tracking-tighter text-white leading-[66px]   max-md:text-4xl">
-                Some of Our Work
+            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
+                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">Some of Our Works</span>
+                <br />
             </div>
-            <div className="mt-14 w-full max-md:mt-10   min-h-[600px]">
-                <div className="flex gap-5 max-md:flex-col max-md:gap-0 min-h-[600px]">
-                    <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+            <div className="mt-14 w-full    ">
+                <div className="flex gap-5  ">
+                    <div className="flex flex-col w-[33%] ">
                         <div className="flex overflow-hidden relative flex-col grow px-8 py-8 rounded-xl aspect-[0.79] max-md:px-5 max-md:mt-5">
 
                             <div className="flex relative gap-2.5 justify-between text-xs leading-4">
@@ -22,23 +23,13 @@ export function OurWork() {
 
                             <div className="relative mt-5 text-xl font-semibold leading-8 text-white">
                                 AI-Powered Freelance{" "}
-                            </div>
-                            <div className="relative text-xl font-semibold leading-8 text-white">
                                 Marketplace Mobile App
                             </div>
-                            <div className="relative mt-4 mr-7 text-sm leading-5 text-gray-200 max-md:mr-2.5">
+                            <div className="text-md mt-4">
                                 We undertook the ambitious project of{" "}
-                            </div>
-                            <div className="relative mr-7 text-sm leading-5 text-gray-200 max-md:mr-2.5">
                                 developing a cutting-edge mobile application{" "}
-                            </div>
-                            <div className="relative mr-7 text-sm leading-5 text-gray-200 max-md:mr-2.5">
                                 designed to revolutionize the freelance{" "}
-                            </div>
-                            <div className="relative mr-7 text-sm leading-5 text-gray-200 max-md:mr-2.5">
                                 marketplace.
-                            </div>
-                            <div className="flex relative gap-1.5 self-start mt-4 text-xs leading-4 text-white">
                                 <div className="grow">Read more</div>
 
                             </div>

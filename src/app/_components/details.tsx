@@ -6,10 +6,11 @@ import { SiCodewars } from "react-icons/si";
 export function Detail() {
     return (
         <div className="flex flex-col justify-center md:mx-auto max-w-5xl mx-5 mt-10">
-            <div className="w-full text-6xl font-medium tracking-tighter text-white leading-[66px]   md:text-4xl">
-                What we do best
+            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
+                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">What we do Best</span>
+                <br />
             </div>
-            <div className="self-start mt-10 text-base leading-6 text-white  ">
+            <div className="self-start mt-10 mx-20 text-base leading-6 text-white  ">
                 We didn't just reinvent website development - we made it accessible,
                 efficient, and affordable. The era of traditional coding is out.
                 Experience the accelerated pace of development, better User Experience
