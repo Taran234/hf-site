@@ -9,7 +9,7 @@ export function Step2() {
                     <div className="flex self-end py-3 bg-neutral-900 md:text-lg text-sm font-bold leading-4 uppercase">
                         Step Two
                     </div>
-                    <div className="md:self-end my-4 md:text-4xl text-xl font-medium md:leading-10 text-white  ">
+                    <div className="md:self-end my-4 md:text-4xl text-xl font-medium md:leading-10 text-white text-right ">
                         Get Your FREE Custom Design
                     </div>
                     <div className="flex md:flex-row-reverse flex-col">

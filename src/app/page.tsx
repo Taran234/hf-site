@@ -13,7 +13,7 @@ import { Footer } from "./_components/footer";
 export default function Home() {
   return (
     <div>
-      <div id="header" className="sticky top-0 z-50">
+      <div id="header" className="sticky top-0 z-30">
         <Header />
       </div>
       <div id="hero">

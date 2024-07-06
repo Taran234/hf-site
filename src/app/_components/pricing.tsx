@@ -2,70 +2,71 @@ import * as React from "react";
 
 export function Pricing() {
     return (
-        <div className="px-20 max-md:px-5 md:m-20 py-10">
-            <div className="flex md:gap-5 gap-10 max-md:flex-col">
-                <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow items-center pt-px pb-3.5 w-full text-white rounded-md border border-sky-400 border-solid shadow-lg bg-zinc-900">
-                        <div className="justify-center items-center self-stretch md:px-16 text-sm font-bold text-center uppercase whitespace-nowrap bg-black rounded-md border-b-2 border-sky-100 border-solid leading-[50px] max-md:px-5">
+        <div className="flex max-w-5xl justify-center mx-auto pb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                {/* E-Commerce Card */}
+                <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400 mt-12">
+                    <div className="  text-white py-8 px-6">
+                        <div className="text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-emerald-400 border-solid mb-4 py-2">
                             E-Commerce
                         </div>
-                        <div className="mt-5 text-lg">STARTING AT</div>
-                        <div className="mt-1 text-7xl text-sky-400 max-md:text-4xl">$1200</div>
-                        <div className="flex flex-col items-start justify-center pt-px pb-4 pl-10 mt-7 max-w-full text-xl w-full max-md:pl-5">
-                            <div>$600 min. Up Front Cost</div>
-                            <div className="mt-4">Custom Designed</div>
-                            <div className="mt-4">Custom Coded</div>
-                            <div className="mt-4">Shopify Integration</div>
-                            <div className="mt-4">Easy to edit</div>
+                        <div className="text-lg mb-2">STARTING AT</div>
+                        <div className="text-7xl text-sky-400 mb-4">$900</div>
+                        <div className="flex flex-col space-y-2">
+                            <div>Free design 30% upfront after</div>
+                            <div>Custom Designed</div>
+                            <div>Custom Coded</div>
+                            <div>Shopify Integration</div>
+                            <div>Easy to edit</div>
                         </div>
-                        <div className="justify-center px-8 py-4 mt-5 text-xs font-bold text-center text-sky-400 rounded-md border border-black border-solid shadow-sm bg-white bg-opacity-0 max-md:px-5">
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             CONTACT US
-                        </div>
+                        </button>
                     </div>
                 </div>
-                <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow items-center pt-px pb-3.5 w-full text-white rounded-md border border-sky-400 border-solid shadow-lg bg-zinc-900">
-                        <div className="justify-center items-center self-stretch md:px-16 text-sm font-bold text-center uppercase whitespace-nowrap bg-black rounded-md border-b-2 border-sky-100 border-solid leading-[50px] max-md:px-5">
-                            Standerd
+
+                {/* Standard Card */}
+                <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400">
+                    <div className="  text-white py-8 px-4">
+                        <div className="text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-emerald-400 border-solid mb-4 py-2">
+                            Standard
                         </div>
-                        <div className="mt-8 text-2xl">5 PAGES</div>
-                        <div className="self-start mt-1 ml-12 text-7xl text-sky-400 max-md:ml-2.5 max-md:text-4xl">
-                            $150/m
-                        </div>
-                        <div className="flex flex-col items-start self-start pt-px pb-5 pl-12 mt-7 text-2xl max-md:pl-5">
+                        <div className="text-2xl mb-2">5 PAGES</div>
+                        <div className="text-7xl text-sky-400 mb-4">$600</div>
+                        <div className="flex flex-col space-y-2">
                             <div>Unlimited Edits</div>
-                            <div className="mt-5">Includes Hosting</div>
-                            <div className="mt-5">24/7 Customer</div>
-                            <div>Service</div>
-                            <div className="mt-5">Lifetime Updates</div>
-                            <div className="mt-5">Garenteed Google Ranking</div>
-                            <div className="mt-5">Minimum Contract 5 months</div>
+                            <div>Includes Hosting</div>
+                            <div>24/7 Customer Service</div>
+                            <div>Lifetime Updates</div>
+                            <div>Guaranteed Google Ranking</div>
+                            <div>Minimum monthly Payments $150/mo</div>
                         </div>
-                        <div className="justify-center px-9 py-4 mt-7 text-sm font-bold text-center text-sky-400 rounded-md border border-black border-solid shadow-sm bg-white bg-opacity-0 max-md:px-5">
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             CONTACT US
-                        </div>
+                        </button>
                     </div>
                 </div>
-                <div className="flex flex-col ">
-                    <div className="flex flex-col grow items-center pt-px pb-8 w-full text-white rounded-md border border-sky-400 border-solid shadow-lg bg-zinc-900 max-w-[400px]">
-                        <div className="justify-center self-stretch px-14 text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-sky-100 border-solid leading-[50px] max-md:px-5">
+
+                {/* Website Design Card */}
+                <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400 mt-12">
+                    <div className="  text-white py-8 px-4">
+                        <div className="text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-emerald-400 border-solid mb-4 py-2">
                             Website Design
                         </div>
-                        <div className="mt-5 text-lg">INCLUDED!</div>
-                        <div className="mt-1 text-7xl text-sky-400 max-md:text-4xl">Free</div>
-                        <div className="flex flex-col items-start self-start pt-px pb-5 pl-12 mt-7 text-2xl max-md:pl-5">
-                            <div>2 revisions</div>
-                            <div className="mt-4">All File Formats</div>
-                            <div className="mt-4">Ready to use</div>
-                            <div className="mt-4">FREE w/ Subscription</div>
+                        <div className="text-lg mb-2">INCLUDED!</div>
+                        <div className="text-7xl text-sky-400 mb-4">Free</div>
+                        <div className="flex flex-col space-y-2">
+                            <div>Unlimited Edits</div>
+                            <div>All File Formats</div>
+                            <div>Ready to use</div>
+                            <div>FREE w/ Subscription</div>
                         </div>
-                        <div className="justify-center px-8 py-4 mt-7 text-xs font-bold text-center text-sky-400 rounded-md border border-black border-solid shadow-sm bg-white bg-opacity-0 max-md:px-5">
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             CONTACT US
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-

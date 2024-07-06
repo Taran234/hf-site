@@ -24,9 +24,9 @@ export function Hero() {
     };
 
     return (
-        <div className="flex flex-col justify-end items-center  text-base font-medium leading-5 ">
+        <div className="flex flex-col justify-end items-center px-2 text-base font-medium leading-5 ">
             <div className="flex flex-col items-center mt-10 w-full max-w-[1040px] ">
-                <div className="flex flex-col justify-center  max-w-full p-[1px] bg-gradient-to-r from-gray-800 via-purple-400 to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
+                <div className="flex flex-col justify-center  max-w-full p-[1px] bg-gradient-to-r from-gray-800 via-amber-400 to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <CiBellOn size={32} />
                         <div className="flex-auto my-auto">
@@ -35,8 +35,7 @@ export function Hero() {
                     </div>
                 </div>
                 <div className="mt-12 md:text-6xl text-4xl text-center md:px-16 mx-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text uppercase ">
-                    Your <span className="text-orange-500 uppercase tracking-tighter">All-In-One</span> Website<br />
-                    Solutions For your Business
+                    Your <span className="text-orange-500 uppercase tracking-tighter">All-In-One </span>Custom Website Solution
                 </div>
                 <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-md:max-w-full">
                     Get unlimited development requests with a simple all-inclusive monthly subscription. From ideation, to design, to development... We have all you need to bring your website ideas to life.
