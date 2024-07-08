@@ -35,7 +35,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between  md:px-6 md:py-1 p-3 font-medium leading-4 capitalize transition-transform duration-500 bg-black ${scrollDirection === 'down' ? '-translate-y-full' : ' translate-y-0'}`}>
+        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 capitalize transition-transform duration-500 bg-black ${scrollDirection === 'down' ? '-translate-y-full' : ' translate-y-0'}`}>
             <div className="flex flex-row  md:gap-3 gap-2 bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-400 text-transparent bg-clip-text">
                 <Image
                     alt="Logo Harbourfront web designs"

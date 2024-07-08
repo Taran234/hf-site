@@ -10,7 +10,7 @@ export function Hero() {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     return (
-        <div className="flex flex-col justify-end items-center px-2 text-base font-medium leading-5 ">
+        <div className="flex flex-col justify-end items-center px-2 mt-20 text-base font-medium leading-5 ">
             <div className="flex flex-col items-center mt-10 w-full max-w-[1040px] ">
                 <div className="flex flex-col justify-center  max-w-full p-[1px] bg-gradient-to-r from-gray-800 via-amber-400 to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
