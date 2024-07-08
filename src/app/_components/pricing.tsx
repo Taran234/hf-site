@@ -2,7 +2,7 @@ import * as React from "react";
 
 export function Pricing() {
     return (
-        <div className="flex flex-col max-w-5xl justify-center mx-auto pb-16">
+        <div className="flex flex-col max-w-5xl justify-center mx-auto pb-16 px-5 py-7">
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
                 <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text my-7">Pricing</span>
                 <br />
@@ -36,7 +36,7 @@ export function Pricing() {
                             Standard
                         </div>
                         <div className="text-2xl mb-2">5 PAGES</div>
-                        <div className="text-7xl text-sky-400 mb-4">$600</div>
+                        <div className="text-7xl text-sky-400 mb-4">$550</div>
                         <div className="flex flex-col space-y-2">
                             <div>Unlimited Edits</div>
                             <div>Includes Hosting</div>

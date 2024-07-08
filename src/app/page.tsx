@@ -6,13 +6,14 @@ import { About } from "./_components/about";
 import { Howitworks } from "./_components/howitworks";
 import { Detail } from "./_components/details";
 import { Pricing } from "./_components/pricing";
-import { OurWork } from "./_components/ourWork";
 import { Faq } from "./_components/faq";
 import { Footer } from "./_components/footer";
+import Gallery from "./_components/Designs";
+
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div id="header" className="sticky top-0 z-30">
         <Header />
       </div>
@@ -35,7 +36,7 @@ export default function Home() {
         <Pricing />
       </div>
       <div id="our-work">
-        <OurWork />
+        <Gallery />
       </div>
       <div id="faq">
         <Faq />
