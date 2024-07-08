@@ -65,35 +65,35 @@ export function Footer() {
                         <div className="block w-full md:hidden">
 
                             <div className="flex flex-wrap gap-10 justify-center items-center mx-auto mt-5 text-md font-bold">
-                                <Link href={'#about'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">About</Link>
-                                <Link href={'#how-it-works'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">How We Work</Link>
-                                <Link href={'#detail'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Services</Link>
-                                <Link href={'#our-work'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Our Works</Link>
-                                <Link href={'#pricing'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Pricing</Link>
-                                <Link href={'#faq'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">FAQ</Link>
+                                <Link href={'#about'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">About</Link>
+                                <Link href={'#how-it-works'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">How We Work</Link>
+                                <Link href={'#detail'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Services</Link>
+                                <Link href={'#our-work'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Our Works</Link>
+                                <Link href={'#pricing'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Pricing</Link>
+                                <Link href={'#faq'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">FAQ</Link>
                             </div>
                         </div>
                         <div className="col-span-1" id="contact">
 
                             <div className="w-full  md:mx-auto sm:px-6 ">
-                                <span className="text-center text-xl md:text-xl font-semibold leading-normal">
+                                <span className="text-center text-base md:text-lg font-semibold leading-normal">
                                     Send Us A Message
                                 </span>
 
                                 <form id="contact-form" onSubmit={handleSubmit}>
                                     <input type="checkbox" className="hidden" name="botcheck" />
-                                    <div className="mb-2 mt-2">
+                                    <div className="mb-1 mt-1">
                                         <input type="text" placeholder="Full Name" autoComplete="off"
                                             className="w-full px-4 py-1 border-2  text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
                                             name="name" required />
                                     </div>
-                                    <div className="mb-2">
+                                    <div className="mb-1">
 
                                         <input id="email_address" type="email" placeholder="Your Contact Email" autoComplete="off"
                                             className="w-full px-4 py-1 border-2  text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
                                             name="email" required />
                                     </div>
-                                    <div className="mb-2">
+                                    <div className="mb-1">
                                         <textarea placeholder="Your Message"
                                             className="w-full px-4 py-1 border-2  text-white placeholder:text-gray-200 bg-gray-900 rounded-md outline-none h-20 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
                                             name="message" required>
@@ -110,12 +110,12 @@ export function Footer() {
                         <div className="md:block col-span-1 hidden">
                             <p className="font-semibold  text-white">Quick Link</p>
                             <div className="flex flex-col items-start mt-5 space-y-2">
-                                <Link href={'#about'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">About</Link>
-                                <Link href={'#how-it-works'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">How We Work</Link>
-                                <Link href={'#detail'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Services</Link>
-                                <Link href={'#our-work'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Our Works</Link>
-                                <Link href={'#pricing'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">Pricing</Link>
-                                <Link href={'#faq'} className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer ">FAQ</Link>
+                                <Link href={'#about'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">About</Link>
+                                <Link href={'#how-it-works'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">How We Work</Link>
+                                <Link href={'#detail'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Services</Link>
+                                <Link href={'#our-work'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Our Works</Link>
+                                <Link href={'#pricing'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">Pricing</Link>
+                                <Link href={'#faq'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">FAQ</Link>
                             </div>
                         </div>
 
@@ -124,13 +124,13 @@ export function Footer() {
                             <div className="flex flex-col items-start mt-5 space-y-2">
                                 <a
                                     href="tel:+12895443272"
-                                    className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer "
+                                    className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer "
                                 >
                                     +1 (289) 544 3272
                                 </a>
                                 <a
                                     href="mailto:harbourfrontwebdesings@gmail.com"
-                                    className=" transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer "
+                                    className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer "
                                 >
                                     harbourfrontwebdesings@gmail.com
                                 </a>

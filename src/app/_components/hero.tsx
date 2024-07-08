@@ -8,20 +8,6 @@ import { TiTick } from "react-icons/ti";
 
 export function Hero() {
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    const [isPlaying, setIsPlaying] = useState(true);
-
-    const handlePlayPause = () => {
-        const videoElement = videoRef.current;
-        if (videoElement) {
-            if (videoElement.paused) {
-                videoElement.play();
-                setIsPlaying(true);
-            } else {
-                videoElement.pause();
-                setIsPlaying(false);
-            }
-        }
-    };
 
     return (
         <div className="flex flex-col justify-end items-center px-2 text-base font-medium leading-5 ">

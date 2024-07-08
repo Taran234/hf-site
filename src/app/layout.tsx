@@ -19,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AnimatedCursor
-          innerSize={10}
-          outerSize={75}
+          innerSize={5}
+          outerSize={50}
           innerScale={1}
-          outerScale={2}
+          outerScale={1.5}
           outerAlpha={0}
           innerStyle={{
             backgroundColor: 'white',
