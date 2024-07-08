@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 export function Pricing() {
@@ -23,8 +24,8 @@ export function Pricing() {
                             <div>Shopify Integration</div>
                             <div>Easy to edit</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
-                            CONTACT US
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                            <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
                 </div>
@@ -45,8 +46,8 @@ export function Pricing() {
                             <div>Guaranteed Google Ranking</div>
                             <div>Minimum monthly Payments $150/mo</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
-                            CONTACT US
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                            <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
                 </div>
@@ -65,8 +66,8 @@ export function Pricing() {
                             <div>Ready to use</div>
                             <div>FREE w/ Subscription</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-black border-solid hover:bg-amber-400 hover:text-white shadow-sm">
-                            CONTACT US
+                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                            <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
                 </div>

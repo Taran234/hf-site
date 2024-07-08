@@ -13,7 +13,7 @@ export function Step2() {
                         Get Your FREE Custom Design
                     </div>
                     <div className="flex md:flex-row-reverse flex-col">
-                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-end text-white">
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-end text-white">
                             Once Approved, receive a custom first design for free tailored to your project's details. We handle design uploads, functional outlines, and all information to guide seamless development.
                         </div>
                         <div className="flex md:w-2/4 justify-start items-center">

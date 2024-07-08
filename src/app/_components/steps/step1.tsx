@@ -20,7 +20,7 @@ export function Step1() {
                         Book a discovery call
                     </div>
                     <div className="flex md:flex-row flex-col">
-                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 md:justify-start justify-center">
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 md:justify-start justify-center">
 
                             Schedule a Discovery Call with us to understand your business,{" "}
                             project idea, and clarify your vision. We'll examine your current{" "}

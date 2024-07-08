@@ -20,7 +20,7 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 md:text-6xl text-4xl text-center md:px-16 mx-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text uppercase ">
+                <div className="mt-12 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text uppercase ">
                     Your <span className="text-orange-500 uppercase tracking-tighter">All-In-One </span>Custom Website Solution
                 </div>
                 <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-md:max-w-full">

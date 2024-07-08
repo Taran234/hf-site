@@ -13,7 +13,7 @@ export function Step5() {
                         Perfecting Your Vision
                     </div>
                     <div className="flex md:flex-row flex-col">
-                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 md:justify-start justify-center">
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 md:justify-start justify-center">
                             After the initial design is complete, we welcome your feedback and make any necessary revisions to ensure your website exceeds expectations. Our commitment to perfection means unlimited edits until you are completely satisfied. We thoroughly test each adjustment to maintain seamless functionality and top-notch performance.
                         </div>
                         <div className="flex md:w-2/4 md:justify-end justify-center">

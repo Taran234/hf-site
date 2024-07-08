@@ -102,8 +102,8 @@ export function Detail() {
 
                 <div className="flex flex-col">
                     <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">API Integrations</div>
-                        <div className="mt-3">We'll help you integrate your software or system with almost any 3rd party application.</div>
+                        <div className="text-xl font-semibold leading-8">Ecommerce Integration</div>
+                        <div className="mt-3">We'll help you integrate your Ecommerce functionality inot your website to create a seemless checkout experience.</div>
                     </div>
                 </div>
 

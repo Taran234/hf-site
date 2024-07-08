@@ -13,7 +13,7 @@ export function Step3() {
                         Divide Project Tasks And Start Development
                     </div>
                     <div className="flex md:flex-row flex-col">
-                        <div className="mt-5 md:text-2xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-start">
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-start">
                             Once we settle on a design we break down the Project into tasks and start working on the development side of things. This is the official begining of our develpopment contract.
                         </div>
                         <div className="flex md:w-2/4 md:justify-end">
