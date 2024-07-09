@@ -20,12 +20,12 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text uppercase ">
-                    Your <span className="text-orange-500 uppercase tracking-tighter">All-In-One </span>Custom Website Solution
-                </div>
-                <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-md:max-w-full">
+                <h1 className="mt-12 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent  bg-clip-text uppercase ">
+                    Toronto's <span className="text-orange-500 uppercase tracking-tighter">All-In-One </span>Custom Website Solution
+                </h1>
+                <h1 className="mt-6 text-white md:px-16 px-4 leading-[150%] max-md:max-w-full">
                     Get unlimited development requests with a simple all-inclusive monthly subscription. From ideation, to design, to development... We have all you need to bring your website ideas to life.
-                </div>
+                </h1>
 
                 <div className="flex gap-5 justify-center md:px-16 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">

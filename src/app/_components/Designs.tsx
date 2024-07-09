@@ -33,7 +33,7 @@ const GalleryItem = ({ src, width, height, caption, onClick }: any) => {
                     src={src}
                     width={width}
                     height={height}
-                    alt="Design description"
+                    alt="Harbourfront Web Design Example"
                 />
                 <div className="absolute inset-1 block items-start justify-start">
                     <div className="absolute top-1 left-1 w-8 h-8 bg-inherit border-t-4 border-l-4 border-gray-400"></div>
