@@ -16,7 +16,7 @@ export function Pricing() {
                             E-Commerce
                         </div>
                         <div className="text-lg mb-2">STARTING AT</div>
-                        <div className="text-7xl text-sky-400 mb-4">$900</div>
+                        <div className="text-7xl text-amber-500 mb-4">$900</div>
                         <div className="flex flex-col space-y-2">
                             <div>$300 up-front</div>
                             <div>Custom Designed</div>
@@ -37,7 +37,7 @@ export function Pricing() {
                             Standard
                         </div>
                         <div className="text-lg mb-2">DIVIDED MONTHLY</div>
-                        <div className="text-7xl text-sky-400 mb-4">$600</div>
+                        <div className="text-7xl text-amber-500 mb-4">$600</div>
                         <div className="flex flex-col space-y-2">
                             <div>Unlimited Edits</div>
                             <div>Includes Free Hosting</div>
@@ -59,7 +59,7 @@ export function Pricing() {
                             Website Designs
                         </div>
                         <div className="text-lg mb-2">INCLUDED!</div>
-                        <div className="text-7xl text-sky-400 mb-4">Free</div>
+                        <div className="text-7xl text-amber-500 mb-4">Free</div>
                         <div className="flex flex-col space-y-2">
                             <div>Unlimited Edits</div>
                             <div>All File Formats</div>
