@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Harbourfront Web Designs - Toronto's All-In-One Website Solution",
-  description: "Toronto's premier one-stop website design and development solution for all your business needs. Get unlimited edits, 24/7 support, monthly payment options ...",
+  description: "Toronto's premier one-stop website design and development solution. Get unlimited edits, 24/7 support, monthly payment options ...",
 };
 
 export default function RootLayout({

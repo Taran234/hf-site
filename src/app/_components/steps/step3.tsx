@@ -10,7 +10,7 @@ export function Step3() {
                         Step three
                     </div>
                     <div className="my-4 md:text-4xl text-xl font-medium md:leading-10 text-white ">
-                        Divide Project Tasks And Start Development
+                        Divide Project And Start Development
                     </div>
                     <div className="flex md:flex-row flex-col">
                         <div className="mt-5 md:text-xl text-sm font-medium md:leading-10 mb-3 max-md:mb-10 md:w-2/4 justify-start">

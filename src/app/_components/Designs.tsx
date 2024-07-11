@@ -36,10 +36,10 @@ const GalleryItem = ({ src, width, height, caption, onClick }: any) => {
                     alt="Harbourfront Web Design Example"
                 />
                 <div className="absolute inset-1 block items-start justify-start">
-                    <div className="absolute top-1 left-1 w-8 h-8 bg-inherit border-t-4 border-l-4 border-gray-400"></div>
-                    <div className="absolute top-1 right-2 w-8 h-8 bg-inherit border-t-4 border-r-4 border-gray-400"></div>
-                    <div className="absolute bottom-1 left-1 w-8 h-8 bg-inherit border-b-4 border-l-4 border-gray-400"></div>
-                    <div className="absolute bottom-1 right-2 w-8 h-8 bg-inherit border-b-4 border-r-4 border-gray-400"></div>
+                    <div className="absolute top-1 left-1 w-8 h-8 bg-inherit border-t-4 border-l-4 border-purple-300"></div>
+                    <div className="absolute top-1 right-2 w-8 h-8 bg-inherit border-t-4 border-r-4 border-purple-300"></div>
+                    <div className="absolute bottom-1 left-1 w-8 h-8 bg-inherit border-b-4 border-l-4 border-purple-300"></div>
+                    <div className="absolute bottom-1 right-2 w-8 h-8 bg-inherit border-b-4 border-r-4 border-purple-300"></div>
                 </div>
             </div>
             {caption && (
@@ -67,8 +67,8 @@ const Gallery = () => {
 
     return (
         <>
-            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal my-16">
-                <span className="bg-gradient-to-r from-pink-100 to-yellow-100 text-transparent bg-clip-text my-7">Our Designs</span>
+            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
+                <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text my-7">Our Designs</span>
                 <br />
             </div>
             <div className="gallery grid gap-10 grid-cols-1 md:grid-cols-3 mx-auto px-10 w-full items-start justify-start" itemScope itemType="http://schema.org/ImageGallery">

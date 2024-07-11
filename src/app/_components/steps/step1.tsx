@@ -5,7 +5,7 @@ export function Step1() {
     return (
         <div className="flex flex-col pt-5 text-base leading-6 text-white rounded-xl w-full md:max-w-5xl mx-auto">
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">Our Unique Approach</span>
+                <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text">How we Work</span>
                 <br />
             </div>
 

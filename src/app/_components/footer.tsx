@@ -75,40 +75,40 @@ export function Footer() {
                         </div>
                         <div className="col-span-1" id="contact">
 
-                            <div className="w-full  md:mx-auto sm:px-6 ">
-                                <span className="text-center text-base md:text-lg font-semibold leading-normal">
+                            <div className="w-full md:mx-auto sm:px-6 ">
+                                <span className="text-center text-base md:text-lg font-semibold leading-normal mb-4 block">
                                     Send Us A Message
                                 </span>
 
-                                <form id="contact-form" onSubmit={handleSubmit}>
+                                <form id="contact-form" onSubmit={handleSubmit} className="bg-inherit">
                                     <input type="checkbox" className="hidden" name="botcheck" />
-                                    <div className="mb-1 mt-1">
+                                    <div className="mb-4">
                                         <input type="text" placeholder="Full Name" autoComplete="off"
-                                            className="w-full px-4 py-1 border-2  text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
+                                            className="w-full px-4 py-2 border-2 border-gray-600 bg-gray-300 rounded-md outline-none placeholder-gray-800 focus:ring-2 focus:ring-gray-600 focus:border-transparent"
                                             name="name" required />
                                     </div>
-                                    <div className="mb-1">
-
+                                    <div className="mb-4">
                                         <input id="email_address" type="email" placeholder="Your Contact Email" autoComplete="off"
-                                            className="w-full px-4 py-1 border-2  text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
+                                            className="w-full px-4 py-2 border-2 border-gray-600 bg-gray-300 rounded-md outline-none placeholder-gray-800 focus:ring-2 focus:ring-gray-600 focus:border-transparent"
                                             name="email" required />
                                     </div>
-                                    <div className="mb-1">
+                                    <div className="mb-4">
                                         <textarea placeholder="Your Message"
-                                            className="w-full px-4 py-1 border-2  text-white placeholder:text-gray-200 bg-gray-900 rounded-md outline-none h-20 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100  ring-0"
+                                            className="w-full px-4 py-2 border-2 border-gray-600 bg-gray-300 rounded-md outline-none placeholder-gray-800 focus:ring-2 focus:ring-gray-600 focus:border-transparent"
                                             name="message" required>
                                         </textarea>
                                     </div>
                                     <button type="submit"
-                                        className=" py-2 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-2" disabled={loading}>
+                                        className="w-full py-2 font-semibold text-white bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200">
                                         {loading ? 'Loading...' : 'Send Message'}
                                     </button>
                                 </form>
                             </div>
+
                         </div>
 
                         <div className="md:block col-span-1 hidden">
-                            <p className="font-semibold  text-white">Quick Link</p>
+                            <p className="font-semibold text-balance text-white">Quick Link</p>
                             <div className="flex flex-col items-start mt-5 space-y-2">
                                 <Link href={'#about'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">About</Link>
                                 <Link href={'#how-it-works'} className=" transition-colors duration-300 text-gray-100 hover:text-blue-400  hover:cursor-pointer ">How We Work</Link>
@@ -145,8 +145,8 @@ export function Footer() {
                                         className="shrink-0 self-stretch max-w-full aspect-[1.75] md:w-[100px] w-[64px]"
                                     />
                                     <div className="flex flex-col md:text-xl text-sm justify-center items-center">
-                                        <h3 className="md:items-start font-bold border-b-2 border-amber-400 md:border-b-0.5 uppercase">Harbourfront</h3>
-                                        <h3 className="md:items-end font-extrabold py-1">Web Designs</h3>
+                                        <h3 className="md:items-start font-bold md:border-b-0.5 uppercase">Harbourfront</h3>
+                                        <h3 className="md:items-end font-extrabold ">Web Designs</h3>
                                     </div>
                                 </div>
                             </div>

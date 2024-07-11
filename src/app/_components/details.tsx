@@ -7,43 +7,36 @@ export function Detail() {
     return (
         <div className="flex flex-col justify-center md:mx-auto max-w-5xl mx-5 mt-10">
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-                <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">What we do Best</span>
+                <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text">What we do Best</span>
                 <br />
             </div>
             <div className="self-start mt-10 mx-20 text-base leading-6 text-white  ">
                 We didn't just reinvent website development - we made it accessible,
-                efficient, and affordable. The era of traditional coding is out.
+                efficient, and affordable. The era of dealing with website platforms is out.
                 Experience the accelerated pace of development, better User Experience
-                and more with our special monthly payment model.
+                and dedicated support.
             </div>
 
             <div className="flex gap-5 max-md:flex-col md:mt-10 mt-5">
                 <div className="flex flex-col w-full rounded-2xl mt-7">
-                    <div className="flex flex-col  text-3xl font-medium leading-10 text-white rounded-2xl border-2 border-orange-500 border-solid p-7 min-h-[650px]  hover:shadow-xl hover:shadow-orange-500">
+                    <div className="flex flex-col  text-3xl font-medium leading-10 text-white rounded-2xl border-2 border-orange-500 border-solid p-7 min-h-[450px]  hover:shadow-xl hover:shadow-orange-500">
                         <MdOutlineScreenSearchDesktop size={35} />
                         <div className="mt-6">SEO-Optimization</div>
                         <div className="mt-8 text-base leading-6">
                             Boost your business's visibility on Google with our expert SEO
-                            services. We optimize your site through comprehensive audits,
-                            targeted keyword research, quality content creation, and
-                            strategic link building. Achieve higher rankings, drive traffic,
+                            services. Achieve higher rankings, drive traffic,
                             and grow your online presence effectively.
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col md:ml-5 w-full rounded-2xl ">
-                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-emerald-400 border-solid p-7 min-h-[650px] hover:shadow-xl hover:shadow-emerald-400">
+                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-emerald-400 border-solid p-7 min-h-[550px] hover:shadow-xl hover:shadow-emerald-400">
                         <IoIosCreate size={35} />
 
                         <div className="mt-6 text-3xl font-medium leading-10">
-                            Custom Business
-                            Solutions</div>
+                            Unique Website</div>
                         <div className="mt-8 text-base leading-6">
-                            Revolutionize your business by building custom solutions or
-                            seamlessly integrating
-                            all your internal tools into a tailored
-                            dashboard. Develop your own systems
-                            such as CMSs and Business Management
+                            Revolutionize your brand by standing out. Manage your products on the website with our own Management
                             Tools. We understand that every business
                             has its own unique fingerprint, so we craft
                             solutions that align perfectly with the
@@ -52,19 +45,19 @@ export function Detail() {
                     </div>
                 </div>
                 <div className="flex flex-col md:ml-5 w-full rounded-2xl mt-7 ">
-                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-amber-400 border-solid p-7 min-h-[650px] hover:shadow-xl hover:shadow-orange-500">
+                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-amber-400 border-solid p-7 min-h-[450px] hover:shadow-xl hover:shadow-orange-500">
                         <MdOutlineMobileFriendly size={35} />
                         <div className="mt-6 text-3xl font-medium leading-10">
                             Mobile Friendly
                         </div>
                         <div className="mt-8 text-base max-md:mr-2">
-                            In today's digital landscape, responsiveness is key. At Harbourfront Web Designs, we ensure your website isn't just viewed, but experienced seamlessly across all devices. Our mobile-friendly designs optimize user engagement and accessibility, ensuring your message reaches every visitor effectively. With mobile-first indexing in mind, we craft websites that load quickly and perform flawlessly, enhancing both user satisfaction and search engine visibility.
+                            Responsiveness is key. We ensure your website isn't just viewed, but experienced seamlessly across all devices. Our mobile-friendly designs optimize user engagement and accessibility, ensuring your message reaches every visitor effectively.
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="mt-20 w-full md:mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 md:py-20">
+            {/* <div className="mt-20 w-full md:mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 md:py-20">
                 <div className="flex flex-col">
                     <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
                         <div className="text-xl font-semibold leading-8">Website Rebranding</div>
@@ -120,7 +113,7 @@ export function Detail() {
                         <div className="mt-3">Let us take care of your Website upkeep, from bugs to changes, or even additional features.</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );

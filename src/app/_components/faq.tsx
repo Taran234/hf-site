@@ -39,7 +39,7 @@ export function Faq() {
   return (
     <div className="flex flex-col p-10 text-xl font-medium leading-7 justify-center items-center mx-auto text-gray-200 max-w-6xl">
       <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-        <span className="bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text">
           Frequently Asked Questions
         </span>
         <br />
