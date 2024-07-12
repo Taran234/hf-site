@@ -16,31 +16,32 @@ export function Pricing() {
                             E-Commerce
                         </div>
                         <div className="text-lg mb-2">STARTING AT</div>
-                        <div className="text-7xl text-amber-500 mb-4">$900</div>
+                        <div className="text-7xl text-amber-500 mb-4">$500</div>
                         <div className="flex flex-col space-y-2">
-                            <div>$300 up-front</div>
-                            <div>Custom Designed</div>
-                            <div>Custom Coded</div>
+                            <div>All Payment options</div>
                             <div>Shopify Integration</div>
                             <div>Easy to edit</div>
+                            <div>Plus Everything from<br /> Standerd Package</div>
                         </div>
                         <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
+
                 </div>
 
                 {/* Standard Card */}
                 <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400">
-                    <div className="  text-white py-8 px-4">
+                    <div className="  text-white py-8 px-6">
                         <div className="text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-emerald-400 border-solid mb-4 py-2">
                             Standard
                         </div>
-                        <div className="text-lg mb-2">DIVIDED MONTHLY</div>
-                        <div className="text-7xl text-amber-500 mb-4">$600</div>
+                        <div className="text-lg mb-2">STARTING AT</div>
+                        <div className="text-7xl text-amber-500 mb-4">$150</div>
                         <div className="flex flex-col space-y-2">
+                            <div>Standerd 5 Page </div>
+                            <div>Free Contact form</div>
                             <div>Unlimited Edits</div>
-                            <div>Includes Free Hosting</div>
                             <div>24/7 Developer Support</div>
                             <div>Lifetime Updates</div>
                             <div>Guaranteed Google Ranking</div>
@@ -50,13 +51,14 @@ export function Pricing() {
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
+
                 </div>
 
                 {/* Website Design Card */}
                 <div className="flex flex-col bg-zinc-900  rounded-md border border-emerald-400  border-solid hover:shadow-xl hover:shadow-emerald-400 md:mt-7">
-                    <div className="  text-white py-8 px-4">
+                    <div className="  text-white py-8 px-6">
                         <div className="text-sm font-bold text-center uppercase bg-black rounded-md border-b-2 border-emerald-400 border-solid mb-4 py-2">
-                            Website Designs
+                            Logo and Branding
                         </div>
                         <div className="text-lg mb-2">INCLUDED!</div>
                         <div className="text-7xl text-amber-500 mb-4">Free</div>
@@ -64,12 +66,13 @@ export function Pricing() {
                             <div>Unlimited Edits</div>
                             <div>All File Formats</div>
                             <div>Ready to use</div>
-                            <div>FREE w/ Subscription</div>
+                            <div>Free w/ Either Package</div>
                         </div>
                         <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
+
                 </div>
             </div>
         </div>

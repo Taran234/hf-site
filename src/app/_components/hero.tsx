@@ -23,9 +23,9 @@ export function Hero() {
                 <h1 className="mt-12 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent  bg-clip-text uppercase ">
                     Toronto's <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Website Solution
                 </h1>
-                <h1 className="mt-6 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
-                    From ideation, to design, to development... We Will take care of it all so you dont have to. Dont wait, Engage.
-                </h1>
+                <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
+                    From ideation, to design, to development... Let us take care of it all so you dont have to. Dont wait, Engage.
+                </div>
 
                 <div className="flex gap-5 justify-center md:px-16 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
@@ -48,15 +48,11 @@ export function Hero() {
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Free Hosting</div>
+                        <div className="flex-auto">Increased visits</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Guaranteed sales</div>
-                    </div>
-                    <div className="flex gap-1.5 py-0.5">
-                        <TiTick size={22} />
-                        <div className="flex-auto">Guarenteed 98+ SEO Score</div>
+                        <div className="flex-auto">Guaranteed 98+ SEO Score</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />

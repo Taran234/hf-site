@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 
 export function Footer() {
     const [loading, setLoading] = useState(false);
@@ -136,18 +138,11 @@ export function Footer() {
                                 </a>
 
                                 <div className="flex flex-row  md:gap-3 gap-2 pt-10">
-                                    <Image
-                                        alt="Logo Harbourfront web designs"
-                                        width={200}
-                                        height={200}
-                                        loading="lazy"
-                                        src="/yatch-white.png"
-                                        className="shrink-0 self-stretch max-w-full aspect-[1.75] md:w-[100px] w-[64px]"
-                                    />
-                                    <div className="flex flex-col md:text-xl text-sm justify-center items-center">
-                                        <h3 className="md:items-start font-bold md:border-b-0.5 uppercase">Harbourfront</h3>
-                                        <h3 className="md:items-end font-extrabold ">Web Designs</h3>
-                                    </div>
+                                    <FaFacebook size={32} />
+                                    <FaInstagram size={32} />
+                                    <FaTwitter size={32} />
+                                    <FaLinkedin size={32} />
+
                                 </div>
                             </div>
                         </div>
