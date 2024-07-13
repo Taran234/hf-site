@@ -7,7 +7,7 @@ export function About() {
                 <div className="text-center text-2xl md:text-5xl font-semibold bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text leading-normal mb-10">
                     Experience Reliable Development with Lightning Speed.<br /><br />
                     <div className="md:text-xl text-sm font-normal text-white">
-                        Stop struggling with overpriced agencies and unreliable freelancers. Partner with us for a dedicated team, unlimited revisions, and real-time tracking. Stay informed every step of the way and enjoy development that's up to 4x faster than traditional methods. Ready to transform your project? <a href="/contact" className="text-blue-500 font-bold underline">Contact us now!</a>
+                        Stop struggling with overpriced agencies and unreliable freelancers. Partner with us for a dedicated team, unlimited revisions, and real-time tracking. Stay informed every step of the way and enjoy development that's up to 4x faster than traditional methods. Ready to transform your project? <a href="#contact" className="text-blue-500 font-bold underline">Contact us now!</a>
                     </div>
                 </div>
 

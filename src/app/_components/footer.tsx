@@ -138,10 +138,10 @@ export function Footer() {
                                 </a>
 
                                 <div className="flex flex-row  md:gap-3 gap-2 pt-10">
-                                    <FaFacebook size={32} />
-                                    <FaInstagram size={32} />
-                                    <FaTwitter size={32} />
-                                    <FaLinkedin size={32} />
+                                    <Link href={'https://www.facebook.com/HarbourfrontWebDesigns'}><FaFacebook size={32} /></Link>
+                                    <Link href={'https://www.instagram.com/harbourfrontwebdesigns'}><FaInstagram size={32} /></Link>
+                                    <Link href={'https://x.com/HFWdesigns'}><FaTwitter size={32} /></Link>
+                                    <Link href={'https://www.linkedin.com/company/harbourfrontwebdesigns'}><FaLinkedin size={32} /></Link>
 
                                 </div>
                             </div>
