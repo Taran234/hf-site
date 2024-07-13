@@ -16,7 +16,7 @@ export function Pricing() {
                             E-Commerce
                         </div>
                         <div className="text-lg mb-2">STARTING AT</div>
-                        <div className="text-7xl text-amber-500 mb-4">$500</div>
+                        <div className="text-7xl text-amber-500 mb-4">$600</div>
                         <div className="flex flex-col space-y-2">
                             <div>All Payment options</div>
                             <div>Shopify Integration</div>
@@ -37,9 +37,9 @@ export function Pricing() {
                             Standard
                         </div>
                         <div className="text-lg mb-2">STARTING AT</div>
-                        <div className="text-7xl text-amber-500 mb-4">$150</div>
+                        <div className="text-7xl text-amber-500 mb-4">$300</div>
                         <div className="flex flex-col space-y-2">
-                            <div>Standerd 5 Page </div>
+
                             <div>Free Contact form</div>
                             <div>Unlimited Edits</div>
                             <div>24/7 Developer Support</div>
