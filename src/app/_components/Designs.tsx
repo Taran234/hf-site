@@ -4,15 +4,15 @@ import React, { useState } from 'react';
 
 const img = [
 
-    { src: "/des13.jpeg", width: 600, height: 1000, caption: "Design 1" },
-    { src: "/des15.jpeg", width: 600, height: 1000, caption: "Design 2" },
-    { src: "/des16.jpg", width: 600, height: 1000, caption: "Design 3" },
-    { src: "/des5.jpeg", width: 600, height: 1000, caption: "Design 4" },
-    { src: "/des11.jpeg", width: 600, height: 1000, caption: "Design 5" },
-    { src: "/des12.jpeg", width: 600, height: 1000, caption: "Design 6" },
-    { src: "/des8.jpeg", width: 600, height: 1000, caption: "Design 7" },
-    { src: "/des7.jpeg", width: 600, height: 1000, caption: "Design 8" },
-    { src: "/des10.jpeg", width: 600, height: 1000, caption: "Design 9" },
+    { src: "/des13.jpeg", width: 600, height: 1000, caption: "Minimalist High-End website Design for furniture store" },
+    { src: "/des15.jpeg", width: 600, height: 1000, caption: "Profesional bright color website design for construction service" },
+    { src: "/des16.jpg", width: 600, height: 1000, caption: "Elegant and clam web design for professionalism" },
+    { src: "/des5.jpeg", width: 600, height: 1000, caption: "A bright and unique website that make you stand out" },
+    { src: "/des11.jpeg", width: 600, height: 1000, caption: "A clean website design for small buisness to show off thier service" },
+    { src: "/des12.jpeg", width: 600, height: 1000, caption: "Real Estate Lisiting website design for portfolio showcase" },
+    { src: "/des8.jpeg", width: 600, height: 1000, caption: "Dark themed website for night time buisnesses" },
+    { src: "/des7.jpeg", width: 600, height: 1000, caption: "Brand designs for standing out" },
+    { src: "/des10.jpeg", width: 600, height: 1000, caption: "Dark themed Bakery website for elegance" },
     // Add more images as needed
 ];
 
@@ -33,7 +33,7 @@ const GalleryItem = ({ src, width, height, caption, onClick }: any) => {
                     src={src}
                     width={width}
                     height={height}
-                    alt="Harbourfront Web Design Example"
+                    alt={caption}
                 />
                 <div className="absolute inset-1 block items-start justify-start">
                     <div className="absolute top-1 left-1 w-8 h-8 bg-inherit border-t-4 border-l-4 border-purple-300"></div>
@@ -79,7 +79,7 @@ const Gallery = () => {
             {lightboxOpen && (
                 <div className="fixed top-0 inset-0 z-20 flex items-center justify-center bg-black bg-opacity-80 overflow-y-scroll" onClick={closeLightbox}>
                     <div className="relative max-w-full max-h-full object-contain">
-                        <img src={selectedImage.src} alt="Expanded" className="relative max-w-full max-h-full " />
+                        <img src={selectedImage.src} alt={selectedImage.caption} className="relative max-w-full max-h-full " />
 
                     </div>
                 </div>

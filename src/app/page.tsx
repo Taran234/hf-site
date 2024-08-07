@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { Header } from "./_components/header";
 import { Hero } from "./_components/hero";
 import { Partners } from "./_components/partners";
@@ -17,17 +17,17 @@ import { useInView } from 'react-intersection-observer';
 // Define animation variants
 const fadeInVariant = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.3 } }
+  visible: { opacity: 1, transition: { duration: 0.4 } }
 };
 
 const scrollAnimation = (delay = 0) => ({
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, delay } }
 });
 
 const AnimatedSection = ({ children, delay = 0 }: any) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.07 });
 
   useEffect(() => {
     if (inView) {
@@ -49,11 +49,9 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
 
 export default function Home() {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={fadeInVariant}
-      className="overflow-x-hidden overflow-hidden"
+    <main
+
+      className="overflow-hidden scroll-smooth"
     >
       <motion.div
         initial="hidden"
@@ -93,21 +91,21 @@ export default function Home() {
           <Pricing />
         </div>
       </AnimatedSection>
-      <AnimatedSection delay={0.3}>
+      <AnimatedSection delay={0}>
         <div id="our-work">
           <Gallery />
         </div>
       </AnimatedSection>
-      <AnimatedSection delay={0.3}>
-        <div id="faq">
-          <Faq />
-        </div>
-      </AnimatedSection>
+
+      <div id="faq">
+        <Faq />
+      </div>
+
 
       <div id="footer">
         <Footer />
       </div>
 
-    </motion.div>
+    </main>
   );
 }

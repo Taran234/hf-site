@@ -98,7 +98,7 @@ export function Header() {
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
                 <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>
-                <DrawerLink href="#our-work" onClick={toggleDrawer}>Our Work</DrawerLink>
+                <DrawerLink href="#our-work" onClick={toggleDrawer}>our Designs</DrawerLink>
                 <DrawerLink href="#pricing" onClick={toggleDrawer}>Pricing</DrawerLink>
                 <DrawerLink href="#faq" onClick={toggleDrawer}>FAQ</DrawerLink>
                 <Link href="#footer" className="md:hidden flex flex-row justify-center items-center mx-auto gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">

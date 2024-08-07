@@ -10,8 +10,8 @@ export function Hero() {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     return (
-        <div className="flex flex-col justify-end items-center px-2 mt-20 text-base font-medium leading-5 ">
-            <div className="flex flex-col items-center mt-10 w-full max-w-[1040px] ">
+        <div className="flex flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
+            <div className="flex flex-col items-center mt-7 w-full max-w-[1040px] ">
                 <div className="flex flex-col justify-center  max-w-full p-[1px] bg-gradient-to-r from-gray-800 via-[#ff9900] to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <CiBellOn size={32} />
@@ -20,14 +20,14 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-                <h1 className="mt-12 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent  bg-clip-text uppercase ">
+                <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent  bg-clip-text uppercase ">
                     Toronto's <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Website Solution
                 </h1>
-                <div className="mt-6 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
-                    From ideation, to design, to development... Let us take care of it all so you dont have to. Dont wait, Engage.
-                </div>
+                <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
+                    From idea, to design, to development... Let us take care of it all so you dont have to. Dont wait, Engage.
+                </h2>
 
-                <div className="flex gap-5 justify-center md:px-16 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
+                <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
 
                         <div className="grow my-auto ">How does it work?</div>
@@ -41,10 +41,10 @@ export function Hero() {
                         <BsStack size={32} />
                     </Link>
                 </div>
-                <div className="flex gap-5 justify-between mt-10 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
+                <div className="flex gap-5 justify-between mt-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
                     <div className="flex gap-1.5 justify-center py-1">
                         <TiTick size={22} />
-                        <div className="flex-auto">Unlimited Revisions</div>
+                        <div className="flex-auto">Unlimited Edits</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
@@ -52,7 +52,7 @@ export function Hero() {
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Guaranteed 98+ SEO Score</div>
+                        <div className="flex-auto">Guaranteed 99+ SEO Score</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
@@ -63,7 +63,7 @@ export function Hero() {
                         <div className="flex-auto">Dedicated Team</div>
                     </div>
                 </div>
-                <div className="relative self-stretch mt-12 w-full aspect-[1.5]  ">
+                <div className="relative self-stretch mt-7 w-full aspect-[1.5]  ">
                     <video
                         ref={videoRef}
                         className="w-full h-full"

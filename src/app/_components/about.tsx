@@ -12,9 +12,9 @@ export function About() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <FeatureCard title="A Dedicated Team" description="Skip the hassle of finding and vetting developers. At We, you get access to an entire dedicated team including a Developer, Designer, and Project Manager all for the price of a single employee." />
+                    <FeatureCard title="A Dedicated Team" description="Skip the hassle of finding and vetting developers. At Harbourfront Web Designs, we get access to an entire dedicated team including a Developer, Designer, and Project Manager all for the price of a single employee." />
                     <FeatureCard title="Real-Time Tracking" description="Access a real-time project management board, allowing you to track progress, request unlimited revisions, and communicate with your dedicated team. The board facilitates clear communication and efficient task management." />
-                    <FeatureCard title="4x Increase Speed" description="Our proven development process eliminates slowdowns with faster project cycles and fewer meetings. Accelerating your software development up to 4x faster than traditional agencies." />
+                    <FeatureCard title="4x Increase Speed" description="At Harbourfront web designs, We have a proven development process which eliminates slowdowns with faster project cycles and fewer meetings. Accelerating your software development up to 4x faster than traditional agencies." />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">

@@ -19,7 +19,7 @@ export function Detail() {
 
             <div className="flex gap-5 max-md:flex-col md:mt-10 mt-5">
                 <div className="flex flex-col w-full rounded-2xl mt-7">
-                    <div className="flex flex-col  text-3xl font-medium leading-10 text-white rounded-2xl border-2 border-orange-500 border-solid p-7 min-h-[450px]  hover:shadow-xl hover:shadow-orange-500">
+                    <div className="flex flex-col  text-3xl font-medium leading-8 text-white rounded-2xl border-2 border-orange-500 border-solid p-7 min-h-[450px]  hover:shadow-xl hover:shadow-orange-500">
                         <MdOutlineScreenSearchDesktop size={35} />
                         <div className="mt-6">SEO-Optimization</div>
                         <div className="mt-8 text-base leading-6">
@@ -33,7 +33,7 @@ export function Detail() {
                     <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-emerald-400 border-solid p-7 min-h-[550px] hover:shadow-xl hover:shadow-emerald-400">
                         <IoIosCreate size={35} />
 
-                        <div className="mt-6 text-3xl font-medium leading-10">
+                        <div className="mt-6 text-3xl font-medium leading-8">
                             Unique Website</div>
                         <div className="mt-8 text-base leading-6">
                             Revolutionize your brand by standing out. Manage your products on the website with our own Management
@@ -47,7 +47,7 @@ export function Detail() {
                 <div className="flex flex-col md:ml-5 w-full rounded-2xl mt-7 ">
                     <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-amber-400 border-solid p-7 min-h-[450px] hover:shadow-xl hover:shadow-orange-500">
                         <MdOutlineMobileFriendly size={35} />
-                        <div className="mt-6 text-3xl font-medium leading-10">
+                        <div className="mt-6 text-3xl font-medium leading-8">
                             Mobile Friendly
                         </div>
                         <div className="mt-8 text-base max-md:mr-2">
