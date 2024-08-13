@@ -100,7 +100,7 @@ export function Header() {
                 </button>
             </div>
 
-            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-5  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-3  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
                 <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>

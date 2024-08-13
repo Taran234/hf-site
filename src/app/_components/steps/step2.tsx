@@ -8,7 +8,7 @@ export function Step2() {
                 <div className="flex z-10 flex-col justify-center items-start px-7 py-8 rounded-xl bg-neutral-900">
 
                     <div className="flex md:flex-row-reverse flex-col">
-                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10 justify-end text-white">
+                        <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
                             We reach out to you and discuss project's details, then in 24 hrs you receive a custom design for absolutely FREE tailored to your project's details. We handle design revisions, functional outlines, and all information to guide seamless development.
                         </div>
 

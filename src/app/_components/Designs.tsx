@@ -46,7 +46,7 @@ const Gallery = () => {
                 </h4>
                 <br />
             </div>
-            <div className="gallery grid gap-10 grid-cols-1 md:grid-cols-3 mx-auto px-10 w-full items-start justify-start" itemScope itemType="http://schema.org/ImageGallery">
+            <div className="gallery grid gap-10 grid-cols-1 md:grid-cols-3 mx-auto md:px-10 w-full items-start justify-start" itemScope itemType="http://schema.org/ImageGallery">
                 <Grid images={img} />
                 {/* Optionally, you might want to add a GalleryItem component for individual items */}
             </div>

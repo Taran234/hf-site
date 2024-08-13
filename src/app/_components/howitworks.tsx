@@ -12,7 +12,7 @@ export function Howitworks() {
             title: "Step One",
             description: "Schedule a Free Call",
             content: <Step1 />,
-            className: "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
+            className: "col-span-6 lg:col-span-4 border-b lg:border-r border-neutral-800",
         },
         {
             title: "Step Two",
@@ -24,19 +24,19 @@ export function Howitworks() {
             title: "Step Three",
             description: "Work on the Project",
             content: <Step3 />,
-            className: "col-span-1 lg:col-span-3 lg:border-r border-neutral-800",
+            className: "col-span-6 lg:col-span-2 lg:border-r border-b border-neutral-800",
         },
         {
             title: "Step Four",
             description: "Review and Adjust",
             content: <Step4 />,
-            className: "col-span-1 lg:col-span-3 border-b border-neutral-800",
+            className: "col-span-6 lg:col-span-4 border-b border-neutral-800",
         },
         {
             title: "Step Five",
             description: "Final Delivery",
             content: <Step5 />,
-            className: "col-span-2 lg:col-span-6 border-b border-t border-neutral-800",
+            className: "col-span-6 lg:col-span-6 border-b border-t border-neutral-800",
         },
     ];
 

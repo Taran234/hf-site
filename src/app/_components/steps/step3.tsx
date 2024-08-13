@@ -8,7 +8,7 @@ export function Step3() {
                 <div className="flex z-10 flex-col justify-center items-start px-7 py-8  rounded-xl bg-neutral-900 ">
 
                     <div className="flex md:flex-row flex-col">
-                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10 justify-start">
+                        <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
                             Once we settle on a design we break down the Project into tasks and start working on the developing the website from the chosen designs. This is the official beginning of our development contract.
                         </div>
 
