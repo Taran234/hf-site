@@ -5,7 +5,6 @@ import { Hero } from "./_components/hero";
 import { Partners } from "./_components/partners";
 import { About } from "./_components/about";
 import { Howitworks } from "./_components/howitworks";
-import { Detail } from "./_components/details";
 import { Pricing } from "./_components/pricing";
 import { Faq } from "./_components/faq";
 import { Footer } from "./_components/footer";
@@ -13,6 +12,7 @@ import Gallery from "./_components/Designs";
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
+import { FeaturesSectionDemo } from "./_components/details";
 
 // Define animation variants
 const fadeInVariant = {
@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <main
 
-      className="overflow-hidden scroll-smooth"
+      className="overflow-hidden scroll-smooth bg-[#000000]"
     >
       <motion.div
         initial="hidden"
@@ -71,9 +71,14 @@ export default function Home() {
           <Partners />
         </div>
       </AnimatedSection>
-      <AnimatedSection delay={0.2}>
+      {/* <AnimatedSection delay={0.2}>
         <div id="about">
           <About />
+        </div>
+      </AnimatedSection> */}
+      <AnimatedSection delay={0.3}>
+        <div id="detail" className="pt-10">
+          <FeaturesSectionDemo />
         </div>
       </AnimatedSection>
 
@@ -81,16 +86,12 @@ export default function Home() {
         <Howitworks />
       </div>
 
-      <AnimatedSection delay={0.3}>
-        <div id="detail">
-          <Detail />
-        </div>
-      </AnimatedSection>
-      <AnimatedSection delay={0.3}>
+
+      {/* <AnimatedSection delay={0.3}>
         <div id="pricing">
           <Pricing />
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
       <AnimatedSection delay={0}>
         <div id="our-work">
           <Gallery />

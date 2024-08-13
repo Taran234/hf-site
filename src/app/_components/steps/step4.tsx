@@ -6,19 +6,12 @@ export function Step4() {
 
             <div className="flex flex-col justify-center px-0.5 mt-10 w-full">
                 <div className="flex z-10 flex-col justify-center items-start px-7 py-8 rounded-xl bg-neutral-900">
-                    <div className="flex self-end py-3 bg-neutral-900 md:text-lg text-sm font-bold leading-4 uppercase">
-                        Step four
-                    </div>
-                    <div className="md:self-end my-4 md:text-4xl text-xl font-medium md:leading-8 text-white text-right">
-                        Optimization and Responsiveness
-                    </div>
+
                     <div className="flex md:flex-row-reverse flex-col">
-                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10 md:w-2/4 justify-end text-white">
-                            At Harbourfront web designs, We create SEO-optimized and responsive websites tailored for all devices. Our expert team ensures your site ranks high in search engines by integrating advanced SEO techniques from the ground up. We test your website across various devices and browsers to guarantee a seamless user experience, enhancing both functionality and design. Trust us to deliver a website that not only attracts traffic but also provides an exceptional, consistent experience for every visitor.
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10  justify-end text-white">
+                            At Harbourfront Web Designs, we create Optimized and responsive websites tailored for all devices. Our expert team ensures your site ranks high in search engines by integrating advanced SEO techniques from the ground up. We test your website across various devices and browsers to achieve a seamless user experience, enhancing both functionality and design. Trust us to deliver a website that not only attracts traffic but also provides an exceptional, consistent experience for every visitor.
                         </div>
-                        <div className="flex md:w-2/4 justify-start items-center">
-                            <Image alt="Free Web Design Toronto Markham Richmond Hill Vaughan Mississauga Brampton" width={400} height={400} src={'/development.svg'} />
-                        </div>
+
                     </div>
                 </div>
             </div>

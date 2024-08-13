@@ -12,7 +12,7 @@ export function Faq() {
   const faqs = [
     {
       question: "Who is the ideal client for Harbourfront Web Designs?",
-      answer: "Our ideal client is any business or individual looking for a professional, responsive, and SEO-optimized website. Whether you're a startup, a small business, or an established company, our services are tailored to meet your unique needs and help you achieve your online goals."
+      answer: "Our ideal client is any business or individual looking for a professional, responsive, and optimized website. Whether you're a startup, a small business, or an established company, our services are tailored to meet your unique needs and help you achieve your online goals."
     },
     {
       question: "What makes Harbourfront Web Designs different from other web design agencies?",
@@ -28,7 +28,7 @@ export function Faq() {
     },
     {
       question: "How long does it take to complete the Website?",
-      answer: "The completion time for a website varies depending on its complexity. However, our efficient processes and dedicated team typically allow us to complete tasks up to 4x faster than traditional agencies."
+      answer: "The completion time for a website varies depending on its complexity. However, our efficient processes and dedicated team typically allow us to complete tasksup to 4x faster than traditional agencies."
     },
     {
       question: "What if I'm not satisfied with the final product?",
@@ -39,9 +39,9 @@ export function Faq() {
   return (
     <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto text-gray-200 max-w-6xl">
       <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-        <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           Frequently Asked Questions
-        </span>
+        </h4>
         <br />
       </div>
       {faqs.map((faq, index) => (

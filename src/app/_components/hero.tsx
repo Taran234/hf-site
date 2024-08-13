@@ -5,6 +5,9 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { BsStack } from "react-icons/bs";
 import { CiBellOn } from "react-icons/ci";
 import { TiTick } from "react-icons/ti";
+import { Spotlight } from "../components/ui/spotlight";
+import { ContainerScroll } from "../components/ui/scroll-container";
+import { TbBellRingingFilled } from "react-icons/tb";
 
 export function Hero() {
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -12,11 +15,15 @@ export function Hero() {
     return (
         <div className="flex flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
             <div className="flex flex-col items-center mt-7 w-full max-w-[1040px] ">
-                <div className="flex flex-col justify-center  max-w-full p-[1px] bg-gradient-to-r from-gray-800 via-[#ff9900] to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
+                <Spotlight
+                    className="-top-40 left-0 md:left-60 md:-top-20"
+                    fill="white"
+                />
+                <div className="flex flex-col justify-center  max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
-                        <CiBellOn size={32} />
+                        <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            Your website represent your brand, Be Unique, Be You.
+                            Contact Us Today and Get your Free Custom Website Design!
                         </div>
                     </div>
                 </div>
@@ -24,7 +31,7 @@ export function Hero() {
                     Toronto's <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Website Solution
                 </h1>
                 <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
-                    From idea, to design, to development... Let us take care of it all so you dont have to. Dont wait, Engage.
+                    From idea, to design, to development... Let us take care of it all so you don't have to. Don't wait, engage now.
                 </h2>
 
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
@@ -48,11 +55,11 @@ export function Hero() {
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Increased visits</div>
+                        <div className="flex-auto">Increased Visits</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Guaranteed 99+ SEO Score</div>
+                        <div className="flex-auto">Guaranteed 90+ SEO Score</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
@@ -63,22 +70,25 @@ export function Hero() {
                         <div className="flex-auto">Dedicated Team</div>
                     </div>
                 </div>
-                <div className="relative self-stretch mt-7 w-full aspect-[1.5]  ">
-                    <video
-                        ref={videoRef}
-                        className="w-full h-full"
-                        preload="auto"
-                        muted
-                        autoPlay
-                        autoFocus
-                        loop
+                <ContainerScroll>
+                    <div className="relative inset-0 w-full h-full object-cover scale-[110%] ">
+                        <video
+                            ref={videoRef}
+                            className="w-full h-full"
+                            preload="auto"
+                            muted
+                            autoPlay
+                            autoFocus
+                            loop
 
-                    >
-                        <source src="/v6.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                        >
+                            <source src="/v6.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
 
-                </div>
+                    </div>
+                </ContainerScroll>
+
             </div>
         </div>
     );

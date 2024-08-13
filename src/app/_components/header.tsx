@@ -9,6 +9,7 @@ export function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [scrollDirection, setScrollDirection] = useState<string | null>(null);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
@@ -22,6 +23,12 @@ export function Header() {
             setScrollDirection("up");
         }
         setLastScrollY(currentScrollY);
+
+        if (currentScrollY > 50) { // Adjust this value based on when you want the background to appear
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
     }, [lastScrollY]);
 
     useEffect(() => {
@@ -35,7 +42,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 capitalize transition-transform duration-500 bg-black ${scrollDirection === 'down' ? '-translate-y-full' : ' translate-y-0'}`}>
+        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex flex-row md:gap-3 gap-2 relative">
                 <svg
                     version="1.1"
@@ -87,14 +94,13 @@ export function Header() {
                 </div>
             </div>
 
-
             <div className="md:hidden ">
                 <button onClick={toggleDrawer} className="text-white focus:outline-none">
                     <HiMenu size={32} />
                 </button>
             </div>
 
-            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-5  text-white bg-black ${isDrawerOpen ? 'block' : 'hidden'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-5  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
                 <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>

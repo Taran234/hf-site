@@ -6,19 +6,12 @@ export function Step2() {
 
             <div className="flex flex-col justify-center px-0.5 mt-10 w-full">
                 <div className="flex z-10 flex-col justify-center items-start px-7 py-8 rounded-xl bg-neutral-900">
-                    <div className="flex self-end py-3 bg-neutral-900 md:text-lg text-sm font-bold leading-4 uppercase">
-                        Step Two
-                    </div>
-                    <div className="md:self-end my-4 md:text-4xl text-xl font-medium md:leading-8 text-white text-right ">
-                        Get Your FREE Custom Design
-                    </div>
+
                     <div className="flex md:flex-row-reverse flex-col">
-                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10 md:w-2/4 justify-end text-white">
-                            We reach out to you and discuss project's details, then in 24 hrs you receive a custom design for absolutly FREE tailored to your project's details. We handle design revisions, functional outlines, and all information to guide seamless development.
+                        <div className="mt-5 md:text-xl text-sm font-medium md:leading-8 mb-3 max-md:mb-10 justify-end text-white">
+                            We reach out to you and discuss project's details, then in 24 hrs you receive a custom design for absolutely FREE tailored to your project's details. We handle design revisions, functional outlines, and all information to guide seamless development.
                         </div>
-                        <div className="flex md:w-2/4 justify-start items-center">
-                            <Image alt="Free Website Design web" width={400} height={400} src={'/designers.svg'} />
-                        </div>
+
                     </div>
                 </div>
             </div>

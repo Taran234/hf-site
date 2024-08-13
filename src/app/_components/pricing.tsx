@@ -19,7 +19,7 @@ export function Pricing() {
                         <div className="flex flex-col space-y-2 uppercase">
                             <div>1-10 products</div>
                             <div>multiple Payment <br />options</div>
-                            <div>and more from standerd package</div>
+                            <div>and more from standard package</div>
                         </div>
                         <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
@@ -36,7 +36,7 @@ export function Pricing() {
                         <div className="text-7xl text-amber-500 mb-4">$400</div>
                         <div className="flex flex-col space-y-2 uppercase">
                             <div>1-5 Pages</div>
-                            <div>Free Contact form</div>
+                            <div>Free Contact Form</div>
                             <div>Google Reviews</div>
                             <div>Unlimited revisions</div>
                             <div>24/7 Developer Support</div>
@@ -55,10 +55,10 @@ export function Pricing() {
                         <div className="text-lg mb-2">INCLUDED!</div>
                         <div className="text-7xl text-amber-500 mb-4">Free</div>
                         <div className="flex flex-col space-y-2">
-                            <div>1 YEAR MAINTAINENCE</div>
+                            <div>1 YEAR MAINTENANCE</div>
                             <div>CUSTOM WEBSITE DESIGN</div>
                             <div>MOBILE FRIENDLY</div>
-                            <div>SEO OPTIMIZATION</div>
+                            <div>SEARCH OPTIMIZATION FOR GOOGLE</div>
                             <div>Free w/ Either Package</div>
                         </div>
                         <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">

@@ -12,13 +12,13 @@ export function About() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <FeatureCard title="A Dedicated Team" description="Skip the hassle of finding and vetting developers. At Harbourfront Web Designs, we get access to an entire dedicated team including a Developer, Designer, and Project Manager all for the price of a single employee." />
+                    <FeatureCard title="A Dedicated Team" description="Skip the hassle of finding and vetting developers. At Harbourfront Web Designs, we have access to an entire dedicated team including a Developer, Designer, and Project Manager all for the price of a single employee." />
                     <FeatureCard title="Real-Time Tracking" description="Access a real-time project management board, allowing you to track progress, request unlimited revisions, and communicate with your dedicated team. The board facilitates clear communication and efficient task management." />
-                    <FeatureCard title="4x Increase Speed" description="At Harbourfront web designs, We have a proven development process which eliminates slowdowns with faster project cycles and fewer meetings. Accelerating your software development up to 4x faster than traditional agencies." />
+                    <FeatureCard title="4x Increased Speed" description="At Harbourfront Web Designs, we have a proven development process which eliminates slowdowns with faster project cycles and fewer meetings. Accelerating your software development up to 4x faster than traditional agencies." />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
-                    <FeatureCard title="Gareented Google Ranking" description="Guarantee top Google rankings with our advanced SEO strategies—keyword optimization, quality content, and expert backlink building. We adapt to algorithm updates for a competitive edge, focusing on user experience and site performance to drive measurable results." />
+                    <FeatureCard title="Guaranteed Google Ranking" description="Guaranteed Google ranking with our advanced SEO strategies like — keyword optimization, quality content, and expert backlink building. We up-to-date SEO for a competitive edge, focusing on user experience and site performance to drive measurable results." />
                     <FeatureCard title="Unlimited Tasks & Revisions" description="Once subscribed, you'll unlock unlimited development services with the ability to add endless changes. Our unlimited revision policy ensures your Website is built exactly as you envision it." />
                 </div>
             </div>

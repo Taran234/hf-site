@@ -1,120 +1,113 @@
-import * as React from "react";
-import { IoIosCreate } from "react-icons/io";
-import { MdOutlineMobileFriendly, MdOutlineScreenSearchDesktop } from "react-icons/md";
-import { SiCodewars } from "react-icons/si";
+import {
+    FaCode,
+    FaMobileAlt,
+    FaLaptopCode,
+    FaUserShield,
+    FaWrench,
+    FaRocket,
+    FaPaintBrush,
+    FaHandshake,
+} from "react-icons/fa";
+import { cn } from "../lib/utils";
 
-export function Detail() {
+export function FeaturesSectionDemo() {
+    const features = [
+        {
+            title: "Custom Web Development",
+            description:
+                "Tailored solutions that fit your unique business needs, from concept to deployment.",
+            icon: <FaCode />,
+        },
+        {
+            title: "Responsive Design",
+            description:
+                "Designs that look great on all devices, ensuring a seamless user experience across screens.",
+            icon: <FaMobileAlt />,
+        },
+        {
+            title: "E-commerce Solutions",
+            description:
+                "Robust and scalable online stores that drive sales and enhance customer experience.",
+            icon: <FaLaptopCode />,
+        },
+        {
+            title: "Secure and Reliable",
+            description:
+                "We prioritize security and reliability to ensure your website is protected and always available.",
+            icon: <FaUserShield />,
+        },
+        {
+            title: "SEO Optimization",
+            description:
+                "Improve your search engine rankings with our SEO best practices and strategies.",
+            icon: <FaWrench />,
+        },
+        {
+            title: "Fast Performance",
+            description:
+                "Optimized websites for fast loading times, improving user satisfaction and retention.",
+            icon: <FaRocket />,
+        },
+        {
+            title: "Creative Design",
+            description:
+                "Innovative and visually appealing designs that capture your brand's essence and attract your audience.",
+            icon: <FaPaintBrush />,
+        },
+        {
+            title: "Client-Centric Approach",
+            description:
+                "We value your feedback and work closely with you to ensure the final product exceeds your expectations.",
+            icon: <FaHandshake />,
+        },
+    ];
+
     return (
-        <div className="flex flex-col justify-center md:mx-auto max-w-5xl mx-5 mt-10">
-            <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-                <span className="bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text">What we do Best</span>
-                <br />
-            </div>
-            <div className="self-start mt-10 mx-20 text-base leading-6 text-white  ">
-                We didn't just reinvent website development - we made it accessible,
-                efficient, and affordable. The era of dealing with website platforms is out.
-                Experience the accelerated pace of development, better User Experience
-                and dedicated support.
-            </div>
-
-            <div className="flex gap-5 max-md:flex-col md:mt-10 mt-5">
-                <div className="flex flex-col w-full rounded-2xl mt-7">
-                    <div className="flex flex-col  text-3xl font-medium leading-8 text-white rounded-2xl border-2 border-orange-500 border-solid p-7 min-h-[450px]  hover:shadow-xl hover:shadow-orange-500">
-                        <MdOutlineScreenSearchDesktop size={35} />
-                        <div className="mt-6">SEO-Optimization</div>
-                        <div className="mt-8 text-base leading-6">
-                            Boost your business's visibility on Google with our expert SEO
-                            services. Achieve higher rankings, drive traffic,
-                            and grow your online presence effectively.
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col md:ml-5 w-full rounded-2xl ">
-                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-emerald-400 border-solid p-7 min-h-[550px] hover:shadow-xl hover:shadow-emerald-400">
-                        <IoIosCreate size={35} />
-
-                        <div className="mt-6 text-3xl font-medium leading-8">
-                            Unique Website</div>
-                        <div className="mt-8 text-base leading-6">
-                            Revolutionize your brand by standing out. Manage your products on the website with our own Management
-                            Tools. We understand that every business
-                            has its own unique fingerprint, so we craft
-                            solutions that align perfectly with the
-                            specific needs and characteristics of your
-                            organization.</div>
-                    </div>
-                </div>
-                <div className="flex flex-col md:ml-5 w-full rounded-2xl mt-7 ">
-                    <div className="flex flex-col  text-base leading-6 text-white rounded-2xl border-2 border-amber-400 border-solid p-7 min-h-[450px] hover:shadow-xl hover:shadow-orange-500">
-                        <MdOutlineMobileFriendly size={35} />
-                        <div className="mt-6 text-3xl font-medium leading-8">
-                            Mobile Friendly
-                        </div>
-                        <div className="mt-8 text-base max-md:mr-2">
-                            Responsiveness is key. We ensure your website isn't just viewed, but experienced seamlessly across all devices. Our mobile-friendly designs optimize user engagement and accessibility, ensuring your message reaches every visitor effectively.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* <div className="mt-20 w-full md:mt-10 grid grid-cols-1 gap-10 md:grid-cols-3 md:py-20">
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Website Rebranding</div>
-                        <div className="mt-3">Rebrand your old outdated website and give it a future proof makeover. User Experience is your friend.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Blogs Management</div>
-                        <div className="mt-3">Develop your own no-code custom internal blogs management for your website.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Custom CMS Systems</div>
-                        <div className="mt-3">Develop CMS systems tailored for your business. No more...</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Custom AI Chatbots</div>
-                        <div className="mt-3">Build custom knowledge-based AI chatbot systems that can be applied with a variety of use cases.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Custom Websites</div>
-                        <div className="mt-3">Create a unique and visually appealing website tailored to your brand.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Ecommerce Integration</div>
-                        <div className="mt-3">We'll help you integrate your Ecommerce functionality inot your website to create a seemless checkout experience.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">SEO with Analytics</div>
-                        <div className="mt-3">Rank on Google searches and see your website traffic with free integration of Google Analytics to your site.</div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col">
-                    <div className=" bg-gradient-to-b from-gray-700 via-gray-800 to-amber-800 border-2 border-black rounded p-4 m-auto h-[200px]">
-                        <div className="text-xl font-semibold leading-8">Website Maintenance</div>
-                        <div className="mt-3">Let us take care of your Website upkeep, from bugs to changes, or even additional features.</div>
-                    </div>
-                </div>
-            </div> */}
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
+            {features.map((feature, index) => (
+                <Feature key={feature.title} {...feature} index={index} />
+            ))}
         </div>
     );
 }
+
+const Feature = ({
+    title,
+    description,
+    icon,
+    index,
+}: {
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+    index: number;
+}) => {
+    return (
+        <div
+            className={cn(
+                "flex flex-col lg:border-r p-10 relative group/feature dark:border-neutral-800",
+                (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
+                index < 4 && "lg:border-b dark:border-neutral-800"
+            )}
+        >
+            {index < 4 && (
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+            )}
+            {index >= 4 && (
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+            )}
+            <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+                {icon}
+            </div>
+            <div className="text-lg font-bold mb-2 relative z-10 px-10">
+                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+                <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+                    {title}
+                </span>
+            </div>
+            <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+                {description}
+            </p>
+        </div>
+    );
+};
