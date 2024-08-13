@@ -14,7 +14,7 @@ export function Step1() {
                             systems and create actionable next steps while answering any{" "}
                             questions you might have about our service.
                         </div>
-                        <div className="md:absolute hidden bottom-0 right-0 md:-bottom-28 md:-right-28 items-end justify-end">
+                        <div className="md:absolute md:block hidden -bottom-60 -right-44 items-end justify-end">
                             <Globe />
                         </div>
                     </div>
