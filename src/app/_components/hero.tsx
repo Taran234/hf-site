@@ -1,15 +1,14 @@
 "use client"
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { BsStack } from "react-icons/bs";
-import { CiBellOn } from "react-icons/ci";
 import { TiTick } from "react-icons/ti";
+import { TbBellRingingFilled } from "react-icons/tb";
 import { Spotlight } from "../components/ui/spotlight";
 import { ContainerScroll } from "../components/ui/scroll-container";
-import { TbBellRingingFilled } from "react-icons/tb";
 
-export function Hero() {
+export function Hero({ location }: any) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     return (
@@ -28,7 +27,7 @@ export function Hero() {
                     </div>
                 </div>
                 <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent  bg-clip-text uppercase ">
-                    Toronto's <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Website Solution
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Website Solution
                 </h1>
                 <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
                     From idea, to design, to development... Let us take care of it all so you don't have to. Don't wait, engage now.
@@ -80,15 +79,12 @@ export function Hero() {
                             autoPlay
                             autoFocus
                             loop
-
                         >
                             <source src="/v6.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-
                     </div>
                 </ContainerScroll>
-
             </div>
         </div>
     );
