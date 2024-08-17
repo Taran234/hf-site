@@ -5,6 +5,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { useCallback, useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger } from "../components/ui/model";
+import Drawer from "./drawer";
 
 export function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -43,7 +44,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 w-screen capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 w-full capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex flex-row md:gap-3 gap-2 relative">
                 <svg
                     version="1.1"
@@ -95,34 +96,24 @@ export function Header() {
                 </div>
             </div>
 
-            <div className="md:hidden ">
-                <button onClick={toggleDrawer} className="text-white focus:outline-none">
-                    <HiMenu size={32} />
-                </button>
-            </div>
 
-            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-2  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
-                <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
-                <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
-                <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>
-                <DrawerLink href="#our-work" onClick={toggleDrawer}>our Designs</DrawerLink>
-                <DrawerLink href="#faq" onClick={toggleDrawer}>FAQ</DrawerLink>
+
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-10 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+                <Link href="#about" onClick={toggleDrawer}>About</Link>
+                <Link href="#how-it-works" onClick={toggleDrawer}>How We Work</Link>
+                <Link href="#detail" onClick={toggleDrawer}>Services</Link>
+                <Link href="#our-work" onClick={toggleDrawer}>our Designs</Link>
+                <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
+                <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white  group/modal-btn">
+                    <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
+                        Contact Now!
+                    </span>
+                    <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                        <BiRightArrowAlt size={32} />
+                    </div>
+                </ModalTrigger>
             </div>
-            <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white m-2 mx-10  group/modal-btn">
-                <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
-                    Contact Now!
-                </span>
-                <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-                    <BiRightArrowAlt size={32} />
-                </div>
-            </ModalTrigger>
+            <div className="md:hidden absolute top-0 right-5"> <Drawer /></div>
         </div>
-    );
-}
-
-function DrawerLink({ href, onClick, children }: any) {
-    return (
-        <Link href={href} passHref className="block py-2 px-4 text-white hover:text-amber-400" onClick={onClick}>{children}
-        </Link>
     );
 }

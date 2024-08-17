@@ -50,7 +50,7 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
 export default function Home() {
   return (
     <main
-      className="overflow-hidden scroll-smooth bg-[#000000]"
+      className="overflow-x-hidden scroll-smooth bg-[#000000]"
     >
       <ModalProvider>
         <Modal>
@@ -72,54 +72,55 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={fadeInVariant}
-            id="header" className="fixed top-0 left-0 right-0 z-50 mx-3"
+            id="header" className="fixed top-0 left-0 right-0 z-50 "
           >
             <Header />
           </motion.div>
-        </Modal>
-
-      </ModalProvider>
 
 
-      <AnimatedSection>
-        <div id="hero">
-          <Hero />
-        </div>
-      </AnimatedSection>
-      <AnimatedSection delay={0.1}>
-        <div id="partners">
-          <Partners />
-        </div>
-      </AnimatedSection>
-      {/* <AnimatedSection delay={0.2}>
+
+          <AnimatedSection>
+            <div id="hero">
+              <Hero />
+            </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <div id="partners">
+              <Partners />
+            </div>
+          </AnimatedSection>
+          {/* <AnimatedSection delay={0.2}>
         <div id="about">
           <About />
         </div>
       </AnimatedSection> */}
-      <AnimatedSection delay={0.3}>
-        <div id="detail" className="pt-10">
-          <FeaturesSectionDemo />
-        </div>
-      </AnimatedSection>
-      <div id="how-it-works">
-        <Howitworks />
-      </div>
-      {/* <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.3}>
+            <div id="detail" className="pt-10">
+              <FeaturesSectionDemo />
+            </div>
+          </AnimatedSection>
+          <div id="how-it-works">
+            <Howitworks />
+          </div>
+          {/* <AnimatedSection delay={0.3}>
         <div id="pricing">
           <Pricing />
         </div>
       </AnimatedSection> */}
-      <AnimatedSection delay={0}>
-        <div id="our-work">
-          <Gallery />
-        </div>
-      </AnimatedSection>
-      <div id="faq">
-        <Faq />
-      </div>
-      <div id="footer">
-        <Footer />
-      </div>
+          <AnimatedSection delay={0}>
+            <div id="our-work">
+              <Gallery />
+            </div>
+          </AnimatedSection>
+          <div id="faq">
+            <Faq />
+          </div>
+          <div id="footer">
+            <Footer />
+          </div>
+        </Modal>
+
+      </ModalProvider>
     </main>
   );
 }

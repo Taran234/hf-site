@@ -31,7 +31,7 @@ const config: Config = {
         spotlight: {
           "0%": {
             opacity: '0',
-            transform: "translate(-72%, -62%) scale(0.5)",
+            transform: "translate(-72%, -62%) scale(0.2)",
           },
           "100%": {
             opacity: '1',

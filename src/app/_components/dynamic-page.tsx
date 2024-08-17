@@ -51,7 +51,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
     const location = keyword.split('-').pop();
 
     return (
-        <main className="overflow-hidden scroll-smooth bg-[#000000]">
+        <main className="overflow-x-hidden scroll-smooth bg-[#000000]">
             <Head>
                 <title>{keyword} | Harbourfront Web Designs</title>
                 <meta name="description" content={`${location}'s best one-stop digital marketing solution. Get unlimited revisions, 24/7 support, affordable payment options...`} />
