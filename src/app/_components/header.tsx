@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { useCallback, useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger } from "../components/ui/model";
 
 export function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -100,27 +101,21 @@ export function Header() {
                 </button>
             </div>
 
-            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-3  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-center md:mx-auto absolute md:top-0 top-16 inset-x-0 flex-col md:text-lg text-sm p-1.5 py-2  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'} ${isDrawerOpen ? 'block' : 'hidden'}`}>
                 <DrawerLink href="#about" onClick={toggleDrawer}>About</DrawerLink>
                 <DrawerLink href="#how-it-works" onClick={toggleDrawer}>How We Work</DrawerLink>
                 <DrawerLink href="#detail" onClick={toggleDrawer}>Services</DrawerLink>
                 <DrawerLink href="#our-work" onClick={toggleDrawer}>our Designs</DrawerLink>
-                <DrawerLink href="#pricing" onClick={toggleDrawer}>Pricing</DrawerLink>
                 <DrawerLink href="#faq" onClick={toggleDrawer}>FAQ</DrawerLink>
-                <Link href="#footer" className="md:hidden flex flex-row justify-center items-center mx-auto gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
-                    <div className="flex justify-center items-center">Contact us</div>
-                    <div className="bg-amber-500 rounded-xl px-1 justify-center items-center flex">
-                        <BiRightArrowAlt size={32} />
-                    </div>
-                </Link>
             </div>
-
-            <Link href="#footer" className="hidden md:flex flex-row items-center justify-center mx-auto my-4 gap-1 py-1 pr-1 pl-3  bg-orange-500 rounded-md text-stone-100">
-                <div className="flex justify-center items-center">Contact us</div>
-                <div className="bg-amber-500 rounded-xl p-1 justify-center items-center flex">
+            <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white m-2 mx-10  group/modal-btn">
+                <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
+                    Contact Now!
+                </span>
+                <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
                     <BiRightArrowAlt size={32} />
                 </div>
-            </Link>
+            </ModalTrigger>
         </div>
     );
 }

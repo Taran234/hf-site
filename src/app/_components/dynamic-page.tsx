@@ -8,10 +8,10 @@ import { Hero } from "../_components/hero";
 import { Partners } from "../_components/partners";
 import { FeaturesSectionDemo } from "../_components/details";
 import { Howitworks } from "../_components/howitworks";
-import Gallery from "../_components/Designs";
 import { Faq } from "../_components/faq";
 import { Footer } from "../_components/footer";
 import Head from "next/head";
+import Gallery from "./Designs";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },

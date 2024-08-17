@@ -3,9 +3,7 @@
 import { Header } from "./_components/header";
 import { Hero } from "./_components/hero";
 import { Partners } from "./_components/partners";
-import { About } from "./_components/about";
 import { Howitworks } from "./_components/howitworks";
-import { Pricing } from "./_components/pricing";
 import { Faq } from "./_components/faq";
 import { Footer } from "./_components/footer";
 import Gallery from "./_components/Designs";
@@ -13,6 +11,8 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
 import { FeaturesSectionDemo } from "./_components/details";
+import { Modal, ModalBody, ModalContent, ModalFooter, ModalProvider } from "./components/ui/model";
+import { Contact } from "./_components/contact";
 
 // Define animation variants
 const fadeInVariant = {
@@ -50,17 +50,37 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
 export default function Home() {
   return (
     <main
-
       className="overflow-hidden scroll-smooth bg-[#000000]"
     >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInVariant}
-        id="header" className="fixed top-0 left-0 right-0 z-50"
-      >
-        <Header />
-      </motion.div>
+      <ModalProvider>
+        <Modal>
+          <ModalBody>
+            <ModalContent>
+              <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
+                Get a {" "}
+                <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
+                  FREE
+                </span>{" "}
+                Custom Design! 📞
+              </h4>
+
+              <Contact />
+            </ModalContent>
+
+          </ModalBody>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariant}
+            id="header" className="fixed top-0 left-0 right-0 z-50 mx-3"
+          >
+            <Header />
+          </motion.div>
+        </Modal>
+
+      </ModalProvider>
+
+
       <AnimatedSection>
         <div id="hero">
           <Hero />
@@ -81,12 +101,9 @@ export default function Home() {
           <FeaturesSectionDemo />
         </div>
       </AnimatedSection>
-
       <div id="how-it-works">
         <Howitworks />
       </div>
-
-
       {/* <AnimatedSection delay={0.3}>
         <div id="pricing">
           <Pricing />
@@ -97,16 +114,12 @@ export default function Home() {
           <Gallery />
         </div>
       </AnimatedSection>
-
       <div id="faq">
         <Faq />
       </div>
-
-
       <div id="footer">
         <Footer />
       </div>
-
     </main>
   );
 }

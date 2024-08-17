@@ -1,7 +1,6 @@
 'use client';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import { ParallaxScroll } from '../components/ui/parallax-grid';
+import React from 'react';
+import { InfiniteMovingCards } from '../components/ui/cards';
 
 // Array with image sources
 const img = [
@@ -17,27 +16,26 @@ const img = [
     // Add more image URLs as needed
 ];
 
-// Grid component to render ParallaxScroll
-const Grid = ({ images }: { images: string[] }) => {
-    return (
-        <ParallaxScroll images={images} />
+// Convert the array of image sources into an array of objects
+const imagesWithDetails = img.map((src, index) => ({
+    // label: `Design ${index + 1}`,
+    label: "",
+    src,
+    alt: `Design Image ${index + 1}`
+}));
+
+// Grid component to render InfiniteMovingCards
+const Grid = ({ images }: { images: { label: string; src: string; alt: string; }[] }) => {
+    return (<div className='flex flex-col gap-2 justify-evenly'>
+        <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
+        <InfiniteMovingCards items={images} direction="right" speed="slow" pauseOnHover={false} />
+        <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
+    </div>
+
     );
 };
 
 const Gallery = () => {
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState({ src: '', caption: '' });
-
-    const openLightbox = (src: string, caption: string) => {
-        setSelectedImage({ src, caption });
-        setLightboxOpen(true);
-    };
-
-    const closeLightbox = () => {
-        setLightboxOpen(false);
-        setSelectedImage({ src: '', caption: '' });
-    };
-
     return (
         <>
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal my-10">
@@ -46,17 +44,9 @@ const Gallery = () => {
                 </h4>
                 <br />
             </div>
-            <div className="gallery grid gap-10 grid-cols-1 md:grid-cols-3 mx-auto md:px-10 w-full items-start justify-start" itemScope itemType="http://schema.org/ImageGallery">
-                <Grid images={img} />
-                {/* Optionally, you might want to add a GalleryItem component for individual items */}
-            </div>
-            {lightboxOpen && (
-                <div className="fixed top-0 inset-0 z-20 flex items-center justify-center bg-black bg-opacity-80 overflow-y-scroll" onClick={closeLightbox}>
-                    <div className="relative max-w-full max-h-full object-contain">
-                        <img src={selectedImage.src} alt={selectedImage.caption} className="relative max-w-full max-h-full " />
-                    </div>
-                </div>
-            )}
+            <div className="gallery mx-auto  w-full items-center justify-center" >
+                <Grid images={imagesWithDetails} />
+            </div >
         </>
     );
 };

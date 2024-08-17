@@ -14,13 +14,6 @@
   /* Custom scrollbar thumb color */
 }
 
-button:hover {
-  cursor: none !important;
-}
-
-button:hover .animated-cursor {
-  display: none;
-}
 
 body {
   color: rgb(var(--foreground-rgb));
