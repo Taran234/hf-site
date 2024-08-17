@@ -15,7 +15,7 @@ export function Hero({ location }: any) {
         <div className="flex -z-40 flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
             <div className="flex flex-col items-center mt-7 w-full max-w-screen overflow-hidden">
                 <Spotlight
-                    className="-top-20 -left-40 md:-left-60 md:-top-20 "
+                    className="-top-20 -left-40 md:left-36 md:-top-20 "
                     fill="white"
                 />
                 <div className="flex flex-col justify-center  max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
