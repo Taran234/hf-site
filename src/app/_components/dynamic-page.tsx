@@ -12,6 +12,8 @@ import { Faq } from "../_components/faq";
 import { Footer } from "../_components/footer";
 import Head from "next/head";
 import Gallery from "./Designs";
+import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
+import { Contact } from "./contact";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },
@@ -52,18 +54,37 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
         <main className="overflow-hidden scroll-smooth bg-[#000000]">
             <Head>
                 <title>{keyword} | Harbourfront Web Designs</title>
-                <meta name="description" content={`${location}'s best one-stop website design and development solution. Get unlimited edits, 24/7 support, monthly payment options...`} />
+                <meta name="description" content={`${location}'s best one-stop digital marketing solution. Get unlimited revisions, 24/7 support, affordable payment options...`} />
                 <meta name="keywords" content={keyword} />
             </Head>
 
-            <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={fadeInVariant}
-                id="header" className="fixed top-0 left-0 right-0 z-50"
-            >
-                <Header />
-            </motion.div>
+            <ModalProvider>
+                <Modal>
+                    <ModalBody>
+                        <ModalContent>
+                            <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
+                                Get a {" "}
+                                <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
+                                    FREE
+                                </span>{" "}
+                                Custom Design! 📞
+                            </h4>
+
+                            <Contact />
+                        </ModalContent>
+
+                    </ModalBody>
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeInVariant}
+                        id="header" className="fixed top-0 left-0 right-0 z-50 mx-3"
+                    >
+                        <Header />
+                    </motion.div>
+                </Modal>
+
+            </ModalProvider>
             <AnimatedSection>
                 <div id="hero">
                     <Hero location={location} />
