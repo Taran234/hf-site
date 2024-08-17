@@ -22,7 +22,7 @@ export function Hero({ location }: any) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            Contact Now to get FREE Custom Website Design only for a limited time!
+                            Contact Us Now for a FREE Custom Website Design — Limited Time Offer!
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export function Hero({ location }: any) {
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Digital Marketing Solution
                 </h1>
                 <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
-                    We combine innovative design, sustainable SEO practises, and exceptional campaings to elevate your business to the top
+                    We combine innovative design, sustainable SEO practices, and exceptional campaigns to elevate your business to the top
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">

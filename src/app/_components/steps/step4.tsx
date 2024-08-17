@@ -9,8 +9,7 @@ export function Step4() {
 
                     <div className="flex md:flex-row-reverse flex-col">
                         <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
-                            At Harbourfront Web Designs, we create Optimized and responsive websites tailored for all devices. Our expert team ensures your site ranks high in search engines by integrating advanced SEO techniques from the ground up. We test your website across various devices and browsers to achieve a seamless user experience, enhancing both functionality and design. Trust us to deliver a website that not only attracts traffic but also provides an exceptional, consistent experience for every visitor.
-                        </div>
+                            Our expert team will optimize your website for peak performance and responsive design across all devices. We integrate advanced SEO techniques to enhance search engine rankings and perform thorough testing to ensure a flawless user experience. We’ll continuously refine the design and functionality based on your feedback and performance metrics.                        </div>
 
                     </div>
                 </div>

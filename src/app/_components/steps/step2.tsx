@@ -9,8 +9,7 @@ export function Step2() {
 
                     <div className="flex md:flex-row-reverse flex-col">
                         <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
-                            We reach out to you and discuss project's details, then in 24 hrs you receive a custom design for absolutely FREE tailored to your project's details. We handle design revisions, functional outlines, and all information to guide seamless development.
-                        </div>
+                            Within 24 hours of our call, you’ll receive a bespoke digital strategy proposal, including a free initial design concept tailored to your unique project requirements. We’ll also provide detailed plans for design revisions, functional specifications, and development stages to align with your marketing objectives.                        </div>
 
                     </div>
                 </div>

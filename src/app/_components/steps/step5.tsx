@@ -8,8 +8,7 @@ export function Step5() {
                 <div className="flex z-10 flex-col justify-center px-7 py-8 rounded-xl bg-neutral-900 ">
                     <div className="flex md:flex-row flex-col">
                         <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
-                            After the initial website is complete, we welcome your feedback and make any necessary revisions to ensure your website exceeds expectations. Our commitment to perfection means unlimited edits until you are completely satisfied. We thoroughly test each adjustment to maintain seamless functionality and top-notch performance.
-                        </div>
+                            Once your project is complete, we review the final product with you and make any necessary adjustments. Our commitment to excellence means unlimited revisions until you’re fully satisfied. We also provide ongoing support to ensure your website remains high-performing and aligned with your marketing goals.                        </div>
                     </div>
                 </div>
             </div>

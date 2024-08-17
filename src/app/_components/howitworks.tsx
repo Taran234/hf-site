@@ -10,31 +10,31 @@ export function Howitworks() {
     const steps = [
         {
             title: "Step One",
-            description: "Schedule a Free Call",
+            description: "Schedule Your Free Strategy Call",
             content: <Step1 />,
             className: "col-span-6 lg:col-span-4 border-b lg:border-r border-neutral-800",
         },
         {
             title: "Step Two",
-            description: "Get Your Plan",
+            description: "Receive Your Customized Plan",
             content: <Step2 />,
             className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
         },
         {
             title: "Step Three",
-            description: "Work on the Project",
+            description: " Begin Your Project",
             content: <Step3 />,
             className: "col-span-6 lg:col-span-2 lg:border-r border-b border-neutral-800",
         },
         {
             title: "Step Four",
-            description: "Review and Adjust",
+            description: "Optimize and Refine",
             content: <Step4 />,
             className: "col-span-6 lg:col-span-4 border-b border-neutral-800",
         },
         {
             title: "Step Five",
-            description: "Final Delivery",
+            description: "Final Delivery and Support",
             content: <Step5 />,
             className: "col-span-6 lg:col-span-6 border-b border-t border-neutral-800",
         },
@@ -48,8 +48,7 @@ export function Howitworks() {
                 </h4>
 
                 <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-                    From scheduling a call to final delivery, follow our streamlined process to get the best results.
-                </p>
+                    Discover how our efficient and collaborative approach takes your project from initial consultation to successful launch, ensuring optimal results at every stage.                </p>
             </div>
 
             <div className="relative">

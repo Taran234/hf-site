@@ -9,8 +9,7 @@ export function Step3() {
 
                     <div className="flex md:flex-row flex-col">
                         <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
-                            Once we settle on a design we break down the Project into tasks and start working on the developing the website from the chosen designs. This is the official beginning of our development contract.
-                        </div>
+                            After finalizing the design concept, we break down the project into actionable tasks and kick off the development phase. Our team will start building your website or digital marketing solution, ensuring all elements are in place to meet your strategic goals.                        </div>
 
                     </div>
                 </div>

@@ -72,7 +72,7 @@ export function Footer() {
             <div className="col col3 flex flex-col items-center md:items-start">
                 <p className="mb-2">Services</p>
                 <p className="mb-2">Our Designs</p>
-                <p className="mb-2">Frequently Asked Question</p>
+                <p className="mb-2">Frequently Asked Questions</p>
                 <p className="mb-2">harbourfrontwebdesigns@gmail.com</p>
             </div>
         </footer>
