@@ -61,7 +61,7 @@ export default function Home() {
                 <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
                   FREE
                 </span>{" "}
-                Custom Design! 📞
+                Consultation! 📞
               </h4>
 
               <Contact />

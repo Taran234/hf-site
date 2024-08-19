@@ -26,7 +26,7 @@ export function Hero({ location }: any) {
                         </div>
                     </div>
                 </div>
-                <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  mx-3 bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent  bg-clip-text uppercase ">
+                <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase ">
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Digital Marketing Solution
                 </h1>
                 <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">

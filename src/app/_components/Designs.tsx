@@ -4,17 +4,22 @@ import { InfiniteMovingCards } from '../components/ui/cards';
 
 // Array with image sources
 const img = [
-    "/des13.jpeg",
-    "/des15.jpeg",
-    "/des16.jpg",
+    "/des1.jpeg",
+    "/des2.jpeg",
+    "/des3.jpeg",
+    "/des4.png",
     "/des5.jpeg",
+    "/des6.jpeg",
+    "/des7.jpeg",
+    "/des8.jpeg",
+    "/des9.jpeg",
+    "/des10.jpeg",
     "/des11.jpeg",
     "/des12.jpeg",
-    "/des8.jpeg",
-    "/des7.jpeg",
-    "/des10.jpeg"
+    "/des13.jpeg"
     // Add more image URLs as needed
 ];
+
 
 // Convert the array of image sources into an array of objects
 const imagesWithDetails = img.map((src, index) => ({
@@ -26,7 +31,7 @@ const imagesWithDetails = img.map((src, index) => ({
 
 // Grid component to render InfiniteMovingCards
 const Grid = ({ images }: { images: { label: string; src: string; alt: string; }[] }) => {
-    return (<div className='flex flex-col gap-2 justify-evenly'>
+    return (<div className='flex flex-col gap-2 justify-center mx-auto'>
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="right" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
