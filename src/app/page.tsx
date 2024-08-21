@@ -56,13 +56,16 @@ export default function Home() {
         <Modal>
           <ModalBody>
             <ModalContent>
-              <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
-                Get a {" "}
+              <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-4">
+                Book your {" "}
                 <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
                   FREE
                 </span>{" "}
-                Consultation! 📞
+                Design Now! 📞
               </h4>
+              <h2 className="text-xs md:text-sm z-50 text-neutral-100 font-bold text-center mb-8">
+                Don't Worry! we don't go crazy with<br /> with marketing emails... 🤦‍♂️
+              </h2>
 
               <Contact />
             </ModalContent>

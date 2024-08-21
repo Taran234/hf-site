@@ -13,7 +13,7 @@ import { cn } from "../lib/utils";
 export function FeaturesSectionDemo() {
     const features = [
         {
-            title: "Custom Web Development",
+            title: "Fully Customized solution",
             description:
                 "Tailored solutions that fit your unique business needs, from concept to deployment.",
             icon: <FaCode />,
@@ -25,15 +25,15 @@ export function FeaturesSectionDemo() {
             icon: <FaMobileAlt />,
         },
         {
-            title: "E-commerce Solutions",
+            title: "E-commerce Integration",
             description:
-                "Robust and scalable online stores that drive sales and enhance customer experience.",
+                "Building robust online stores that drive sales and enhance customer experience.",
             icon: <FaLaptopCode />,
         },
         {
-            title: "Secure and Reliable",
+            title: "Fast and Secure Hosting",
             description:
-                "We prioritize security and reliability to ensure your website is protected and always available.",
+                "Providing reliable hosting solutions for optimal website performance and security.",
             icon: <FaUserShield />,
         },
         {
@@ -43,13 +43,13 @@ export function FeaturesSectionDemo() {
             icon: <FaWrench />,
         },
         {
-            title: "Fast Performance",
+            title: "Content Management System",
             description:
-                "Optimized websites for fast loading times, improving user satisfaction and retention.",
+                "Integrating easy-to-use CMS platforms so you can effortlessly update and manage your website content.",
             icon: <FaRocket />,
         },
         {
-            title: "Creative Design",
+            title: "Ongoing Support and Maintenance",
             description:
                 "Innovative and visually appealing designs that capture your brand's essence and attract your audience.",
             icon: <FaPaintBrush />,
@@ -57,7 +57,7 @@ export function FeaturesSectionDemo() {
         {
             title: "Client-Centric Approach",
             description:
-                "We value your feedback and work closely with you to ensure the final product exceeds your expectations.",
+                "Offering 24/7 support to keep your website running smoothly and up-to-date.",
             icon: <FaHandshake />,
         },
     ];

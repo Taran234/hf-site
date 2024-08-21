@@ -22,7 +22,7 @@ export function Hero({ location }: any) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            Contact Us Now for a FREE Custom Website Design — Limited Time Offer!
+                            Claim Your FREE Custom Website Design Today — Limited Spots Available!
                         </div>
                     </div>
                 </div>

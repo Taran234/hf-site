@@ -31,7 +31,7 @@ const imagesWithDetails = img.map((src, index) => ({
 
 // Grid component to render InfiniteMovingCards
 const Grid = ({ images }: { images: { label: string; src: string; alt: string; }[] }) => {
-    return (<div className='flex flex-col gap-2 justify-center mx-auto'>
+    return (<div className='flex flex-1 flex-col gap-2 justify-center mx-auto'>
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="right" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />

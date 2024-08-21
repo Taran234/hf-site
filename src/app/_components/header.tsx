@@ -106,10 +106,10 @@ export function Header() {
                 <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
                 <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
-                        Contact Now!
+                        Claim your FREE Design!
                     </span>
                     <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-                        <BiRightArrowAlt size={32} />
+                        Contact Now!
                     </div>
                 </ModalTrigger>
             </div>
