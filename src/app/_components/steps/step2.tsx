@@ -9,7 +9,8 @@ export function Step2() {
 
                     <div className="flex md:flex-row-reverse flex-col">
                         <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
-                            Within 24 hours of our call, you’ll receive a bespoke digital strategy proposal, including a free initial design concept tailored to your unique project requirements. We’ll also provide detailed plans for design revisions, functional specifications, and development stages to align with your marketing objectives.                        </div>
+                            Within 24 hours, we’ll send you a detailed strategy proposal, including an initial website concept. This proposal will cover all aspects of your project, from design to functionality, and how we'll achieve your objectives.
+                        </div>
 
                     </div>
                 </div>

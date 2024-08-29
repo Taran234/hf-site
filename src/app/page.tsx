@@ -10,7 +10,7 @@ import Gallery from "./_components/Designs";
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from "react";
 import { useInView } from 'react-intersection-observer';
-import { FeaturesSectionDemo } from "./_components/details";
+import { Detail } from "./_components/details";
 import { Modal, ModalBody, ModalContent, ModalFooter, ModalProvider } from "./components/ui/model";
 import { Contact } from "./_components/contact";
 
@@ -61,7 +61,7 @@ export default function Home() {
                 <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
                   FREE
                 </span>{" "}
-                Design Now! 📞
+                Consultaion! 📞
               </h4>
               <h2 className="text-xs md:text-sm z-50 text-neutral-100 font-bold text-center mb-8">
                 Don't Worry! we don't go crazy with<br /> with marketing emails... 🤦‍♂️
@@ -99,7 +99,7 @@ export default function Home() {
       </AnimatedSection> */}
           <AnimatedSection delay={0.3}>
             <div id="detail" className="pt-10">
-              <FeaturesSectionDemo />
+              <Detail />
             </div>
           </AnimatedSection>
           <div id="how-it-works">

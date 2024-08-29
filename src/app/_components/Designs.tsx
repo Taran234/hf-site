@@ -31,7 +31,7 @@ const imagesWithDetails = img.map((src, index) => ({
 
 // Grid component to render InfiniteMovingCards
 const Grid = ({ images }: { images: { label: string; src: string; alt: string; }[] }) => {
-    return (<div className='flex flex-1 flex-col gap-2 justify-center mx-auto'>
+    return (<div className='flex flex-col gap-2'>
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="right" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
@@ -44,12 +44,12 @@ const Gallery = () => {
     return (
         <>
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal my-10">
-                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+                <h4 className="text-3xl lg:text-5xl font-aclonica lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
                     Our Designs
                 </h4>
                 <br />
             </div>
-            <div className="gallery mx-auto  w-full items-center justify-center" >
+            <div className="mx-auto w-full " >
                 <Grid images={imagesWithDetails} />
             </div >
         </>

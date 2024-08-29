@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { BsStack } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
@@ -10,27 +10,49 @@ import { ContainerScroll } from "../components/ui/scroll-container";
 
 export function Hero({ location }: any) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [spots, setSpots] = useState(4);
+
+    useEffect(() => {
+        // Randomly set the number of spots between 4 and 2 on load
+        const randomSpots = Math.floor(Math.random() * 3) + 2;
+        setSpots(randomSpots);
+
+        // Make the number blink by toggling the 'blinking' class every 0.5 seconds
+        const blinkInterval = setInterval(() => {
+            const element = document.getElementById('spots-number');
+            if (element) {
+                element.classList.toggle('blinking');
+            }
+        }, 500);
+
+        // Cleanup interval on component unmount
+        return () => clearInterval(blinkInterval);
+    }, []);
 
     return (
         <div className="flex -z-40 flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
-            <div className="flex flex-col items-center mt-7 w-full max-w-screen overflow-hidden">
+            <div className="flex flex-col items-center mt-7 w-full max-w-screen gap-4 overflow-hidden">
                 <Spotlight
                     className="-top-20 -left-40 md:left-36 md:-top-20 "
                     fill="white"
                 />
-                <div className="flex flex-col justify-center  max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-xs font-bold text-white uppercase rounded-md ">
+                <div className="flex flex-col justify-center max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-xs font-bold text-white uppercase rounded-md">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            Claim Your FREE Custom Website Design Today — Limited Spots Available!
+                            Claim Your $99 Website today — Only{' '}
+                            <span id="spots-number" className="font-extrabold text-yellow-400">
+                                {spots}
+                            </span>{' '}
+                            spots left this month!
                         </div>
                     </div>
                 </div>
                 <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase ">
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> Digital Marketing Solution
                 </h1>
-                <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-2xl text-center">
-                    We combine innovative design, sustainable SEO practices, and exceptional campaigns to elevate your business to the top
+                <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
+                    Dominate Your Market with an Unmatched Online Presence - We'll Design, Optimize, and Elevate Your Site for Just $99. Then just Pay for Hosting and Plugins you choose!
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
@@ -44,7 +66,7 @@ export function Hero({ location }: any) {
                         <BsStack size={32} />
                     </Link>
                 </div>
-                <div className="flex gap-5 justify-between mt-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
+                <div className="flex gap-5 justify-between my-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
                     <div className="flex gap-1.5 justify-center py-1">
                         <TiTick size={22} />
                         <div className="flex-auto">Unlimited Edits</div>

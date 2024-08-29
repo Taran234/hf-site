@@ -43,16 +43,16 @@ export function Howitworks() {
     return (
         <div className="relative z-20 p-10 lg:py-30 max-w-7xl mx-auto">
             <div className="px-8">
-                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
                     How We Work
                 </h4>
 
-                <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+                <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
                     Discover how our efficient and collaborative approach takes your project from initial consultation to successful launch, ensuring optimal results at every stage.                </p>
             </div>
 
             <div className="relative">
-                <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+                <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-800">
                     {steps.map((step) => (
                         <FeatureCard key={step.title} className={step.className}>
                             <FeatureTitle>{step.title}</FeatureTitle>
@@ -76,7 +76,7 @@ const FeatureCard = ({ children, className }: { children?: React.ReactNode; clas
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+        <p className="max-w-5xl mx-auto text-left tracking-tight font-aclonica text-white text-xl md:text-2xl md:leading-snug">
             {children}
         </p>
     );
@@ -84,7 +84,7 @@ const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
 
 const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="text-sm md:text-base max-w-4xl text-left mx-auto text-neutral-500  font-normal dark:text-neutral-300">
+        <p className="text-sm md:text-base max-w-4xl text-left mx-auto font-normal text-neutral-300">
             {children}
         </p>
     );

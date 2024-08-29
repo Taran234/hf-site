@@ -98,15 +98,15 @@ export function Header() {
 
 
 
-            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-10 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-10 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-6  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
                 <Link href="#about" onClick={toggleDrawer}>About</Link>
                 <Link href="#how-it-works" onClick={toggleDrawer}>How We Work</Link>
                 <Link href="#detail" onClick={toggleDrawer}>Services</Link>
                 <Link href="#our-work" onClick={toggleDrawer}>our Designs</Link>
                 <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
-                <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white  group/modal-btn">
+                <ModalTrigger className="bg-amber-500  justify-center items-center flex mb-2 text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
-                        Claim your FREE Design!
+                        Book a Call!
                     </span>
                     <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
                         Contact Now!
