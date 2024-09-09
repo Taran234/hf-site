@@ -108,9 +108,9 @@ const SkeletonTwo = () => {
 
                         </div>
                         <div className="flex items-end mt-6">
-                            <h3 className="text-indigo-500 leading-5 text-lg md:text-2xl">4,875</h3>
+                            <h3 className="text-indigo-500 leading-5 text-lg md:text-2xl">11,875</h3>
                             <div className="flex items-center md:ml-4 ml-1 text-green-700">
-                                <p className="text-green-700 text-xs md:text-base">67%</p>
+                                <p className="text-green-700 text-xs md:text-base">267%</p>
                                 <svg role="img" className="text-green-700" aria-label="increase. upward arrow icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                     <path d="M6 2.5V9.5" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
                                     <path d="M8 4.5L6 2.5" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
