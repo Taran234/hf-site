@@ -8,13 +8,9 @@ export function Step5() {
             <div className="flex flex-col justify-center px-0.5 mt-10 w-full">
                 <div className="flex z-10 flex-col justify-center px-4 py-4 rounded-xl bg-neutral-900">
                     <div className="flex flex-col">
-                        <div className="mt-5 md:text-base text-sm font-medium md:leading-8 md:justify-start">
-                            Your website is live, but our work has just begun. To help your site climb the ranks on Google and attract more visitors,
-                            we focus on continuous SEO enhancements and carefully crafted content. SEO is a process—Google usually takes a few months to fully rank a website,
-                            so ongoing optimization is crucial. We don't just write random blog posts;
-                            each one is carefully researched by experts to target the right audience for your business.
-                            These blogs are designed to guide visitors through a funnel straight to your sales page, turning them into loyal customers.
-                            Alongside this, we handle all technical maintenance to keep your site fast, secure, and always performing at its best.
+                        <div className="mt-5 text-lg font-medium md:leading-8 md:justify-start">
+                            Your website is live, but our work has just begun. From here on we have two path to scale traffic to your website: our SEO content package brings steady, organic traffic over time, or we can help you scale quickly with targeted ads on Google, Facebook, and Instagram. For the best results, we recommend a balanced approach—building SEO while running ads for faster growth.
+                            Alongside either packages, we provide FREE technical maintenance to keep your site fast, secure, and always performing at its best.
                         </div>
                         <div className="justify-center mt-4 items-center">
                             <SkeletonTwo />
@@ -97,8 +93,8 @@ const SkeletonTwo = () => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center py-8 px-4 ">
-            <div className="w-11/12 lg:w-2/3 bg-dot-white/[0.2] mx-10 p-6">
+        <div className="flex items-center justify-center py-8 md:px-4 ">
+            <div className="w-full lg:w-2/3 bg-dot-white/[0.2] md:mx-10 md:p-6">
                 <div className="flex flex-col justify-between h-full">
                     <div>
                         <div className="lg:flex w-full justify-between">

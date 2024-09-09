@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </AnimatedSection> */}
           <AnimatedSection delay={0.3}>
-            <div id="detail" className="pt-10">
+            <div id="detail" className="py-10">
               <Detail />
             </div>
           </AnimatedSection>

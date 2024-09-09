@@ -40,7 +40,7 @@ export function Hero({ location }: any) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            Claim Your $99 Website today — Only{' '}
+                            To keep up the qualtiy we only work with 7 businesses every month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
@@ -48,15 +48,15 @@ export function Hero({ location }: any) {
                         </div>
                     </div>
                 </div>
-                <h1 className="mt-7 md:text-6xl text-4xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase ">
-                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Website Solution
+                <h1 className="mt-7 md:text-6xl text-5xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Digital Growth Solution
                 </h1>
-                <h2 className="mt-7 text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Dominate Your Market with an Unmatched Online Presence - We'll Design, Optimize, and Elevate Your Site for Just $99. Then just Pay for Hosting and Plugins you choose!
+                <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
+                    Get your website done for just $99 then just pay for plugins you need <br />What's the Catch?<br /> nothing, we offer it because it's a great way for us to build connections with business owners who might hire us for larger paid projects as their companies grow.
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
-                        <div className="grow my-auto ">How does it work?</div>
+                        <div className="grow my-auto ">How is it JUST $99?</div>
                         <div className="border-2 p-1">
                             <BiRightArrowAlt size={32} />
                         </div>
@@ -66,7 +66,7 @@ export function Hero({ location }: any) {
                         <BsStack size={32} />
                     </Link>
                 </div>
-                <div className="flex gap-5 justify-between my-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
+                <div className="md:flex hidden gap-5 justify-between my-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
                     <div className="flex gap-1.5 justify-center py-1">
                         <TiTick size={22} />
                         <div className="flex-auto">Unlimited Edits</div>
@@ -105,6 +105,6 @@ export function Hero({ location }: any) {
                     </div>
                 </ContainerScroll>
             </div>
-        </div>
+        </div >
     );
 }

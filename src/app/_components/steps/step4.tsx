@@ -8,10 +8,10 @@ export function Step4() {
             <div className="flex flex-col justify-center px-0.5 mt-4 w-full">
                 <div className="flex z-10 flex-col justify-center items-start px-4 py-4 rounded-xl bg-neutral-900">
                     <div className="flex flex-col">
-                        <div className="mt-5 md:text-base text-sm font-medium text-left md:leading-8">
+                        <div className="mt-5 text-lg font-medium text-left md:leading-8">
                             After finalizing the design, we focus on creating a top-notch website. We make sure it looks great on all devices, from phones to desktops. We use high-quality images and videos, custom graphics, and smooth animations to make your site engaging and easy to navigate. We also ensure it loads quickly, is secure, and functions perfectly. Once everything is tested and ready, we launch your site and continue to refine it to keep it performing at its best.
                         </div>
-                        <div className="flex justify-center bg-dot-white/[0.2] items-center gap-6 flex-row mt-8 w-full overflow-hidden">
+                        <div className="hidden md:flex justify-center bg-dot-white/[0.2] items-center gap-6 flex-row mt-8 w-full overflow-hidden">
                             <SkeletonFour />
                         </div>
                     </div>

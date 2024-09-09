@@ -35,7 +35,7 @@ export function Step3() {
                 <div className="flex z-10 flex-col justify-center items-start px-4 py-4  rounded-xl bg-neutral-900 ">
 
                     <div className="flex  flex-col">
-                        <div className="mt-5 md:text-base text-sm font-medium md:leading-8  md:justify-start">
+                        <div className="mt-5 text-lg font-medium md:leading-8  md:justify-start">
                             Once you approve the design, our team will start building your website. We break the project into actionable steps and keep you informed throughout the process to ensure everything aligns with your vision.
                         </div>
                         <div className=" justify-center mt-4 items-center">

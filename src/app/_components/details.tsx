@@ -16,54 +16,54 @@ export function Detail() {
             title: "Fully Customized solution",
             description:
                 "Tailored solutions that fit your unique business needs, from concept to deployment.",
-            icon: <FaCode />,
+            icon: <FaCode size={40} />,
         },
         {
             title: "Responsive Design",
             description:
                 "Designs that look great on all devices, ensuring a seamless user experience across screens.",
-            icon: <FaMobileAlt />,
+            icon: <FaMobileAlt size={40} />,
         },
         {
             title: "E-commerce Integration",
             description:
                 "Building robust online stores that drive sales and enhance customer experience.",
-            icon: <FaLaptopCode />,
+            icon: <FaLaptopCode size={40} />,
         },
         {
             title: "Fast and Secure Hosting",
             description:
                 "Providing reliable hosting solutions for optimal website performance and security.",
-            icon: <FaUserShield />,
+            icon: <FaUserShield size={40} />,
         },
         {
             title: "SEO Optimization",
             description:
                 "Improve your search engine rankings with our SEO best practices and strategies.",
-            icon: <FaWrench />,
+            icon: <FaWrench size={40} />,
         },
         {
             title: "Content Management System",
             description:
                 "Integrating easy-to-use CMS platforms so you can effortlessly update and manage your website content.",
-            icon: <FaRocket />,
+            icon: <FaRocket size={40} />,
         },
         {
             title: "Ongoing Support and Maintenance",
             description:
                 "Innovative and visually appealing designs that capture your brand's essence and attract your audience.",
-            icon: <FaPaintBrush />,
+            icon: <FaPaintBrush size={40} />,
         },
         {
             title: "Client-Centric Approach",
             description:
                 "Offering 24/7 support to keep your website running smoothly and up-to-date.",
-            icon: <FaHandshake />,
+            icon: <FaHandshake size={40} />,
         },
     ];
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 md:py-10 max-w-7xl mx-auto">
             {features.map((feature, index) => (
                 <Feature key={feature.title} {...feature} index={index} />
             ))}
@@ -85,7 +85,7 @@ const Feature = ({
     return (
         <div
             className={cn(
-                "flex flex-col lg:border-r p-10 relative group/feature border-neutral-800",
+                "flex flex-col lg:border-r md:p-10 p-6 relative group/feature border-neutral-800",
                 (index === 0 || index === 4) && "lg:border-l border-neutral-800",
                 index < 4 && "lg:border-b border-neutral-800"
             )}
@@ -101,11 +101,11 @@ const Feature = ({
             </div>
             <div className="text-lg font-bold mb-2 relative z-10 px-10">
                 <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-                <span className="group-hover/feature:translate-x-2 transition duration-200 font-aclonica inline-block text-neutral-100">
+                <span className="group-hover/feature:translate-x-2 transition duration-200 font-aclonica text-3xl inline-block text-neutral-100">
                     {title}
                 </span>
             </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+            <p className="text-base text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
                 {description}
             </p>
         </div>

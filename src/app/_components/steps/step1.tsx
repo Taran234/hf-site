@@ -12,7 +12,7 @@ export function Step1() {
             <div className="flex flex-col justify-center px-0.5 mt-8 w-full ">
                 <div className="flex z-10 flex-col justify-center px-4 py-4 rounded-xl bg-neutral-900 ">
                     <div className="flex flex-col-reverse  relative">
-                        <div className="p-5 mt-2 md:text-base text-sm font-medium md:leading-8 w-full ">
+                        <div className="p-5 mt-2 text-lg font-medium md:leading-8 w-full ">
                             Schedule a FREE consultation where we discuss your business goals, website preferences, and digital marketing needs. We'll assess your current online presence and outline a plan tailored to your success.
                         </div>
                         <div className=" justify-center items-center">
@@ -75,7 +75,7 @@ export const SkeletonThree = () => {
             target="__blank"
             className="relative flex gap-10 h-full group/image"
         >
-            <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
+            <div className="w-full  mx-auto bg-transparent group h-full">
                 <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
                     <SiYoutube className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
                     <Image
@@ -83,7 +83,7 @@ export const SkeletonThree = () => {
                         alt="header"
                         width={800}
                         height={800}
-                        className="h-[50vh] w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+                        className="md:h-[45vh] h-[30vh] w-full  aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
                     />
                 </div>
             </div>

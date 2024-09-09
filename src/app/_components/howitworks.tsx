@@ -41,14 +41,15 @@ export function Howitworks() {
     ];
 
     return (
-        <div className="relative z-20 p-10 lg:py-30 max-w-7xl mx-auto">
+        <div className="relative z-20 md:p-10 p-4 lg:py-30 border-t-[0.1px] border-slate-600 max-w-7xl mx-auto">
             <div className="px-8">
-                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
+                <h4 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
                     How We Work
                 </h4>
 
-                <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
-                    Discover how our efficient and collaborative approach takes your project from initial consultation to successful launch, ensuring optimal results at every stage.                </p>
+                <p className="text-lg max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
+                    {`Yes, we can create a fully mobile-friendly website (valued at $500+) and provide SEO services (valued at $250+), totaling over $750 in value, all for just $99.`}
+                </p>
             </div>
 
             <div className="relative">
@@ -68,7 +69,7 @@ export function Howitworks() {
 
 const FeatureCard = ({ children, className }: { children?: React.ReactNode; className?: string }) => {
     return (
-        <div className={`p-4 sm:p-8 relative overflow-hidden ${className}`}>
+        <div className={`p-4 relative overflow-hidden ${className}`}>
             {children}
         </div>
     );
@@ -76,7 +77,7 @@ const FeatureCard = ({ children, className }: { children?: React.ReactNode; clas
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="max-w-5xl mx-auto text-left tracking-tight font-aclonica text-white text-xl md:text-2xl md:leading-snug">
+        <p className="max-w-5xl mx-auto text-left tracking-tight font-aclonica text-white text-3xl md:leading-snug">
             {children}
         </p>
     );
@@ -84,7 +85,7 @@ const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
 
 const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="text-sm md:text-base max-w-4xl text-left mx-auto font-normal text-neutral-300">
+        <p className="text-xl max-w-4xl text-left mx-auto font-normal text-neutral-300">
             {children}
         </p>
     );

@@ -10,7 +10,7 @@ export function Step2() {
                 <div className="flex z-10 flex-col justify-center items-start px-4 py-4 rounded-xl bg-neutral-900">
 
                     <div className="flex md:flex-col flex-col">
-                        <div className=" md:text-base text-sm font-medium md:leading-8 md:justify-start">
+                        <div className=" text-lg font-medium md:leading-8 md:justify-start">
                             Within 24 hours, we'll send you a detailed strategy proposal, including an initial website concept. This proposal will cover all aspects of your project, from design to functionality, and how we'll achieve your objectives.
                         </div>
                         <div className=" justify-center mt-4 items-center">
