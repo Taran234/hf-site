@@ -44,7 +44,7 @@ export const Globe = ({ className }: any) => {
     return (
         <canvas
             ref={canvasRef}
-            style={{ width: 500, height: 500, maxWidth: "100%", aspectRatio: 1 }}
+            style={{ width: 350, height: 350, maxWidth: "100%", aspectRatio: 1 }}
             className={className}
         />
     );

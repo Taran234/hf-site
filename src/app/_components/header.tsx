@@ -91,20 +91,20 @@ export function Header() {
                 </svg>
 
                 <div className="flex flex-col md:text-xl text-sm justify-center bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text items-center">
-                    <h3 className="md:items-start font-bold md:border-b-0.5 uppercase text-xl md:text-2xl">Harbourfront</h3>
-                    <h3 className="md:items-end font-extrabold text-lg md:text-2xl">Web Designs</h3>
+                    <h3 className="md:items-start font-bold md:border-b-0.5 font-aclonica uppercase text-xl md:text-2xl">Harbourfront</h3>
+                    <h3 className="md:items-end font-extrabold font-aclonica text-lg md:text-2xl">Web Designs</h3>
                 </div>
             </div>
 
 
 
-            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-10 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-6  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-12 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
                 <Link href="#about" onClick={toggleDrawer}>About</Link>
                 <Link href="#how-it-works" onClick={toggleDrawer}>How We Work</Link>
                 <Link href="#detail" onClick={toggleDrawer}>Services</Link>
                 <Link href="#our-work" onClick={toggleDrawer}>our Designs</Link>
                 <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
-                <ModalTrigger className="bg-amber-500  justify-center items-center flex mb-2 text-white  group/modal-btn">
+                <ModalTrigger className="bg-amber-500  justify-center items-center flex  text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
                         Book a Call!
                     </span>

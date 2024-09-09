@@ -50,7 +50,7 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
 export default function Home() {
   return (
     <main
-      className="overflow-x-hidden scroll-smooth bg-[#000000]"
+      className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10"
     >
       <ModalProvider>
         <Modal>

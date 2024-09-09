@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { InfiniteMovingCards } from '../components/ui/cards';
+import { HeroParallax } from './pdesign';
 
 // Array with image sources
 const img = [
@@ -19,7 +20,71 @@ const img = [
     "/des13.jpeg"
     // Add more image URLs as needed
 ];
+const products = [
+    {
+        title: "Management Company Website Design",
+        thumbnail:
+            "/des1.jpeg",
+    },
+    {
+        title: "Restorant Website Design",
+        thumbnail:
+            "/des2.jpeg",
+    },
+    {
+        title: "E-commerce Website Design",
+        thumbnail:
+            "/des3.jpeg",
+    },
 
+    {
+        title: "Editorially",
+        thumbnail:
+            "/des4.png",
+    },
+    {
+        title: "Product Landing Page Design",
+        thumbnail:
+            "/des5.jpeg",
+    },
+    {
+        title: "Photography Website Design",
+        thumbnail:
+            "/des6.jpeg",
+    },
+
+    {
+        title: "Restaurant Bar Website Design",
+        thumbnail:
+            "/des8.jpeg",
+    },
+    {
+        title: "E-Commerce Website Redesign",
+        thumbnail:
+            "/des9.jpeg",
+    },
+    {
+        title: "Hi-res Bakery website Design",
+        thumbnail:
+            "/des10.jpeg",
+    },
+    {
+        title: "Movers website Design",
+        thumbnail:
+            "/des11.jpeg",
+    },
+
+    {
+        title: "Real Estate Website design",
+        thumbnail:
+            "/des12.jpeg",
+    },
+    {
+        title: "Real Estate Lisiting Website Design",
+        thumbnail:
+            "/des13.jpeg",
+    },
+];
 
 // Convert the array of image sources into an array of objects
 const imagesWithDetails = img.map((src, index) => ({
@@ -31,10 +96,11 @@ const imagesWithDetails = img.map((src, index) => ({
 
 // Grid component to render InfiniteMovingCards
 const Grid = ({ images }: { images: { label: string; src: string; alt: string; }[] }) => {
-    return (<div className='flex flex-col gap-2'>
-        <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
+    return (<div className='flex flex-col m-6'>
+        {/* <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
         <InfiniteMovingCards items={images} direction="right" speed="slow" pauseOnHover={false} />
-        <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} />
+        <InfiniteMovingCards items={images} direction="left" speed="slow" pauseOnHover={false} /> */}
+        <HeroParallax products={products} />
     </div>
 
     );

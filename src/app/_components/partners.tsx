@@ -14,7 +14,7 @@ export function Partners() {
     return (
         <div className="flex justify-center items-center md:px-16 md:py-12 py-5 md:text-5xl text-2xl font-medium tracking-tighter leading-8 text-black bg-[#f6f4f2] drop-shadow-2xl max-md:px-5">
             <div className="flex flex-col items-center w-full max-w-[1194px] max-md:max-w-full uppercase font-aclonica">
-                <div>Our Partners</div>
+                <div>Our Tech Stack</div>
                 <div className="relative w-full overflow-x-hidden py-4 mt-3">
                     <div className="flex space-x-8 animate-marquee w-max">
                         {icons.map((Icon, index) => (

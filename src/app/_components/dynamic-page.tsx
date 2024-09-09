@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer";
 import { Header } from "../_components/header";
 import { Hero } from "../_components/hero";
 import { Partners } from "../_components/partners";
-import { FeaturesSectionDemo } from "../_components/details";
 import { Howitworks } from "../_components/howitworks";
 import { Faq } from "../_components/faq";
 import { Footer } from "../_components/footer";
@@ -14,6 +13,7 @@ import Head from "next/head";
 import Gallery from "./Designs";
 import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
 import { Contact } from "./contact";
+import { Detail } from "./details";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },
@@ -51,7 +51,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
     const location = keyword.split('-').pop();
 
     return (
-        <main className="overflow-x-hidden scroll-smooth bg-[#000000]">
+        <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
                 <title>{keyword} | Harbourfront Web Designs</title>
                 <meta name="description" content={`${location}'s best one-stop digital marketing solution. Get unlimited revisions, 24/7 support, affordable payment options...`} />
@@ -97,7 +97,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
             </AnimatedSection>
             <AnimatedSection delay={0.3}>
                 <div id="detail" className="pt-10">
-                    <FeaturesSectionDemo />
+                    <Detail />
                 </div>
             </AnimatedSection>
             <div id="how-it-works">
