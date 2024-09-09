@@ -91,8 +91,8 @@ export function Header() {
                 </svg>
 
                 <div className="flex flex-col md:text-xl text-sm justify-center bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text items-center">
-                    <h3 className="md:items-start font-bold md:border-b-0.5 font-aclonica uppercase text-xl md:text-2xl">Harbourfront</h3>
-                    <h3 className="md:items-end font-extrabold font-aclonica text-lg md:text-2xl">Web Designs</h3>
+                    <div className="md:items-start font-bold md:border-b-0.5 font-aclonica uppercase text-xl md:text-2xl">Harbourfront</div>
+                    <div className="md:items-end font-extrabold font-aclonica text-lg md:text-2xl">Web Designs</div>
                 </div>
             </div>
 

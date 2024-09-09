@@ -49,7 +49,7 @@ const SkeletonFour = () => {
                 >
                     <Image
                         src={src}
-                        alt="avatar"
+                        alt="web page design agency toronto"
                         layout="fill"
                         className="rounded-2xl object-cover z-10"
                     />

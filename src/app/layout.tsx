@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Toronto Web Designs Agency - Best website services in Toronto",
-  description: "Toronto's best one-stop website design and development solution. Get unlimited edits, 24/7 support, monthly payment options...",
+  title: "web page design Toronto | Entire Website for just $99",
+  description: "Toronto's best all-in-one website design agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...",
 };
 
 export default function RootLayout({

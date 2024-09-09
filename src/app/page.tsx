@@ -63,9 +63,9 @@ export default function Home() {
                 </span>{" "}
                 Consultaion! 📞
               </h4>
-              <h2 className="text-xs md:text-sm z-50 text-neutral-100 font-bold text-center mb-8">
+              <div className="text-xs md:text-sm z-50 text-neutral-100 font-bold text-center mb-8">
                 Don't Worry! we don't go crazy with<br /> with marketing emails... 🤦‍♂️
-              </h2>
+              </div>
 
               <Contact />
             </ModalContent>

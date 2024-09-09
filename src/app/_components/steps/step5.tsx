@@ -98,13 +98,13 @@ const SkeletonTwo = () => {
                 <div className="flex flex-col justify-between h-full">
                     <div>
                         <div className="lg:flex w-full justify-between">
-                            <h3 className="text-gray-600 dark:text-gray-400 leading-5 text-base md:text-xl font-bold">
+                            <div className="text-gray-600 dark:text-gray-400 leading-5 text-base md:text-xl font-bold">
                                 Increased Visitors
-                            </h3>
+                            </div>
 
                         </div>
                         <div className="flex items-end mt-6">
-                            <h3 className="text-indigo-500 leading-5 text-lg md:text-2xl">11,875</h3>
+                            <div className="text-indigo-500 leading-5 text-lg md:text-2xl">11,875</div>
                             <div className="flex items-center md:ml-4 ml-1 text-green-700">
                                 <p className="text-green-700 text-xs md:text-base">267%</p>
                                 <svg role="img" className="text-green-700" aria-label="increase. upward arrow icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">

@@ -49,11 +49,11 @@ export function Hero({ location }: any) {
                     </div>
                 </div>
                 <h1 className="mt-7 md:text-6xl text-5xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
-                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Digital Growth Solution
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Website Design Agency
                 </h1>
-                <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Get your website done for just $99 then just pay for plugins you need <br />What's the Catch?<br /> nothing, we offer it because it's a great way for us to build connections with business owners who might hire us for larger paid projects as their companies grow.
-                </h2>
+                <div className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
+                    Get your website done for just $99 then just pay for plugins you pick <br />What's the Catch?<br /> nothing, we offer it because it's a great way for us to build connections with business owners who might hire us for larger paid projects as their companies grow.
+                </div>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
                         <div className="grow my-auto ">How is it JUST $99?</div>
