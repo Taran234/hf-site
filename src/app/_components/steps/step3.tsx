@@ -1,6 +1,4 @@
-import Image from "next/image";
-import * as React from "react";
-import { motion } from "framer-motion";
+
 
 
 export function Step3() {

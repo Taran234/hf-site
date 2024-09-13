@@ -1,6 +1,6 @@
-import StaticPage from "./_components/static-page";
+import DynamicPage from "./_components/dynamic-page";
 
 
 export default function Home() {
-  return <StaticPage />;
+  return <DynamicPage keyword="Toronto" />;
 }

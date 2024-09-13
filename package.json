@@ -12,6 +12,7 @@
     "@contentful/rich-text-react-renderer": "^15.22.11",
     "@contentful/rich-text-types": "^16.8.5",
     "@tabler/icons-react": "^3.12.0",
+    "chart.js": "^4.4.4",
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
     "contentful": "^10.15.0",
@@ -33,6 +34,7 @@
     "yet-another-react-lightbox": "^3.21.4"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.9.41",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { InfiniteMovingCards } from '../components/ui/cards';
 import { HeroParallax } from './pdesign';
 
 // Array with image sources

@@ -1,4 +1,4 @@
-import * as React from "react";
+
 import { DiGithubBadge, DiJsBadge, DiNpm } from "react-icons/di";
 import { FaReact, FaShopify, FaWordpress } from "react-icons/fa";
 

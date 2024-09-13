@@ -1,5 +1,3 @@
-import Image from "next/image";
-import * as React from "react";
 import { useEffect } from "react";
 
 export function Step5() {
@@ -9,8 +7,8 @@ export function Step5() {
                 <div className="flex z-10 flex-col justify-center px-4 py-4 rounded-xl bg-neutral-900">
                     <div className="flex flex-col">
                         <div className="mt-5 text-lg font-medium md:leading-8 md:justify-start">
-                            Your website is live, but our work has just begun. From here on we have two path to scale traffic to your website: our SEO content package brings steady, organic traffic over time, or we can help you scale quickly with targeted ads on Google, Facebook, and Instagram. For the best results, we recommend a balanced approach—building SEO while running ads for faster growth.
-                            Alongside either packages, we provide FREE technical maintenance to keep your site fast, secure, and always performing at its best.
+                            Your website is live, but our work has just begun. From here on we have two paths to scale traffic to your website: our SEO content package brings steady, organic traffic over time, or we can help you scale quickly with targeted ads on Google, Facebook, and Instagram. For the best results, we recommend a balanced approach—building SEO while running ads for faster growth.
+                            Alongside either package, we provide FREE technical maintenance to keep your site fast, secure, and always performing at its best.
                         </div>
                         <div className="justify-center mt-4 items-center">
                             <SkeletonTwo />
@@ -24,76 +22,72 @@ export function Step5() {
 
 const SkeletonTwo = () => {
     useEffect(() => {
-        // Dynamically load the Chart.js script
-        const script = document.createElement('script');
-        script.src = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0";
-        script.async = true;
-        document.body.appendChild(script);
+        let chartInstance: any;
 
-        script.onload = () => {
-            // After the script loads, initialize the chart
-            const Chart = (window as any).Chart;
-            const chart = new Chart(document.getElementById("myChart"), {
-                type: "line",
-                data: {
-                    labels: [
-                        "January",
-                        "February",
-                        "March",
-                        "April",
-                        "May",
-                        "June",
-                        "July",
-                        "Aug",
-                        "Sep",
-                        "Nov",
-                        "Dec"
-                    ],
-                    datasets: [
-                        {
-                            label: "16 Mar 2018",
-                            borderColor: "#4A5568",
-                            data: [300, 330, 420, 400, 600, 680, 830, 900, 800, 940, 1000],
-                            fill: false,
-                            pointBackgroundColor: "#4A5568",
-                            borderWidth: "3",
-                            pointBorderWidth: "4",
-                            pointHoverRadius: "6",
-                            pointHoverBorderWidth: "8",
-                            pointHoverBorderColor: "rgba(74, 85, 104, 0.2)"
-                        }
-                    ]
-                },
-                options: {
-                    legend: {
-                        display: false
-                    },
-                    scales: {
-                        yAxes: [
+        // Dynamically import Chart.js when component is mounted
+        const loadChart = async () => {
+            try {
+                const { Chart } = await import('chart.js');
+
+                // Initialize the chart
+                chartInstance = new Chart(document.getElementById("myChart") as HTMLCanvasElement, {
+                    type: "line",
+                    data: {
+                        labels: [
+                            "January", "February", "March", "April", "May", "June", "July", "Aug", "Sep", "Nov", "Dec"
+                        ],
+                        datasets: [
                             {
-                                gridLines: {
-                                    display: true
-                                },
-                                display: true
+                                label: "16 Mar 2018",
+                                borderColor: "#4A5568",
+                                data: [300, 330, 420, 400, 600, 680, 830, 900, 800, 940, 1000],
+                                fill: false,
+                                pointBackgroundColor: "#4A5568",
+                                borderWidth: 3,
+                                pointBorderWidth: 4,
+                                pointHoverRadius: 6,
+                                pointHoverBorderWidth: 8,
+                                pointHoverBorderColor: "rgba(74, 85, 104, 0.2)"
                             }
                         ]
+                    },
+                    options: {
+                        plugins: {
+                            legend: {
+                                display: false,
+                            },
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    display: true,
+                                },
+                            },
+                            y: {
+                                grid: {
+                                    display: true,
+                                },
+                            },
+                        },
                     }
-                }
-            });
-
-            return () => {
-                chart.destroy(); // Clean up the chart on component unmount
-            };
+                });
+            } catch (error) {
+                console.error("Failed to load Chart.js:", error);
+            }
         };
 
+        loadChart();
+
         return () => {
-            // Clean up the script when the component is unmounted
-            document.body.removeChild(script);
+            // Clean up chart instance on unmount
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
         };
     }, []);
 
     return (
-        <div className="flex items-center justify-center py-8 md:px-4 ">
+        <div className="flex items-center justify-center py-8 md:px-4">
             <div className="w-full lg:w-2/3 bg-dot-white/[0.2] md:mx-10 md:p-6">
                 <div className="flex flex-col justify-between h-full">
                     <div>
@@ -101,7 +95,6 @@ const SkeletonTwo = () => {
                             <div className="text-gray-600 dark:text-gray-400 leading-5 text-base md:text-xl font-bold">
                                 Increased Visitors
                             </div>
-
                         </div>
                         <div className="flex items-end mt-6">
                             <div className="text-indigo-500 leading-5 text-lg md:text-2xl">11,875</div>

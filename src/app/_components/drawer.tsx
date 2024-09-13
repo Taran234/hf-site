@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
 import { RiMenu4Line } from "react-icons/ri";
-import { SiGooglemaps } from "react-icons/si";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { ModalTrigger } from "../components/ui/model";
 

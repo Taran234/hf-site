@@ -1,8 +1,6 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
-import * as React from "react";
+
 import Link from "next/link";
-import { RiYoutubeFill } from "react-icons/ri";
 import { SiYoutube } from "react-icons/si";
 
 export function Step1() {
@@ -80,9 +78,10 @@ export const SkeletonThree = () => {
                     <Image
                         src="/sales.jpg"
                         alt="$99 web page design toronto"
-                        width={800}
-                        height={800}
-                        className="md:h-[45vh] h-[30vh] w-full  aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+                        width={1200}
+                        loading="lazy"
+                        height={1200}
+                        className="md:h-[45vh] h-[30vh] w-full  object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
                     />
                 </div>
             </div>

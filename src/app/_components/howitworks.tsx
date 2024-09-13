@@ -48,7 +48,7 @@ export function Howitworks() {
                 </h4>
 
                 <p className="text-lg max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
-                    {`Yes, we can create a fully mobile-friendly website (valued at $500+) and provide SEO services (valued at $250+), totaling over $750 in value, all for just $99.`}
+                    {`Yes, we will create you a complete mobile-friendly website with all necessary plugins totaling over $550 in value, all for just $99. we offer it because it's a great way for us to build connections with business owners who might hire us for larger paid projects as their companies grow.`}
                 </p>
             </div>
 

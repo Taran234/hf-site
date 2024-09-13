@@ -14,7 +14,7 @@ export function Hero({ location }: any) {
 
     useEffect(() => {
         // Randomly set the number of spots between 4 and 2 on load
-        const randomSpots = Math.floor(Math.random() * 3) + 2;
+        const randomSpots = Math.floor(Math.random() * 2) + 2;
         setSpots(randomSpots);
 
         // Make the number blink by toggling the 'blinking' class every 0.5 seconds
@@ -40,7 +40,7 @@ export function Hero({ location }: any) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            To keep up the qualtiy we only work with 7 businesses every month — Only{' '}
+                            To maintain quality work we only take 10 clients per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
@@ -51,9 +51,9 @@ export function Hero({ location }: any) {
                 <h1 className="mt-7 md:text-6xl text-5xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Website Design Agency
                 </h1>
-                <div className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Get your website done for just $99 then just pay for plugins you pick <br />What's the Catch?<br /> nothing, we offer it because it's a great way for us to build connections with business owners who might hire us for larger paid projects as their companies grow.
-                </div>
+                <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
+                    Book a call today and you might qualify for an entire website done for you for just $99 CAD
+                </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
                         <div className="grow my-auto ">How is it JUST $99?</div>

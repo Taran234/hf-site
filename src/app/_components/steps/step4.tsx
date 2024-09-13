@@ -51,6 +51,7 @@ const SkeletonFour = () => {
                         src={src}
                         alt="web page design agency toronto"
                         layout="fill"
+                        loading="lazy"
                         className="rounded-2xl object-cover z-10"
                     />
                 </motion.div>

@@ -53,7 +53,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
-                <title>web page design {keyword} | Entire Website for just $99</title>
+                <title>Web Page Designs {keyword} | Website Starting at just $99</title>
                 <meta name="description" content={`${location}'s best all-in-one website design agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
                 <meta name="keywords" content={keyword} />
             </Head>
@@ -78,7 +78,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInVariant}
-                        id="header" className="fixed top-0 left-0 right-0 z-50 mx-3"
+                        id="header" className="fixed top-0 left-0 right-0 z-50 "
                     >
                         <Header />
                     </motion.div>
