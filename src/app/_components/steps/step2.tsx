@@ -55,24 +55,24 @@ const SkeletonTwo = () => {
         >
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-full border  border-white/[0.2] p-2  items-center space-x-2 bg-black"
+                className="flex flex-row rounded-full border  border-amber-500 p-2  items-center space-x-2 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-                <div className="w-full px-2">We can do your website for just $99. </div>
+                <div className="w-full px-2">Your total comes down to $299. </div>
             </motion.div>
             <motion.div
                 variants={variantsSecond}
-                className="flex flex-row rounded-full border  border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-black"
+                className="flex flex-row rounded-full border border-amber-500 p-2 items-center space-x-2 w-3/4 ml-auto bg-black"
             >
                 <div className="w-full px-2 text-right">That's it?, what's the catch? </div>
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
             </motion.div>
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-full border  border-white/[0.2] p-2 items-center space-x-2 bg-black"
+                className="flex flex-row rounded-full border  border-amber-500 p-2 items-center space-x-2 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-                <div className="w-full px-2">No catch, just pay for any plugins you want. </div>
+                <div className="w-full px-2">No catch, just pay for any plugins you pick. </div>
             </motion.div>
         </motion.div>
     );

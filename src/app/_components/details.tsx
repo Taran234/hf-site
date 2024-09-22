@@ -43,21 +43,21 @@ export function Detail() {
             icon: <FaWrench size={40} />,
         },
         {
-            title: "Content Management System",
+            title: "Keyword-Specific Blogs",
             description:
-                "Integrating easy-to-use CMS platforms so you can effortlessly update and manage your website content.",
+                "Crafting SEO-optimized blog content tailored to specific keywords that enhance your search visibility and audience engagement.",
             icon: <FaRocket size={40} />,
         },
         {
-            title: "Ongoing Support and Maintenance",
+            title: "GMB Profile Optimization",
             description:
-                "Innovative and visually appealing designs that capture your brand's essence and attract your audience.",
+                "Optimizing your Google My Business profile to boost local search visibility and attract more customers in your area.",
             icon: <FaPaintBrush size={40} />,
         },
         {
-            title: "Client-Centric Approach",
+            title: "Improved Google Ranking",
             description:
-                "Offering 24/7 support to keep your website running smoothly and up-to-date.",
+                "Implementing strategies that enhance your website's search engine ranking, driving more organic traffic to your business.",
             icon: <FaHandshake size={40} />,
         },
     ];

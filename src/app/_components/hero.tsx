@@ -52,11 +52,11 @@ export function Hero({ location }: any) {
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Website Design Agency
                 </h1>
                 <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Book a call today and you might qualify for an entire website done for you for just $99 CAD
+                    Talk to an Expert today and see how we can get you ranked number 1 on google searches.
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
-                        <div className="grow my-auto ">How is it JUST $99?</div>
+                        <div className="grow my-auto ">How does it work?</div>
                         <div className="border-2 p-1">
                             <BiRightArrowAlt size={32} />
                         </div>

@@ -8,6 +8,7 @@ import { Hero } from "../_components/hero";
 import { Partners } from "../_components/partners";
 import { Howitworks } from "../_components/howitworks";
 import { Faq } from "../_components/faq";
+import { BlogsPre } from "../_components/blog-preview";
 import { Footer } from "../_components/footer";
 import Head from "next/head";
 import Gallery from "./Designs";
@@ -53,7 +54,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
-                <title>Web Page Designs {keyword} | Website Starting at just $99</title>
+                <title>Web Page Designs {keyword} | Affordable Web Designs</title>
                 <meta name="description" content={`${location}'s best all-in-one website design agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
                 <meta name="keywords" content={keyword} />
             </Head>
@@ -108,6 +109,9 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
                     <Gallery />
                 </div>
             </AnimatedSection>
+            {/* <div id="blog">
+                <BlogsPre />
+            </div> */}
             <div id="faq">
                 <Faq />
             </div>

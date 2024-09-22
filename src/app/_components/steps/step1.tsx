@@ -67,24 +67,24 @@ export function Step1() {
 
 export const SkeletonThree = () => {
     return (
-        <Link
-            href="..."
-            target="__blank"
-            className="relative flex gap-10 h-full group/image"
-        >
-            <div className="w-full  mx-auto bg-transparent group h-full">
-                <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
-                    <SiYoutube className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
-                    <Image
-                        src="/sales.jpg"
-                        alt="$99 web page design toronto"
-                        width={1200}
-                        loading="lazy"
-                        height={1200}
-                        className="md:h-[45vh] h-[30vh] w-full  object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
-                    />
-                </div>
+        // <Link
+        //     href="..."
+        //     target="__blank"
+        //     className="relative flex gap-10 h-full group/image"
+        // >
+        <div className="w-full  mx-auto bg-transparent group h-full">
+            <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
+                {/* <SiYoutube className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " /> */}
+                <Image
+                    src="/results.webp"
+                    alt="Affordable web page design toronto"
+                    width={1200}
+                    loading="lazy"
+                    height={1200}
+                    className="h-[450px] aspect-auto object-contain object-center rounded-sm blur-none transition-all duration-200"
+                />
             </div>
-        </Link>
+        </div>
+        // </Link>
     );
 };
