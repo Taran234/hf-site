@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
@@ -63,18 +64,36 @@ export function Footer() {
                 </div>
                 <p className="text-sm text-slate-100 md:ml-24">2024 © All Rights Reserved</p>
             </div>
-            <div className="col col2 flex flex-col items-center md:items-start mb-8 md:mb-0">
-                <p className="mb-2">About</p>
-                <p className="mb-2">How we Work</p>
-                <p className="mb-2">Privacy Policy</p>
-                <p className="mb-2">Terms of Service</p>
+            <div className="col col1 flex flex-col items-center md:items-start mb-4 md:mb-0">
+                <p className="mb-2 text-xl font-aclonica">Services</p>
+                <Link href="/web-design-toronto" className="mb-2 text-gray-400">Web Design</Link>
+                <Link href="/seo-services-toronto" className="mb-2 text-gray-400">SEO Services</Link>
+                <Link href="/digital-marketing-toronto" className="mb-2 text-gray-400">Digital Marketing</Link>
+                <Link href="/ecommerce-website-design-toronto" className="mb-2 text-gray-400">Ecommerce Solutions</Link>
+                <Link href="/website-redesign-toronto" className="mb-2 text-gray-400">Website Redesign</Link>
             </div>
-            <div className="col col3 flex flex-col items-center md:items-start">
-                <p className="mb-2">Services</p>
-                <p className="mb-2">Our Designs</p>
-                <p className="mb-2">Frequently Asked Questions</p>
-                <p className="mb-2">harbourfrontwebdesigns@gmail.com</p>
+            <div className="col col2 flex flex-col items-center md:items-start">
+                <p className="mb-2 text-xl font-aclonica">Service Areas</p>
+                <div className="flex flex-col md:flex-row justify-between w-full">
+                    <div className="flex flex-col mb-4 md:mr-8">
+                        <Link href="/web-design-toronto" className="mb-2 text-gray-400">Toronto</Link>
+                        <Link href="/web-design-markham" className="mb-2 text-gray-400">Markham</Link>
+                        <Link href="/web-design-richmond-hill" className="mb-2 text-gray-400">Richmond Hill</Link>
+                        <Link href="/web-design-vaughan" className="mb-2 text-gray-400">Vaughan</Link>
+                        <Link href="/web-design-hamilton" className="mb-2 text-gray-400">Hamilton</Link>
+                        <Link href="/web-design-london" className="mb-2 text-gray-400">London</Link>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href="/web-design-scarborough" className="mb-2 text-gray-400">Scarborough</Link>
+                        <Link href="/web-design-waterloo" className="mb-2 text-gray-400">Waterloo</Link>
+                        <Link href="/web-design-cambridge" className="mb-2 text-gray-400">Cambridge</Link>
+                        <Link href="/web-design-oshawa" className="mb-2 text-gray-400">Oshawa</Link>
+                        <Link href="/web-design-etobicoke" className="mb-2 text-gray-400">Etobicoke</Link>
+                        <Link href="/web-design-newmarket" className="mb-2 text-gray-400">Newmarket</Link>
+                    </div>
+                </div>
             </div>
+
         </footer>
     );
 }

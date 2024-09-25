@@ -11,19 +11,27 @@ export function Faq() {
 
   const faqs = [
     {
+      question: "Is there a guarantee that my website will meet my expectations?",
+      answer: "Our primary goal is client satisfaction. We strive to ensure that your website aligns with your vision and requirements. If you are not satisfied with the final product, we will work closely with you to make any necessary changes until you are completely happy. Additionally, if you still unhappy with the results and choose not to keep the website, we offer a money-back guarantee for your peace of mind. Your success is important to us, and we want to be your trusted partner as you grow."
+    },
+    {
+      question: "Can you guarantee me top placement on Google?",
+      answer: "No one can. People say it, and there are certainly things you can do right to get good placement, but no one can truly guarantee any search results. Also many companies, not just yours, are working to get top placement. So results change due to competition and new content being added to the web. At Harbourfront Web Designs we offer SEO (Search Engine Optimization) to rank your website well in search engine results. This helps bring more qualified potential customers to your site and eventually increases conversion rates."
+    },
+    {
       question: "Who is the ideal client for Harbourfront Web Designs & Marketing?",
       answer: "Our ideal clients are businesses seeking to scale and enhance their online presence through expertly crafted websites and targeted advertising campaigns. Whether you're a startup, small business, or an established company, we tailor our services to meet your unique needs and growth goals."
     },
     {
-      question: "What sets Harbourfront Web Designs & Marketing apart from other agencies?",
+      question: "What sets Harbourfront Web Designs apart from other agencies?",
       answer: "We stand out through our blend of deep industry expertise, personalized service, and a relentless commitment to excellence. Our team collaborates closely with clients, offering unlimited revisions, real-time project tracking, and data-driven strategies to ensure your website and ads are both visually stunning and highly effective."
     },
     {
-      question: "How quickly can Harbourfront Web Designs & Marketing start on my project?",
-      answer: "We can typically initiate your project within 1-2 days following your initial consultation. Our streamlined onboarding process gathers all necessary information efficiently, allowing us to kick off your custom design and development work as soon as possible."
+      question: "Do you offer website hosting?",
+      answer: "Yes, we offers month to month hosting with free maintenance and backups on all new website projects."
     },
     {
-      question: "Do you offer custom design options for websites and ads?",
+      question: "Do you offer custom design options for website?",
       answer: "Absolutely! Our talented designers collaborate with you to create custom website designs and ad campaigns that reflect your brand identity and meet your specific business needs. From color schemes to layout and functionality, every detail is tailored to your vision and objectives."
     },
     {
@@ -32,7 +40,7 @@ export function Faq() {
     },
     {
       question: "What if I'm not satisfied with the final product?",
-      answer: "Your satisfaction is our top priority. We offer unlimited revisions and maintain close communication throughout the development process to ensure the final product meets your expectations. If you're not satisfied, we'll continue to make adjustments until you are."
+      answer: "Your satisfaction is our top priority. We offer unlimited revisions and maintain close communication throughout the development process to ensure the final product meets your expectations. If you're still not satisfied, we offer 100% Money Back Guarantee."
     }
   ];
 

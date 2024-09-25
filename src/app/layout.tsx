@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Best Web Page Designers | Affordable Web Designs",
+  title: "Website Designs Toronto | Custom Web Page Design Company Toronto",
   description:
     "Canada's best all-in-one website design agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...",
 };

@@ -55,7 +55,7 @@ const SkeletonTwo = () => {
         >
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-full border  border-amber-500 p-2  items-center space-x-2 bg-black"
+                className="flex flex-row rounded-full border  border-amber-500 p-2  items-center space-x-2 w-4/5 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
                 <div className="w-full px-2">Your total comes down to $299. </div>
@@ -69,10 +69,17 @@ const SkeletonTwo = () => {
             </motion.div>
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-full border  border-amber-500 p-2 items-center space-x-2 bg-black"
+                className="flex flex-row rounded-full border  border-amber-500 p-2 items-center space-x-2 w-4/5 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-                <div className="w-full px-2">No catch, just pay for any plugins you pick. </div>
+                <div className="w-full px-2">No catch, just pay for what you use. </div>
+            </motion.div>
+            <motion.div
+                variants={variantsSecond}
+                className="flex flex-row rounded-full border border-amber-500 p-2 items-center space-x-2 w-3/4 ml-auto bg-black"
+            >
+                <div className="w-full px-2 text-right">Sounds Great! Lets do it 🤝 </div>
+                <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
             </motion.div>
         </motion.div>
     );

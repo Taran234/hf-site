@@ -44,7 +44,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between z-30 md:px-6 md:py-1 p-3 font-medium leading-4 w-full capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+        <div className={`flex flex-row justify-between z-30 md:px-4 md:py-1 p-3 font-medium leading-4 w-full capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex flex-row md:gap-3 gap-2 relative">
                 <svg
                     version="1.1"
@@ -103,6 +103,7 @@ export function Header() {
                 <Link href="#how-it-works" onClick={toggleDrawer}>How We Work</Link>
                 <Link href="#detail" onClick={toggleDrawer}>Services</Link>
                 <Link href="#our-work" onClick={toggleDrawer}>our Designs</Link>
+                <Link href="#blogs" onClick={toggleDrawer}>Blogs</Link>
                 <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
                 <ModalTrigger className="bg-amber-500  justify-center items-center flex  text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">

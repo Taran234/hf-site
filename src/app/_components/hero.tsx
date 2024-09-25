@@ -7,8 +7,16 @@ import { TiTick } from "react-icons/ti";
 import { TbBellRingingFilled } from "react-icons/tb";
 import { Spotlight } from "../components/ui/spotlight";
 import { ContainerScroll } from "../components/ui/scroll-container";
+import { TypewriterEffect } from "../components/ui/typewriter";
 
-export function Hero({ location }: any) {
+interface HeroProps {
+    location: any;
+    service: string;
+}
+
+export function Hero({ location, service }: HeroProps) {
+
+
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const [spots, setSpots] = useState(4);
 
@@ -29,6 +37,16 @@ export function Hero({ location }: any) {
         return () => clearInterval(blinkInterval);
     }, []);
 
+    // Split the service string into individual words
+    const serviceWords: string[] = service.split(' ');
+
+    // Create words array for the TypewriterEffect, adding each service word separately
+    const words = [
+        ...serviceWords.map((word: string) => ({ text: word.toUpperCase() })), // Create an object for each word
+        { text: "AGENCY." }, // Add "AGENCY." as the last item
+    ];
+
+
     return (
         <div className="flex -z-40 flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
             <div className="flex flex-col items-center mt-7 w-full max-w-screen gap-4 overflow-hidden">
@@ -40,7 +58,7 @@ export function Hero({ location }: any) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            To maintain quality work we only take 10 clients per month — Only{' '}
+                            To maintain quality work we only accept 6 projects per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
@@ -49,10 +67,10 @@ export function Hero({ location }: any) {
                     </div>
                 </div>
                 <h1 className="mt-7 md:text-6xl text-5xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
-                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br />Website Design Agency
+                    {location ?? "Canada"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br /><TypewriterEffect words={words} />
                 </h1>
                 <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Talk to an Expert today and see how we can get you ranked number 1 on google searches.
+                    Get a Free Consultation today and see how our unique website design strategies can get you to rank higher on Google searches in your area.
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
@@ -69,15 +87,15 @@ export function Hero({ location }: any) {
                 <div className="md:flex hidden gap-5 justify-between my-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
                     <div className="flex gap-1.5 justify-center py-1">
                         <TiTick size={22} />
-                        <div className="flex-auto">Unlimited Edits</div>
+                        <div className="flex-auto">Free Maintenance</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Increased Visits</div>
+                        <div className="flex-auto">Improved Google Rank</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Guaranteed 90+ SEO Score</div>
+                        <div className="flex-auto">Keyword research</div>
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
@@ -85,15 +103,15 @@ export function Hero({ location }: any) {
                     </div>
                     <div className="flex gap-1.5 py-0.5">
                         <TiTick size={22} />
-                        <div className="flex-auto">Dedicated Team</div>
+                        <div className="flex-auto">Satisfaction Guaranteed</div>
                     </div>
                 </div>
                 <ContainerScroll>
-                    <div className="relative inset-0 w-full h-full object-cover scale-[110%] ">
+                    <div className="relative inset-0 w-full h-full object-cover scale-[105%] ">
                         <video
                             ref={videoRef}
                             className="w-full h-full"
-                            preload="auto"
+                            preload="none"
                             muted
                             autoPlay
                             autoFocus

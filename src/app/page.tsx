@@ -3,10 +3,10 @@ import { client } from "./lib/contentful";
 
 
 export default async function Home() {
-  // const res = await client.getEntries({ content_type: 'bloghf' });
-  // const posts = res.items;
+  const res = await client.getEntries({ content_type: 'bloghf' });
+  const posts = res.items;
 
-  // console.log(posts);
+  console.log(posts);
 
   return <DynamicPage keyword="Canada" />;
 }

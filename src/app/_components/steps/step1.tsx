@@ -81,7 +81,7 @@ export const SkeletonThree = () => {
                     width={1200}
                     loading="lazy"
                     height={1200}
-                    className="h-[450px] aspect-auto object-contain object-center rounded-sm blur-none transition-all duration-200"
+                    className=" h-auto aspect-auto object-contain object-center rounded-sm blur-none transition-all duration-200"
                 />
             </div>
         </div>

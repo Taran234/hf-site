@@ -8,7 +8,7 @@ import { Hero } from "../_components/hero";
 import { Partners } from "../_components/partners";
 import { Howitworks } from "../_components/howitworks";
 import { Faq } from "../_components/faq";
-import { BlogsPre } from "../_components/blog-preview";
+import { Blog, BlogsPre } from "../_components/blog-preview";
 import { Footer } from "../_components/footer";
 import Head from "next/head";
 import Gallery from "./Designs";
@@ -47,16 +47,98 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
         </motion.div>
     );
 };
+const blogData: Blog[] = [
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/DYxtCJq/img-1.png',
+        alt: 'Chair',
+    },
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/3C5HvxC/img-2.png',
+        alt: 'Wall Design',
+    },
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/Ms4qyXp/img-3.png',
+        alt: 'Sitting Place',
+    },
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/6Wfjf2w/img-4.png',
+        alt: 'Sitting Place',
+    },
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/3yvZBpm/img-5.png',
+        alt: 'Chair',
+    },
+    {
+        date: '12 April 2021',
+        title: 'The Decorated Ways',
+        description: 'Dive into minimalism',
+        link: '...',
+        image: 'https://i.ibb.co/gDdnJb5/img-6.png',
+        alt: 'Wall Design',
+    },
+];
+
+
+
+
 
 export default function DynamicPage({ keyword }: { keyword: string }) {
-    const location = keyword.split('-').pop();
+    // List of city names with hyphens for multi-word cities
+    const cities = [
+        'toronto', 'markham', 'burlington', 'richmond-hill', 'vaughan', 'ajax',
+        'aurora', 'etobicoke', 'oshawa', 'scarborough', 'newmarket', 'sudbury',
+        'pickering', 'thornhill', 'halton-hill', 'georgina', 'north-york',
+        'simcoe', 'hamilton', 'welland', 'windsor', 'st-catharines', 'london',
+        'waterloo', 'cambridge'
+    ];
+
+    const serviceMapping: Record<string, string> = {
+        'digital-marketing': 'Digital Marketing',
+        'digital-advertising': 'Digital Advertising',
+        'facebook-ads': 'Digital Marketing',
+        'google-ads': 'Digital Marketing',
+        'web-design': 'Website Designing',
+        'website-development': 'Website Designing',
+        'seo-services': 'Website SEO',
+        'ecommerce-seo': 'E-Commerce SEO',
+        'ecommerce-website-development': 'E-Commerce Website',
+        'website-maintenance': 'Website Services',
+        'website-optimization': 'Website Services',
+        'website-redesign': 'Website Services',
+    };
+    const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
+        ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
+        : 'Website Design Agency';
+
+    // Find the city from the keyword
+    const location = cities.find(city => keyword.includes(city));
 
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
-                <title>Web Page Designs {keyword} | Affordable Web Designs</title>
-                <meta name="description" content={`${location}'s best all-in-one website design agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
-                <meta name="keywords" content={keyword} />
+                <title>{service} {location} | Custom Website Designing Services {location}</title>
+                <meta name="description" content={`${location}'s best all-in-one ${service} agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
+                <meta name="keywords" content={service} />
             </Head>
 
             <ModalProvider>
@@ -88,7 +170,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
             </ModalProvider>
             <AnimatedSection>
                 <div id="hero">
-                    <Hero location={location} />
+                    <Hero location={location} service={service} />
                 </div>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
@@ -109,8 +191,8 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
                     <Gallery />
                 </div>
             </AnimatedSection>
-            {/* <div id="blog">
-                <BlogsPre />
+            {/* <div id="blogs">
+                <BlogsPre blogs={blogData} />;
             </div> */}
             <div id="faq">
                 <Faq />

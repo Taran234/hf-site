@@ -80,7 +80,7 @@ export const Card = ({
             {/* Camera */}
             <div className="absolute top-[45%] left-5 transform -translate-x-1/2 w-3.5 h-3.5 bg-gray-900 rounded-full"></div>
             {/* Home Button */}
-            <div className="absolute top-[43%] right-1 transform -translate-x-1/2 w-8 h-8 bg-black rounded-full border-2 border-[#b3c0c0]">
+            <div className="absolute top-[43%] -right-1 transform -translate-x-1/2 w-8 h-8 bg-black rounded-full border-2 border-[#b3c0c0]">
                 <div className="w-4 h-4 bg-transparent border-gray-100 border-[0.3px] rounded-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 
             </div>

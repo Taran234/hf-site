@@ -45,14 +45,15 @@ const SkeletonFour = () => {
                     whileHover="hover"
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
-                    className={`md:h-[350px] h-[200px] justify-center  md:w-1/3 w-full relative rounded-2xl  border-amber-600 border-b-2 border-r-2 flex flex-col items-center  ${index === 1 ? 'z-20' : ''}`}
+                    className={` justify-center  md:w-1/3 w-full relative rounded-2xl  border-amber-600 border-b-2 border-r-2 flex flex-col items-center  ${index === 1 ? 'z-20' : ''}`}
                 >
                     <Image
                         src={src}
-                        alt="web page design agency toronto"
-                        layout="fill"
+                        alt="website designing agency Toronto"
+                        width={1200}
+                        height={1200}
                         loading="lazy"
-                        className="rounded-2xl object-cover z-10"
+                        className=" md:h-[350px] h-[200px] rounded-2xl object-cover z-10"
                     />
                 </motion.div>
             ))}
