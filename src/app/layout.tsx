@@ -38,6 +38,7 @@ export default function RootLayout({
             OpenWidget
           </a>
         </noscript>
+        <meta name="trustpilot-one-time-domain-verification-id" content="191f1550-4544-41de-8adc-fee18b6bc60e" />
       </head>
       <body className={inter.className}>
         {children}

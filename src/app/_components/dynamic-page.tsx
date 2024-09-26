@@ -15,6 +15,7 @@ import Gallery from "./Designs";
 import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
 import { Contact } from "./contact";
 import { Detail } from "./details";
+import Testimonials from "./testimonials";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },
@@ -128,7 +129,7 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
     };
     const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
         ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
-        : 'Website Design Agency';
+        : 'Website Designing';
 
     // Find the city from the keyword
     const location = cities.find(city => keyword.includes(city));
@@ -186,6 +187,11 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
             <div id="how-it-works">
                 <Howitworks />
             </div>
+            <AnimatedSection delay={0}>
+                <div id="our-reviews">
+                    <Testimonials />
+                </div>
+            </AnimatedSection>
             <AnimatedSection delay={0}>
                 <div id="our-work">
                     <Gallery />

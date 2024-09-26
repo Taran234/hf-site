@@ -103,7 +103,7 @@ export function Header() {
                 <Link href="#how-it-works" onClick={toggleDrawer}>How We Work</Link>
                 <Link href="#detail" onClick={toggleDrawer}>Services</Link>
                 <Link href="#our-work" onClick={toggleDrawer}>our Designs</Link>
-                <Link href="#blogs" onClick={toggleDrawer}>Blogs</Link>
+                {/* <Link href="#blogs" onClick={toggleDrawer}>Blogs</Link> */}
                 <Link href="#faq" onClick={toggleDrawer}>FAQs</Link>
                 <ModalTrigger className="bg-amber-500  justify-center items-center flex  text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
