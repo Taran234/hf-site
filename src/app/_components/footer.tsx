@@ -89,7 +89,7 @@ export function Footer() {
                         <Link href="/web-design-cambridge" className="mb-2 text-gray-400">Cambridge</Link>
                         <Link href="/web-design-oshawa" className="mb-2 text-gray-400">Oshawa</Link>
                         <Link href="/web-design-etobicoke" className="mb-2 text-gray-400">Etobicoke</Link>
-                        <Link href="/web-design-newmarket" className="mb-2 text-gray-400">Newmarket</Link>
+                        <Link href="/web-design-mississauga" className="mb-2 text-gray-400">Mississauga</Link>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { useCallback, useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
-import { Modal, ModalBody, ModalContent, ModalFooter, ModalTrigger } from "../components/ui/model";
+import { ModalTrigger } from "../components/ui/model";
 import Drawer from "./drawer";
 
 export function Header() {

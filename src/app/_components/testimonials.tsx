@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Testimonials = () => {
     return (
-        <>
+        <div>
             <div className="flex md:flex-row flex-col">
                 <div className="text-left md:w-1/2 md:text-6xl mx-8 font-semibold leading-normal my-10">
                     <h4 className="md:text-xl text-base font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
@@ -38,16 +38,14 @@ const Testimonials = () => {
                                 <MdStarRate size={36} className=" text-yellow-400" />
                             </div>
                         </div>
-                        <button className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex  text-white" ><Link href={`https://g.page/r/CccjUzgFn2BBEBM/review`}> Review us on Google</Link></button>
+                        <button className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></button>
                     </div>
 
                 </div>
-
-
             </div>
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div className="elfsight-app-3b4b470e-17e8-42b6-9b89-a4ecd50cfc58" data-elfsight-app-lazy></div>
-        </>
+        </div>
     );
 };
 

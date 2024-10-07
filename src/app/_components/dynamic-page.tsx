@@ -48,62 +48,8 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
         </motion.div>
     );
 };
-const blogData: Blog[] = [
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/DYxtCJq/img-1.png',
-        alt: 'Chair',
-    },
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/3C5HvxC/img-2.png',
-        alt: 'Wall Design',
-    },
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/Ms4qyXp/img-3.png',
-        alt: 'Sitting Place',
-    },
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/6Wfjf2w/img-4.png',
-        alt: 'Sitting Place',
-    },
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/3yvZBpm/img-5.png',
-        alt: 'Chair',
-    },
-    {
-        date: '12 April 2021',
-        title: 'The Decorated Ways',
-        description: 'Dive into minimalism',
-        link: '...',
-        image: 'https://i.ibb.co/gDdnJb5/img-6.png',
-        alt: 'Wall Design',
-    },
-];
 
-
-
-
-
-export default function DynamicPage({ keyword }: { keyword: string }) {
+export default function DynamicPage({ keyword, posts }: { keyword: string, posts: any }) {
     // List of city names with hyphens for multi-word cities
     const cities = [
         'toronto', 'markham', 'burlington', 'richmond-hill', 'vaughan', 'ajax',
@@ -165,47 +111,49 @@ export default function DynamicPage({ keyword }: { keyword: string }) {
                         id="header" className="fixed top-0 left-0 right-0 z-50 "
                     >
                         <Header />
+
                     </motion.div>
+                    <AnimatedSection>
+                        <div id="hero">
+                            <Hero location={location} service={service} />
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection delay={0.1}>
+                        <div id="partners">
+                            <Partners />
+                        </div>
+                    </AnimatedSection>
+                    <AnimatedSection delay={0.3}>
+                        <div id="detail" className="pt-10">
+                            <Detail />
+                        </div>
+                    </AnimatedSection>
+                    <div id="how-it-works">
+                        <Howitworks />
+                    </div>
+
+                    <div id="reviews">
+                        <Testimonials />
+                    </div>
+
+                    <AnimatedSection delay={0}>
+                        <div id="our-work">
+                            <Gallery />
+                        </div>
+                    </AnimatedSection>
+                    <div id="blogs">
+                        <BlogsPre blogs={posts} />
+                    </div>
+                    <div id="faq">
+                        <Faq />
+                    </div>
+                    <div id="footer">
+                        <Footer />
+                    </div>
                 </Modal>
 
             </ModalProvider>
-            <AnimatedSection>
-                <div id="hero">
-                    <Hero location={location} service={service} />
-                </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.1}>
-                <div id="partners">
-                    <Partners />
-                </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.3}>
-                <div id="detail" className="pt-10">
-                    <Detail />
-                </div>
-            </AnimatedSection>
-            <div id="how-it-works">
-                <Howitworks />
-            </div>
-            <AnimatedSection delay={0}>
-                <div id="our-reviews">
-                    <Testimonials />
-                </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0}>
-                <div id="our-work">
-                    <Gallery />
-                </div>
-            </AnimatedSection>
-            {/* <div id="blogs">
-                <BlogsPre blogs={blogData} />;
-            </div> */}
-            <div id="faq">
-                <Faq />
-            </div>
-            <div id="footer">
-                <Footer />
-            </div>
+
         </main>
     );
 }

@@ -72,8 +72,8 @@ export const SkeletonThree = () => {
         //     target="__blank"
         //     className="relative flex gap-10 h-full group/image"
         // >
-        <div className="w-full  mx-auto bg-transparent group h-full">
-            <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
+        <div className="w-full  h-full">
+            <div className=" border-b-8 border-r-8 border-amber-600  h-fit w-fit rounded-2xl relative">
                 {/* <SiYoutube className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " /> */}
                 <Image
                     src="/results.webp"
@@ -81,7 +81,7 @@ export const SkeletonThree = () => {
                     width={1200}
                     loading="lazy"
                     height={1200}
-                    className=" h-auto aspect-auto object-contain object-center rounded-sm blur-none transition-all duration-200"
+                    className=" h-auto aspect-auto brightness-75  object-contain object-center rounded-md "
                 />
             </div>
         </div>
