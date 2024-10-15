@@ -21,8 +21,10 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
 
     return (
         <>
-            <div className="max-w-7xl mx-auto py-20 md:py-10 px-4 w-full">
+            <div className="max-w-7xl mt-20 mx-auto py-20 md:py-10 px-4 w-full">
+                <div className="relative left-0 top- justify-start md:w-1/2">
 
+                </div>
                 <div className="relative right-0 top-0 text-right ml-auto justify-end md:w-1/2">
                     <p className="max-w-2xl text-base font-semiBold mt-8 text-neutral-200">
                         Stay Ahead with Our Industry Secrets for Easier Google Rankings

@@ -16,6 +16,8 @@ import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/
 import { Contact } from "./contact";
 import { Detail } from "./details";
 import Testimonials from "./testimonials";
+import CalendlyEmbed from "./calendly";
+import Calen from "./calendly";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },
@@ -52,26 +54,16 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
 export default function DynamicPage({ keyword, posts }: { keyword: string, posts: any }) {
     // List of city names with hyphens for multi-word cities
     const cities = [
-        'toronto', 'markham', 'burlington', 'richmond-hill', 'vaughan', 'ajax',
-        'aurora', 'etobicoke', 'oshawa', 'scarborough', 'newmarket', 'sudbury',
-        'pickering', 'thornhill', 'halton-hill', 'georgina', 'north-york',
-        'simcoe', 'hamilton', 'welland', 'windsor', 'st-catharines', 'london',
-        'waterloo', 'cambridge'
+        'toronto', 'markham', 'richmond-hill',
+        'etobicoke', 'oshawa', 'kitchener', 'hamilton', 'london',
+        'waterloo', 'cambridge', 'mississauga'
     ];
 
     const serviceMapping: Record<string, string> = {
-        'digital-marketing': 'Digital Marketing',
-        'digital-advertising': 'Digital Advertising',
-        'facebook-ads': 'Digital Marketing',
-        'google-ads': 'Digital Marketing',
-        'web-design': 'Website Designing',
-        'website-development': 'Website Designing',
-        'seo-services': 'Website SEO',
-        'ecommerce-seo': 'E-Commerce SEO',
-        'ecommerce-website-development': 'E-Commerce Website',
-        'website-maintenance': 'Website Services',
-        'website-optimization': 'Website Services',
-        'website-redesign': 'Website Services',
+        'web-design': 'Business Website Designing',
+        'website-development': 'Business Website Development',
+        'ecommerce-website-development': 'E-Commerce Website Development',
+        'ecommerce-website-design': 'E-Commerce Website Designing',
     };
     const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
         ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
@@ -83,7 +75,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
-                <title>{service} {location} | Custom Website Designing Services {location}</title>
+                <title>{service} {location} | Best Website Design Agency for Small Businesses {location}</title>
                 <meta name="description" content={`${location}'s best all-in-one ${service} agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
                 <meta name="keywords" content={service} />
             </Head>
@@ -100,7 +92,8 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                                 Consultation! 📞
                             </h4>
 
-                            <Contact />
+                            {/* <Contact /> */}
+                            <Calen />
                         </ModalContent>
 
                     </ModalBody>
@@ -131,11 +124,9 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                     <div id="how-it-works">
                         <Howitworks />
                     </div>
-
                     <div id="reviews">
-                        <Testimonials />
+                        <Testimonials keyword={location} />
                     </div>
-
                     <AnimatedSection delay={0}>
                         <div id="our-work">
                             <Gallery />

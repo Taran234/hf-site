@@ -6,12 +6,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
-  --cursor-color: 255, 255, 255;
-
   --scrollbar-bg: 40, 40, 40;
-  /* Custom scrollbar background color */
   --scrollbar-thumb: 249, 115, 35;
-  /* Custom scrollbar thumb color */
 }
 
 

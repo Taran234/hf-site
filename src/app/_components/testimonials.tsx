@@ -2,16 +2,16 @@ import { MdStarRate } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 
-const Testimonials = () => {
+const Testimonials = ({ keyword }: { keyword: any }) => {
     return (
         <div>
             <div className="flex md:flex-row flex-col">
                 <div className="text-left md:w-1/2 md:text-6xl mx-8 font-semibold leading-normal my-10">
                     <h4 className="md:text-xl text-base font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
-                        Website Design Toronto
+                        Website Design {keyword}
                     </h4>
                     <h4 className="md:text-4xl text-2xl font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
-                        See what our clients think of our Toronto web design services.
+                        Anyone can make promises we give you proof.
                     </h4>
                     <br />
                     <h4 className="md:text-2xl text-sm font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">

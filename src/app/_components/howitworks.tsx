@@ -48,7 +48,7 @@ export function Howitworks() {
                 </h4>
 
                 <p className="text-lg max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
-                    {`We will create you a complete mobile-friendly website with all necessary plugins totaling over thousands of dollar in value, all under your budget.`}
+                    {`We have helped number of businesses in Ontario to get their online journey started and succeed, and here is how we did it.`}
                 </p>
             </div>
 

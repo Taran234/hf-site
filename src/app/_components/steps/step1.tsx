@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { BackgroundBeams } from "@/app/components/ui/beams";
 
-import Link from "next/link";
-import { SiYoutube } from "react-icons/si";
 
 export function Step1() {
     return (
@@ -9,82 +9,83 @@ export function Step1() {
             <div className="flex flex-col justify-center px-0.5 mt-8 w-full ">
                 <div className="flex z-10 flex-col justify-center px-4 py-4 rounded-xl bg-neutral-900 ">
                     <div className="flex flex-col-reverse  relative">
-                        <div className="p-5 mt-2 text-lg font-medium md:leading-8 w-full ">
-                            Schedule a FREE consultation where we discuss your business goals, website preferences, and digital marketing needs. We'll assess your current online presence and outline a plan tailored to your success.
+                        <div className="p-5 text-lg font-medium md:leading-8 w-full ">
+                            <div className="hidden md:block justify-center items-center ">
+                                <SkeletonThree />
+                                {/* <Calen /> */}
+                            </div>
+                            Book your FREE consultation now, where we will discuss your business objectives, website preferences, and digital marketing needs in detail. It will also help us assess your current budget to outline a plan tailored to your success.
                         </div>
-                        <div className=" justify-center items-center">
-                            <SkeletonThree />
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-// const SkeletonOne = () => {
-//     const variants = {
-//         initial: {
-//             backgroundPosition: "0 50%",
-//         },
-//         animate: {
-//             backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
-//         },
-//     };
-//     return (
-//         <motion.div
-//             initial="initial"
-//             animate="animate"
-//             variants={variants}
-//             transition={{
-//                 duration: 5,
-//                 repeat: Infinity,
-//                 repeatType: "reverse",
-//             }}
-//             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-//             style={{
-//                 background:
-//                     "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-//                 backgroundSize: "400% 400%",
-//             }}
-//         >
-//             <motion.div className=" h-[300px] z-10s w-full rounded-lg">
-//                 <div className="hidden md:block">
-//                     <FloatImg />
-//                 </div>
 
-//                 <Image
-//                     src={'/call.jpg'}
-//                     alt="avatar"
-//                     width={200}
-//                     height={200}
-//                     className="absolute hidden -top-10 left-10 rounded-2xl object-cover z-10"
-//                 />
-
-//             </motion.div>
-//         </motion.div>
-//     );
-// };
 
 export const SkeletonThree = () => {
+    const floatAnimation = {
+        y: [0, -2, 0], // Moves the element up and down
+        x: [0, -10, 0],  // Moves the element left and right
+        transition: {
+            duration: 3,   // Duration of one full loop of the animation
+            repeat: Infinity, // Loop animation indefinitely
+            ease: "easeInOut" // Smooth easing
+        }
+    };
+    const floatAnimation2 = {
+        y: [0, 10, 0], // Moves the element up and down
+        x: [0, 10, 0],  // Moves the element left and right
+        transition: {
+            duration: 3,   // Duration of one full loop of the animation
+            repeat: Infinity, // Loop animation indefinitely
+            ease: "easeInOut" // Smooth easing
+        }
+    };
+
     return (
-        // <Link
-        //     href="..."
-        //     target="__blank"
-        //     className="relative flex gap-10 h-full group/image"
-        // >
-        <div className="w-full  h-full">
-            <div className=" border-b-8 border-r-8 border-amber-600  h-fit w-fit rounded-2xl relative">
-                {/* <SiYoutube className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " /> */}
+        <div className="w-full flex flex-wrap h-full">
+            <div className="h-[200px] top-28 left-20 w-[100px] rounded-2xl relative z-20">
+                <motion.div animate={floatAnimation}>
+                    <Image
+                        src="/phone.webp"
+                        alt="Affordable web page design toronto"
+                        width={1200}
+                        loading="lazy"
+                        height={1200}
+                        className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
+                    />
+                </motion.div>
+            </div>
+
+            <div className="relative top-5 left-10 h-[350px] w-[400px] rounded-2xl z-10">
+
                 <Image
-                    src="/results.webp"
+                    src="/tablet.webp"
                     alt="Affordable web page design toronto"
                     width={1200}
                     loading="lazy"
                     height={1200}
-                    className=" h-auto aspect-auto brightness-75  object-contain object-center rounded-md "
+                    className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
                 />
+
             </div>
+
+            <div className="h-[200px] top-16 right-0 w-[100px] rounded-2xl relative z-20">
+                <motion.div animate={floatAnimation2}>
+                    <Image
+                        src="/clock.webp"
+                        alt="Affordable web page design toronto"
+                        width={1200}
+                        loading="lazy"
+                        height={1200}
+                        className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
+                    />
+                </motion.div>
+            </div>
+            <BackgroundBeams />
         </div>
-        // </Link>
     );
 };

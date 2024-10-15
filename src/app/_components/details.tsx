@@ -15,49 +15,49 @@ export function Detail() {
         {
             title: "Fully Customized solution",
             description:
-                "Tailored solutions that fit your unique business needs, from concept to deployment.",
+                "Tailored solutions that fit your unique business needs.",
             icon: <FaCode size={30} />,
         },
         {
             title: "Responsive Design",
             description:
-                "Designs that look great on all devices, ensuring a seamless user experience across screens.",
+                "Designs that look great on all devices.",
             icon: <FaMobileAlt size={30} />,
         },
         {
             title: "E-commerce Integration",
             description:
-                "Building robust online stores that drive sales and enhance customer experience.",
+                "Building online stores that drive sales.",
             icon: <FaLaptopCode size={30} />,
         },
         {
             title: "Fast and Secure Hosting",
             description:
-                "Providing reliable hosting solutions for optimal website performance and security.",
+                "Reliable hosting solutions for optimal website performance and security.",
             icon: <FaUserShield size={30} />,
         },
         {
             title: "SEO Optimization",
             description:
-                "Improve your search engine rankings with our proven SEO practices and strategies.",
+                "SEO practices and strategies to rank higher on google.",
             icon: <FaWrench size={30} />,
         },
         {
             title: "100% Money Back Gauranteed",
             description:
-                "We offer 100% money back gaurantee if you are unsatisfied with the website.",
+                "Money back if unsatisfying results.",
             icon: <FaRocket size={30} />,
         },
         {
             title: "GMB Profile Optimization",
             description:
-                "Optimizing your Google My Business profile to boost local search visibility and attract more customers in your area.",
+                "Boost local search visibility and attract more customers in your area.",
             icon: <FaPaintBrush size={30} />,
         },
         {
             title: "Improved Brand Visability",
             description:
-                "Implementing strategies that make your website rank highest on google searches for your Business Name",
+                "Rank highest on google searches for your Business Name",
             icon: <FaHandshake size={30} />,
         },
     ];
@@ -100,7 +100,7 @@ const Feature = ({
                 {icon}
             </div>
             <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-amber-500 transition-all duration-200 origin-center" />
                 <span className="group-hover/feature:translate-x-2 transition duration-200 font-aclonica text-2xl inline-block text-neutral-100">
                     {title}
                 </span>

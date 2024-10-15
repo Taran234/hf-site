@@ -146,7 +146,7 @@ export const ModalContent = ({
     className?: string;
 }) => {
     return (
-        <div className={cn("flex flex-col flex-1 py-8 md:py-10", className)}>
+        <div className={cn("flex flex-col flex-1 py-8 md:py-10 overflow-hidden", className)}>
             {children}
         </div>
     );
@@ -207,7 +207,7 @@ const CloseIcon = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-black dark:text-white h-4 w-4 group-hover:scale-125 group-hover:rotate-3 transition duration-200"
+                className="text-white h-4 w-4 group-hover:scale-125 group-hover:rotate-3 transition duration-200"
             >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M18 6l-12 12" />

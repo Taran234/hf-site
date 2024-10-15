@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
+import { Header } from "@/app/_components/header";
+import { Modal, ModalBody, ModalContent, ModalProvider } from "@/app/components/ui/model";
+import { Footer } from "@/app/_components/footer";
+import { Contact } from "@/app/_components/contact";
 
 // Force dynamic rendering (optional based on your use case)
 export const dynamic = "force-dynamic";
@@ -56,7 +60,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                     <div className="max-w-3xl mx-auto px-5">
                         <p className="text-center mt-20 text-xl">Blog post not found.</p>
                         <div className="flex justify-center mt-4">
-                            <Link href="/" className="text-amber-600 hover:text-[#719b8f]">
+                            <Link href="/" className="text-amber-400 hover:text-[#719b8f]">
                                 ← Back to home
                             </Link>
                         </div>
@@ -142,12 +146,31 @@ const BlogDetailPage = async ({ params }: Props) => {
 
         return (
             <section className="bg-dot-slate-50/10">
-                <div className="max-w-4xl mx-auto px-5 overflow-x-hidden scroll-smooth bg-gray-800 bg-opacity-30 ">
+                <ModalProvider>
+                    <Modal>
+                        <ModalBody>
+                            <ModalContent>
+                                <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
+                                    Get a {" "}
+                                    <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
+                                        FREE
+                                    </span>{" "}
+                                    Consultation! 📞
+                                </h4>
+                                <Contact />
+                            </ModalContent>
+                        </ModalBody>
+                        <div className="fixed top-0 left-0 right-0 z-50">
+                            <Header />
+                        </div>
+                    </Modal>
+                </ModalProvider>
+                <div className="max-w-4xl mt-20 mx-auto px-5 overflow-x-hidden scroll-smooth  ">
                     {/* Back to Home Link */}
                     <div className="flex">
                         <Link
                             href="/"
-                            className="flex items-center gap-2 mt-10 hover:text-[#719b8f] text-sm md:text-base text-amber-600"
+                            className="flex items-center gap-2 mt-10 hover:text-[#719b8f] text-sm md:text-base text-amber-400"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -169,11 +192,16 @@ const BlogDetailPage = async ({ params }: Props) => {
 
                     {/* Blog Metadata */}
                     <div className="flex justify-between md:mt-10 mt-8">
-                        <div className="text-gray-300">{createdAt}</div>
+                        <div className="text-gray-500">{createdAt}</div>
                         <div className="flex gap-5">
-                            <FaLinkedinIn className="h-6 w-6 text-amber-600" title="LinkedIn" />
-                            <FaGithub className="h-6 w-6 text-amber-600" title="GitHub" />
+                            <a href="https://www.linkedin.com/in/taranjeet-bhatia/" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedinIn className="h-6 w-6 text-amber-400" title="LinkedIn" />
+                            </a>
+                            <a href="https://github.com/Taran234" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="h-6 w-6 text-amber-400" title="GitHub" />
+                            </a>
                         </div>
+
                     </div>
 
                     {/* Blog Title and Author */}
@@ -181,8 +209,8 @@ const BlogDetailPage = async ({ params }: Props) => {
                         <h1 className="text-center md:text-4xl text-xl font-bold md:mt-10 mt-8 mb-4">
                             {blogDetailData.fields.title}
                         </h1>
-                        <div className="text-left mb-4 md:text-base text-sm text-amber-600 font-bold px-4">
-                            <span className="text-amber-600 font-normal">Written by</span> | Taranjeet Singh
+                        <div className="text-left mb-4 md:text-base text-sm text-amber-400 font-bold px-4">
+                            <span className="text-amber-400 font-normal">Written by</span> | Taranjeet Singh
                         </div>
                     </div>
 
@@ -209,7 +237,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                     <div className="flex">
                         <Link
                             href="/"
-                            className="flex items-center gap-2 mt-2 hover:text-[#719b8f] text-sm md:text-base text-amber-600 mb-10"
+                            className="flex items-center gap-2 mt-2 hover:text-[#719b8f] text-sm md:text-base text-amber-400 mb-10"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -229,6 +257,8 @@ const BlogDetailPage = async ({ params }: Props) => {
                         </Link>
                     </div>
                 </div>
+                <Footer />
+
             </section>
         );
     } catch (error) {
@@ -238,7 +268,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                 <div className="max-w-3xl mx-auto px-5">
                     <p className="text-center mt-20 text-xl">An error occurred while fetching the blog post.</p>
                     <div className="flex justify-center mt-4">
-                        <Link href="/" className="text-amber-600 hover:text-[#719b8f]">
+                        <Link href="/" className="text-amber-400 hover:text-[#719b8f]">
                             ← Back to home
                         </Link>
                     </div>

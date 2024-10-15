@@ -11,15 +11,15 @@ export function Faq() {
 
   const faqs = [
     {
-      question: "Is there a guarantee that my website will meet my expectations?",
+      question: "How can you guarantee that my website will meet my expectations?",
       answer: "Our primary goal is client satisfaction. We strive to ensure that your website aligns with your vision and requirements. If you are not satisfied with the final product, we will work closely with you to make any necessary changes until you are completely happy. Additionally, if you still unhappy with the results and choose not to keep the website, we offer a money-back guarantee for your peace of mind. Your success is important to us, and we want to be your trusted partner as you grow."
     },
     {
       question: "Can you guarantee me top placement on Google?",
-      answer: "No one can. People say it, and there are certainly things you can do right to get good placement, but no one can truly guarantee any search results. Also many companies, not just yours, are working to get top placement. So results change due to competition and new content being added to the web. At Harbourfront Web Designs we offer SEO (Search Engine Optimization) to rank your website well in search engine results. This helps bring more qualified potential customers to your site and eventually increases conversion rates."
+      answer: "No one can. People say it to get you worked up, and there are certainly things you can do right to get good placement, but no one can truly guarantee any search results. Also many companies, not just yours, are working to get top placement. So results change due to competition and new content being added to the web. At Harbourfront Web Designs we offer weekly key word researched SEO (Search Engine Optimization) to rank your website well in search engine results. This helps bring more qualified potential customers to your site and eventually increases conversion rates."
     },
     {
-      question: "Who is the ideal client for Harbourfront Web Designs & Marketing?",
+      question: "What type of Clients does Harbourfront Web Designs have worked with?",
       answer: "Our ideal clients are businesses seeking to scale and enhance their online presence through expertly crafted websites and targeted advertising campaigns. Whether you're a startup, small business, or an established company, we tailor our services to meet your unique needs and growth goals."
     },
     {
@@ -28,7 +28,7 @@ export function Faq() {
     },
     {
       question: "Do you offer website hosting?",
-      answer: "Yes, we offers month to month hosting with free maintenance and backups on all new website projects."
+      answer: "Yes, we offers month to month hosting with free maintenance and secure backups on all new website projects."
     },
     {
       question: "Do you offer custom design options for website?",
@@ -56,12 +56,12 @@ export function Faq() {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-inherit border-b-[0.1px] border-l-[0.1px] border-r-[0.1px] border-white transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
+          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-inherit border-b-[0.1px] border-l-[0.1px] border-r-[0.1px] border-amber-400 transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
           onClick={() => toggleOpenIndex(index)}
         >
           <div className="flex justify-between items-center text-gray-50 w-full cursor-pointer">
             <div className="flex-auto">{faq.question}</div>
-            <div className="flex items-center justify-center w-10">
+            <div className="flex items-center justify-center text-amber-500 w-10">
               {openIndex === index ? (
                 <RiArrowDropUpLine size={30} />
               ) : (
