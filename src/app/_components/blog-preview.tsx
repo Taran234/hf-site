@@ -75,7 +75,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
                                 />
                             </div>
                             {/* Overlay */}
-                            <div className="absolute inset-y-0 left-0 w-1/2 bg-amber-600 bg-opacity-90 m-4 flex flex-col justify-center">
+                            <div className="absolute inset-y-0 left-0 md:w-1/2 w-10/12 bg-amber-600 bg-opacity-90 m-4 flex flex-col justify-center">
                                 <h2 className="text-5xl font-bold m-4 line-clamp-2 text-white">
                                     SEO SECRETS
                                 </h2>

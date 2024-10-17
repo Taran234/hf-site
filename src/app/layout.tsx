@@ -42,7 +42,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <Script
+        {/* <Script
           id="openwidget-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -58,7 +58,7 @@ export default function RootLayout({
               }(window,document,[].slice));
             `,
           }}
-        />
+        /> */}
       </body>
     </html>
   );
