@@ -146,7 +146,7 @@ export const ModalContent = ({
     className?: string;
 }) => {
     return (
-        <div className={cn("flex flex-col flex-1 py-8 md:py-10 overflow-hidden", className)}>
+        <div className={cn("flex flex-col flex-1 py-8 md:py-10 overflow-scroll", className)}>
             {children}
         </div>
     );

@@ -52,9 +52,9 @@ export const SkeletonThree = () => {
                     <Image
                         src="/phone.webp"
                         alt="Affordable web page design toronto"
-                        width={1200}
+                        width={600}
                         loading="lazy"
-                        height={1200}
+                        height={600}
                         className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
                     />
                 </motion.div>
@@ -65,9 +65,9 @@ export const SkeletonThree = () => {
                 <Image
                     src="/tablet.webp"
                     alt="Affordable web page design toronto"
-                    width={1200}
+                    width={600}
                     loading="lazy"
-                    height={1200}
+                    height={600}
                     className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
                 />
 
@@ -78,9 +78,9 @@ export const SkeletonThree = () => {
                     <Image
                         src="/clock.webp"
                         alt="Affordable web page design toronto"
-                        width={1200}
+                        width={600}
                         loading="lazy"
-                        height={1200}
+                        height={600}
                         className="h-auto aspect-auto brightness-75 object-contain object-center rounded-md"
                     />
                 </motion.div>

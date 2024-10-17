@@ -39,11 +39,11 @@ export function Detail() {
         {
             title: "SEO Optimization",
             description:
-                "SEO practices and strategies to rank higher on google.",
+                "SEO practices and strategies to rank higher on Google.",
             icon: <FaWrench size={30} />,
         },
         {
-            title: "100% Money Back Gauranteed",
+            title: "100% Money Back Guaranteed",
             description:
                 "Money back if unsatisfying results.",
             icon: <FaRocket size={30} />,
@@ -57,7 +57,7 @@ export function Detail() {
         {
             title: "Improved Brand Visability",
             description:
-                "Rank highest on google searches for your Business Name",
+                "Rank highest on Google searches for your Business Name",
             icon: <FaHandshake size={30} />,
         },
     ];

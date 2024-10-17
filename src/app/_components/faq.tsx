@@ -56,7 +56,7 @@ export function Faq() {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-inherit border-b-[0.1px] border-l-[0.1px] border-r-[0.1px] border-amber-400 transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
+          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-inherit border-b-[0.1px] border-l-[0.1px] border-r-[0.1px] border-amber-300 transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
           onClick={() => toggleOpenIndex(index)}
         >
           <div className="flex justify-between items-center text-gray-50 w-full cursor-pointer">

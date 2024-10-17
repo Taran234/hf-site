@@ -22,7 +22,7 @@ export function Hero({ location, service }: HeroProps) {
 
     useEffect(() => {
         // Randomly set the number of spots between 4 and 2 on load
-        const randomSpots = Math.floor(Math.random() * 2) + 2;
+        const randomSpots = Math.floor(Math.random() * 1) + 1;
         setSpots(randomSpots);
 
         // Make the number blink by toggling the 'blinking' class every 0.5 seconds
@@ -58,7 +58,7 @@ export function Hero({ location, service }: HeroProps) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
                         <div className="flex-auto my-auto">
-                            To maintain quality work we only accept 6 projects per month — Only{' '}
+                            To maintain quality work we only accept 5 business per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
@@ -117,7 +117,7 @@ export function Hero({ location, service }: HeroProps) {
                             autoFocus
                             loop
                         >
-                            <source src="/v6.mp4" type="video/mp4" />
+                            <source src="/v6.webm" type="video/webm" />
                             Your browser does not support the video tag.
                         </video>
                     </div>

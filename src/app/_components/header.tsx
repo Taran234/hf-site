@@ -46,7 +46,7 @@ export function Header() {
                 <img src={`/harbourfront.png`} alt={`harbourfront`} className="rounded-lg w-56 my-2" />
                 <img src={`/web-designs.png`} alt={'web designers near me'} className="rounded-lg w-48 ml-4 -mt-7" />
             </div>
-            <div className={`md:flex md:flex-row md:relative md:justify-evenly gap-12 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly flex-1 gap-12 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
                 <Link href="/#how-it-works" >How We Work</Link>
                 <Link href="/#our-work" >Designs</Link>
                 <Link href="/#reviews" >Reviews</Link>

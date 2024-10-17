@@ -7,14 +7,14 @@ const Testimonials = ({ keyword }: { keyword: any }) => {
         <div>
             <div className="flex md:flex-row flex-col">
                 <div className="text-left md:w-1/2 md:text-6xl mx-8 font-semibold leading-normal my-10">
-                    <h4 className="md:text-xl text-base font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
-                        Website Design {keyword}
+                    <h4 className="md:text-xl text-base font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-gray-500">
+                        Website Design {keyword ? keyword : "Toronto"}
                     </h4>
                     <h4 className="md:text-4xl text-2xl font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                         Anyone can make promises we give you proof.
                     </h4>
-                    <br />
-                    <h4 className="md:text-2xl text-sm font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
+
+                    <h4 className="md:text-2xl text-sm font-aclonica lg:leading-tight mt-4 justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                         We asked some of our clients to write an honest review about their experience working with us. Here's what they had to say:
                     </h4>
 

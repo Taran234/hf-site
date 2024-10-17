@@ -124,9 +124,9 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                     <div id="how-it-works">
                         <Howitworks />
                     </div>
-                    <div id="reviews">
+                    {/* <div id="reviews">
                         <Testimonials keyword={location} />
-                    </div>
+                    </div> */}
                     <AnimatedSection delay={0}>
                         <div id="our-work">
                             <Gallery />

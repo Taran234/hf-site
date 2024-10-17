@@ -12,36 +12,36 @@ export function Howitworks() {
             title: "Step One",
             description: "Schedule Your Free Strategy Call",
             content: <Step1 />,
-            className: "col-span-6 lg:col-span-4 border-b lg:border-r border-neutral-800",
+            className: "col-span-6 lg:col-span-4 border-b lg:border-r border-gray-800",
         },
         {
             title: "Step Two",
             description: "Receive Your Customized Plan",
             content: <Step2 />,
-            className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
+            className: "border-b col-span-1 lg:col-span-2 border-gray-800",
         },
         {
             title: "Step Three",
             description: " Begin Your Project",
             content: <Step3 />,
-            className: "col-span-6 lg:col-span-2 lg:border-r border-b border-neutral-800",
+            className: "col-span-6 lg:col-span-2 lg:border-r border-b border-gray-800",
         },
         {
             title: "Step Four",
             description: "Optimize and Refine",
             content: <Step4 />,
-            className: "col-span-6 lg:col-span-4 border-b border-neutral-800",
+            className: "col-span-6 lg:col-span-4 border-b border-gray-800",
         },
         {
             title: "Step Five",
             description: "Final Delivery and Support",
             content: <Step5 />,
-            className: "col-span-6 lg:col-span-6 border-b border-t border-neutral-800",
+            className: "col-span-6 lg:col-span-6 border-b  border-gray-800",
         },
     ];
 
     return (
-        <div className="relative z-20 md:p-10 p-4 lg:py-30 border-t-[0.1px] border-slate-600 max-w-7xl mx-auto">
+        <div className="relative z-20 md:p-10 p-4 lg:py-30  max-w-7xl mx-auto">
             <div className="px-8">
                 <h4 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
                     How We Work
@@ -53,7 +53,7 @@ export function Howitworks() {
             </div>
 
             <div className="relative">
-                <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-800">
+                <div className="grid grid-cols-1 lg:grid-cols-6 mt-12  rounded-md ">
                     {steps.map((step) => (
                         <FeatureCard key={step.title} className={step.className}>
                             <FeatureTitle>{step.title}</FeatureTitle>
