@@ -60,14 +60,14 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
     ];
 
     const serviceMapping: Record<string, string> = {
-        'web-design': 'Business Website Designing',
-        'website-development': 'Business Website Development',
+        'web-design': 'Business Website Design',
+        'website-development': 'Business Website Design',
         'ecommerce-website-development': 'E-Commerce Website Development',
         'ecommerce-website-design': 'E-Commerce Website Designing',
     };
     const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
         ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
-        : 'Website Designing';
+        : 'Business Website Design';
 
     // Find the city from the keyword
     const location = cities.find(city => keyword.includes(city));
@@ -124,17 +124,17 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                     <div id="how-it-works">
                         <Howitworks />
                     </div>
-                    {/* <div id="reviews">
+                    <div id="reviews">
                         <Testimonials keyword={location} />
-                    </div> */}
+                    </div>
                     <AnimatedSection delay={0}>
                         <div id="our-work">
                             <Gallery />
                         </div>
                     </AnimatedSection>
-                    <div id="blogs">
+                    {/* <div id="blogs">
                         <BlogsPre blogs={posts} />
-                    </div>
+                    </div> */}
                     <div id="faq">
                         <Faq />
                     </div>

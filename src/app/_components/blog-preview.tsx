@@ -47,6 +47,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
                         className="relative block p-2 h-full w-full group"
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
+                        aria-label={`link to ${blog.title}`}
                     >
                         <AnimatePresence>
                             {hoveredIndex === index && (
@@ -79,7 +80,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
                                 <h2 className="text-5xl font-bold m-4 line-clamp-2 text-white">
                                     SEO SECRETS
                                 </h2>
-                                <h3 className="text-lg font-bold text-gray-800 m-4 line-clamp-3">
+                                <h3 className="text-lg font-bold text-white m-4 line-clamp-3">
                                     {blog.title}
                                 </h3>
                             </div>

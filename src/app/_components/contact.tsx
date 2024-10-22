@@ -77,7 +77,7 @@ export function Contact() {
                             className="w-full px-1 py-2 bg-transparent border-b-2 border-[#c5ecfd] text-[#c5ecfd] placeholder-[#c5ecfd] focus:ring-0 focus:border-[#c5ecfd]"
                             name="message" required></textarea>
                     </div>
-                    <button type="submit"
+                    <button aria-label="Submit button" type="submit"
                         className="w-full py-2 font-semibold text-white bg-[#39b7dd] rounded-md hover:bg-[#39b7dd]/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5ecfd]">
                         {loading ? 'Loading...' : 'Send Message'}
                     </button>

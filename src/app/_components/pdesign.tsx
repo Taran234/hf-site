@@ -128,14 +128,14 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full  left-0 top-0">
             <p className="max-w-2xl text-base  font-semiBold  mt-8 text-neutral-200">
-                Excellent Website Development & Marketing Company
+                Website design agency Toronto
             </p>
             <div className="text-2xl md:text-4xl font-aclonica mt-2 font-bold text-white md:w-3/5 w-5/6">
                 We Don't Just Build Websites, We Build Websites That Guarantee Results And Better Business.
             </div>
             <p className="max-w-2xl text-base  font-semiBold md:text-xl mt-8 text-neutral-200">
                 We build beautiful products with the latest technologies and frameworks.
-                Our website development and creation teams focus on what is best for you and give you unmatched services. We deliver a range of solutions through our services.
+                Our website development and creation teams focus on what is best for your business and give you unmatched services then any other website design agency in Toronto.
             </p>
         </div>
     );

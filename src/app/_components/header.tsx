@@ -1,9 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { BiRightArrowAlt } from "react-icons/bi";
 import { useCallback, useEffect, useState } from "react";
-import { HiMenu } from "react-icons/hi";
 import { ModalTrigger } from "../components/ui/model";
 import Drawer from "./drawer";
 
@@ -43,17 +41,74 @@ export function Header() {
     return (
         <div className={`flex flex-row justify-between z-30 md:px-4 md:py-0 p-1 font-medium leading-4 w-full capitalize transition-transform duration-500 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex flex-col md:gap-3 gap-2 relative">
-                <img src={`/harbourfront.png`} alt={`harbourfront`} className="rounded-lg w-56 my-2" />
-                <img src={`/web-designs.png`} alt={'web designers near me'} className="rounded-lg w-48 ml-4 -mt-7" />
+                <Image
+                    src="/harbourfront1.png"
+                    alt="harbourfront"
+                    width={300} // equivalent to w-56
+                    height={300} // adjust this based on the image aspect ratio
+                    className="rounded-lg my-2"
+                />
+                {/* <Image
+                    src="/web-designs.png"
+                    alt="web designers near me"
+                    width={192} // equivalent to w-48
+                    height={192} // adjust this based on the image aspect ratio
+                    className="rounded-lg ml-4 -mt-7"
+                /> */}
             </div>
-            <div className={`md:flex md:flex-row md:relative md:justify-evenly flex-1 gap-12 md:mx-auto hidden md:top-1 inset-x-0 md:text-lg my-4  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
-                <Link href="/#how-it-works" >How We Work</Link>
-                <Link href="/#our-work" >Designs</Link>
-                <Link href="/#reviews" >Reviews</Link>
-                <Link href="/#blogs" >Blogs</Link>
-                {/* <Link href="#blogs" >Blogs</Link> */}
-                <Link href="/#faq" >FAQs</Link>
-                <ModalTrigger className="bg-amber-500  justify-center items-center flex  text-white  group/modal-btn">
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly flex-1 gap-12 md:mx-auto hidden md:top-2 inset-x-0 md:text-lg my-6 pl-16  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+                <Link href="/#how-it-works" className="relative group">
+                    <span className="pb-1">How We Work</span>
+                    <video
+                        className="absolute left-0 bottom-0 w-full h-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        muted
+                        playsInline
+                        onMouseEnter={(e: any) => e.target.play()}
+                        onMouseLeave={(e: any) => e.target.currentTime = 0}
+                        onEnded={(e: any) => e.target.pause()}
+                        src="/underline.webm"
+                    />
+                </Link>
+                <Link href="/#reviews" className="relative group">
+                    <span className="pb-1">Our Reviews</span>
+                    <video
+                        className="absolute left-0 bottom-0 w-full h-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        muted
+                        playsInline
+                        onMouseEnter={(e: any) => e.target.play()}
+                        onMouseLeave={(e: any) => e.target.currentTime = 0}
+                        onEnded={(e: any) => e.target.pause()}
+                        src="/underline.webm"
+                    />
+                </Link>
+
+                <Link href="/blogs" className="relative group">
+                    <span className="pb-1">SEO Secrets</span>
+                    <video
+                        className="absolute left-0 bottom-0 w-full h-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        muted
+                        playsInline
+                        onMouseEnter={(e: any) => e.target.play()}
+                        onMouseLeave={(e: any) => e.target.currentTime = 0}
+                        onEnded={(e: any) => e.target.pause()}
+                        src="/underline.webm"
+                    />
+                </Link>
+
+                <Link href="/#faq" className="relative group">
+                    <span className="pb-1">FAQs</span>
+                    <video
+                        className="absolute left-0 bottom-0 w-full h-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        muted
+                        playsInline
+                        onMouseEnter={(e: any) => e.target.play()}
+                        onMouseLeave={(e: any) => e.target.currentTime = 0}
+                        onEnded={(e: any) => e.target.pause()}
+                        src="/underline.webm"
+                    />
+                </Link>
+
+                <ModalTrigger className="bg-amber-600  justify-center items-center flex  text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
                         Book a Call!
                     </span>

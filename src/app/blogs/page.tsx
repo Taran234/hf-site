@@ -1,7 +1,17 @@
 import { client } from "../lib/contentful";
 import { Blog, BlogsPre } from "../_components/blog-preview";
+import { Header } from "../_components/header";
+import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
+import Calen from "../_components/calendly";
+import { useAnimation, motion } from "framer-motion";
+import BlogsList from "../_components/blog-list";
 
-const BlogsList = async () => {
+
+const BlogsPage = async () => {
+    const fadeInVariant = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.4 } }
+    };
     // Fetch blog entries from Contentful
     const res = await client.getEntries({ content_type: 'bloghf' });
 
@@ -24,7 +34,7 @@ const BlogsList = async () => {
         };
     });
 
-    return <BlogsPre blogs={blogs} />;
+    return <BlogsList blogs={blogs} />;
 }
 
-export default BlogsList;
+export default BlogsPage;

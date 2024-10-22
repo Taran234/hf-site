@@ -48,29 +48,29 @@ export function Hero({ location, service }: HeroProps) {
 
 
     return (
-        <div className="flex -z-40 flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
-            <div className="flex flex-col items-center mt-7 w-full max-w-screen gap-4 overflow-hidden">
+        <div className="flex -z-40 overflow-x-hidden flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
+            <div className="flex flex-col items-center mt-8 w-full max-w-screen gap-4 overflow-hidden">
                 <Spotlight
                     className="-top-20 -left-40 md:left-36 md:-top-20 "
-                    fill="white"
+                    fill="gray"
                 />
-                <div className="flex flex-col justify-center max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-xs font-bold text-white uppercase rounded-md">
-                    <div className="flex gap-1.5 justify-center items-start px-5 py-2.5 bg-neutral-900">
+                <div className="flex flex-col mt-8 justify-center max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-md font-bold text-white uppercase rounded-md">
+                    <div className="flex gap-1.5 justify-center items-start px-5 py-3 bg-neutral-900">
                         <TbBellRingingFilled size={22} />
-                        <div className="flex-auto my-auto">
+                        <h3 className="flex-auto my-auto">
                             To maintain quality work we only accept 5 business per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
                             spots left this month!
-                        </div>
+                        </h3>
                     </div>
                 </div>
-                <h1 className="mt-7 md:text-6xl text-5xl text-center md:px-12  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
-                    {location ?? "Canada"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br /><TypewriterEffect words={words} />
+                <h1 className="mt-8 md:text-6xl text-4xl text-center md:px-7  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br /><TypewriterEffect words={words} />
                 </h1>
-                <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-3xl text-center">
-                    Get a Free Consultation today and see how our unique website design strategies can get you to rank higher on Google searches in your area.
+                <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-4xl text-center">
+                    Harbourfront Web Designs is {location ?? "Toronto"}'s Premier Website Design Agency for Small to Medium Businesses and Enterprises. We Help Canadian Businesses Thrive Online with Stunning, User-Friendly Websites, SEO Optimization, and E-commerce Solutions Tailored to Your Industry.
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
@@ -84,7 +84,7 @@ export function Hero({ location, service }: HeroProps) {
                         <BsStack size={32} />
                     </Link>
                 </div>
-                <div className="md:flex hidden gap-5 justify-between my-7 md:px-16 px-4 text-sm text-neutral-400 max-md:flex-wrap">
+                <div className="md:flex gap-5 justify-between my-10 md:px-16 px-4 text-sm text-neutral-400 md:flex-wrap grid " >
                     <div className="flex gap-1.5 justify-center py-1">
                         <TiTick size={22} />
                         <div className="flex-auto">Free Maintenance</div>

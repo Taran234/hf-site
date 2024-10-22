@@ -4,84 +4,69 @@ import { HeroParallax } from './pdesign';
 
 // Array with image sources
 const img = [
-    "/des1.jpeg",
-    "/des2.jpeg",
-    "/des3.jpeg",
-    "/des4.png",
-    "/des5.jpeg",
-    "/des6.jpeg",
-    "/des7.jpeg",
-    "/des8.jpeg",
-    "/des9.jpeg",
-    "/des10.jpeg",
-    "/des11.jpeg",
-    "/des12.jpeg",
-    "/des13.jpeg"
+    "/website-design-toronto1.webp",
+    "/website-design-toronto2.webp",
+    "/website-design-toronto3.webp",
+    "/website-design-toronto4.webp",
+    "/website-design-toronto5.webp",
+    "/website-design-toronto6.webp",
+    "/website-design-toronto7.webp",
+    "/website-design-toronto8.webp",
+    "/website-design-toronto9.webp",
+    "/website-design-toronto10.webp",
+    "/website-design-toronto11.webp",
+    "/website-design-toronto12.webp",
+    "/website-design-toronto13.webp"
     // Add more image URLs as needed
 ];
 const products = [
     {
-        title: "Management Company Website Design",
-        thumbnail:
-            "/des1.jpeg",
+        title: "Management Company Website Design Agency in Toronto",
+        thumbnail: "/website-design-toronto1.webp",
     },
     {
-        title: "Restorant Website Design",
-        thumbnail:
-            "/des2.jpeg",
+        title: "Restaurant Website Design Services in Toronto | Harbourfront Web Designs",
+        thumbnail: "/website-design-toronto2.webp",
     },
     {
-        title: "E-commerce Website Design",
-        thumbnail:
-            "/des3.jpeg",
-    },
-
-    {
-        title: "Editorially",
-        thumbnail:
-            "/des4.png",
+        title: "Custom E-commerce Website Design in Toronto",
+        thumbnail: "/website-design-toronto3.webp",
     },
     {
-        title: "Product Landing Page Design",
-        thumbnail:
-            "/des5.jpeg",
+        title: "Editorial Website Design Services in Toronto",
+        thumbnail: "/website-design-toronto4.webp",
     },
     {
-        title: "Photography Website Design",
-        thumbnail:
-            "/des6.jpeg",
-    },
-
-    {
-        title: "Restaurant Bar Website Design",
-        thumbnail:
-            "/des8.jpeg",
+        title: "High-Converting Product Landing Page Design in Toronto",
+        thumbnail: "/website-design-toronto5.webp",
     },
     {
-        title: "E-Commerce Website Redesign",
-        thumbnail:
-            "/des9.jpeg",
+        title: "Photography Portfolio Website Design in Toronto",
+        thumbnail: "/website-design-toronto6.webp",
     },
     {
-        title: "Hi-res Bakery website Design",
-        thumbnail:
-            "/des10.jpeg",
+        title: "Restaurant & Bar Website Design in Toronto | Custom Solutions",
+        thumbnail: "/website-design-toronto8.webp",
     },
     {
-        title: "Movers website Design",
-        thumbnail:
-            "/des11.jpeg",
-    },
-
-    {
-        title: "Real Estate Website design",
-        thumbnail:
-            "/des12.jpeg",
+        title: "E-Commerce Website Redesign & Optimization in Toronto",
+        thumbnail: "/website-design-toronto9.webp",
     },
     {
-        title: "Real Estate Lisiting Website Design",
-        thumbnail:
-            "/des13.jpeg",
+        title: "Bakery Website Design in High-Resolution | Toronto",
+        thumbnail: "/website-design-toronto10.webp",
+    },
+    {
+        title: "Professional Movers Website Design in Toronto",
+        thumbnail: "/website-design-toronto11.webp",
+    },
+    {
+        title: "Custom Real Estate Website Design in Toronto",
+        thumbnail: "/website-design-toronto12.webp",
+    },
+    {
+        title: "Real Estate Listing Website Design Services in Toronto",
+        thumbnail: "/website-design-toronto13.webp",
     },
 ];
 
@@ -109,9 +94,9 @@ const Gallery = () => {
     return (
         <>
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal my-10">
-                <h4 className="text-3xl lg:text-5xl font-aclonica lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
+                <div className="text-3xl lg:text-5xl font-aclonica lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
                     Our Designs
-                </h4>
+                </div>
                 <br />
             </div>
             <div className="mx-auto w-full " >

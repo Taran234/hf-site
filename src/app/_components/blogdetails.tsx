@@ -50,6 +50,7 @@ const BlogDetailPage = async ({ slug, blogDataCont }: IProp) => {
                         <Link
                             href="/"
                             className="flex items-center gap-2 mt-10 hover:text-[#719b8f] text-sm md:text-base text-[#3d483d]"
+                            aria-label="link to homepage"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -102,6 +103,7 @@ const BlogDetailPage = async ({ slug, blogDataCont }: IProp) => {
                         <Link
                             href="/"
                             className="flex items-center gap-2 mt-2 hover:text-[#719b8f] text-sm md:text-base text-[#3d483d] mb-10"
+                            aria-label="link to homepage"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

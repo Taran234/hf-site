@@ -4,6 +4,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { ModalTrigger } from "../components/ui/model";
 import Link from "next/link";
+import Image from "next/image";
 
 
 interface PathProps {
@@ -86,12 +87,22 @@ const Drawer: React.FC = () => {
         >
             <nav className="fixed top-0 -left-10 h-screen w-11/12 bg-stone-950 transform -translate-x-full will-change-transform">
                 <div className="flex flex-col relative z-40 pt-4 pl-10 font-oswald text-center  text-stone-400 ">
-
                     <div className="flex flex-col md:gap-3 gap-2 relative">
-                        <img src={`/harbourfront.png`} alt={`harbourfront`} className="rounded-lg w-56 my-2" />
-                        <img src={`/web-designs.png`} alt={'web designers near me'} className="rounded-lg w-48 ml-4 -mt-7" />
+                        <Image
+                            src="/harbourfront.png"
+                            alt="harbourfront web design agency"
+                            width={224} // equivalent to w-56
+                            height={224} // adjust this based on the image aspect ratio
+                            className="rounded-lg my-2"
+                        />
+                        <Image
+                            src="/web-designs.png"
+                            alt="web designers near me"
+                            width={192} // equivalent to w-48
+                            height={192} // adjust this based on the image aspect ratio
+                            className="rounded-lg ml-4 -mt-7"
+                        />
                     </div>
-
                 </div>
                 <ul className="flex flex-col gap-5 pt-10 pl-10 text-white font-bold text-2xl border-l-[0.5px] m-5 ">
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
@@ -99,19 +110,19 @@ const Drawer: React.FC = () => {
                     </li>
 
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <Link href="/#how-it-works" onClick={toggleDrawer}>How we Work</Link>
+                        <Link aria-label="link to how it works section" href="/#how-it-works" onClick={toggleDrawer}>How we Work</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <Link href="/#our-work" onClick={toggleDrawer}>Designs</Link>
+                        <Link aria-label="check designs" href="/#our-work" onClick={toggleDrawer}>Designs</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <Link href="/#reviews" onClick={toggleDrawer}>Reviews</Link>
+                        <Link aria-label="check our reviews" href="/#reviews" onClick={toggleDrawer}>Reviews</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <Link href="/#blogs" onClick={toggleDrawer}>Blogs</Link>
+                        <Link aria-label="Check out our blogs" href="/blogs" onClick={toggleDrawer}>Blogs</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <Link href="/#faq" onClick={toggleDrawer}>FAQs</Link>
+                        <Link aria-label="Frequently asked Questions" href="/#faq" onClick={toggleDrawer}>FAQs</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
                         <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white  group/modal-btn">
