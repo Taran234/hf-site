@@ -89,19 +89,19 @@ const Drawer: React.FC = () => {
                 <div className="flex flex-col relative z-40 pt-4 pl-10 font-oswald text-center  text-stone-400 ">
                     <div className="flex flex-col md:gap-3 gap-2 relative">
                         <Image
-                            src="/harbourfront.png"
+                            src="/harbourfront1.png"
                             alt="harbourfront web design agency"
-                            width={224} // equivalent to w-56
-                            height={224} // adjust this based on the image aspect ratio
+                            width={300} // equivalent to w-56
+                            height={300} // adjust this based on the image aspect ratio
                             className="rounded-lg my-2"
                         />
-                        <Image
+                        {/* <Image
                             src="/web-designs.png"
                             alt="web designers near me"
                             width={192} // equivalent to w-48
                             height={192} // adjust this based on the image aspect ratio
                             className="rounded-lg ml-4 -mt-7"
-                        />
+                        /> */}
                     </div>
                 </div>
                 <ul className="flex flex-col gap-5 pt-10 pl-10 text-white font-bold text-2xl border-l-[0.5px] m-5 ">

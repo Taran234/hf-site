@@ -9,7 +9,7 @@ export function Footer() {
             <div className="flex flex-col items-center  mb-8 md:mr-8 md:mb-0">
                 <div className="flex flex-col md:gap-3 gap-2 relative">
                     <Image
-                        src="/harbourfront.png"
+                        src="/harbourfront1.png"
                         alt="harbourfront"
                         width={300} // equivalent to w-56
                         height={300} // adjust this based on the image aspect ratio
