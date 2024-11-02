@@ -18,6 +18,7 @@ import { Detail } from "./details";
 import Testimonials from "./testimonials";
 import CalendlyEmbed from "./calendly";
 import Calen from "./calendly";
+import { TestimonialsVariant1 } from "./reviews";
 
 const fadeInVariant = {
     hidden: { opacity: 0 },
@@ -125,7 +126,8 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                         <Howitworks />
                     </div>
                     <div id="reviews">
-                        <Testimonials keyword={location} />
+                        {/* <Testimonials keyword={location} /> */}
+                        <TestimonialsVariant1 keyword={location} />
                     </div>
                     <AnimatedSection delay={0}>
                         <div id="our-work">

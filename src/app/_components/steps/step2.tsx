@@ -10,8 +10,7 @@ export function Step2() {
 
                     <div className="flex md:flex-col flex-col">
                         <div className=" text-lg font-medium md:leading-8 md:justify-start">
-                            Within 24 hours, we'll send you a detailed strategy proposal, including an initial website concept. This proposal will cover all aspects of your project, from design to functionality, and how we'll achieve your objectives.
-                        </div>
+                            Within 24 hours, you’ll get a full strategy proposal, including an initial website concept tailored to your goals. We’ll break down our approach—from competitor-based keyword research and a custom development plan to design and functionality—to set your business up for measurable success.                        </div>
                         <div className=" justify-center mt-4 items-center">
                             <SkeletonTwo />
                         </div>

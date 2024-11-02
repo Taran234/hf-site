@@ -14,8 +14,7 @@ export function Step1() {
                                 <SkeletonThree />
                                 {/* <Calen /> */}
                             </div>
-                            Book your FREE consultation now, where we will discuss your business objectives, website preferences, and digital marketing needs in detail. It will also help us assess your current budget to outline a plan tailored to your success.
-                        </div>
+                            Claim your FREE consultation to see how our tailored web design, SEO, and e-commerce solutions can fuel your business growth. We'll dig into your goals, discuss your website vision, and provide a quote to create a powerful, results-driven plan for your success.                        </div>
 
                     </div>
                 </div>

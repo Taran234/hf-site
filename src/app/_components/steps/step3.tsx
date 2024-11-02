@@ -11,7 +11,7 @@ export function Step3() {
 
                     <div className="flex  flex-col">
                         <div className="mt-5 text-lg font-medium md:leading-8  md:justify-start">
-                            Once you approve the design, our team will start building your website. We break the project into actionable steps and keep you informed throughout the process to ensure everything aligns with your vision.
+                            We start by setting up your domain and business email, so your foundation is ready to go. Once you approve the plan, we jump into action—building your website in focused, actionable steps and keeping you updated to ensure every detail matches your vision.
                         </div>
                         <div className=" justify-center mt-4 items-center">
                             <SkeletonThree />

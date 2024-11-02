@@ -70,7 +70,7 @@ export function Hero({ location, service }: HeroProps) {
                     {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br /><TypewriterEffect words={words} />
                 </h1>
                 <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-4xl text-center">
-                    Harbourfront Web Designs is {location ?? "Toronto"}'s Premier Website Design Agency for Small to Medium Businesses and Enterprises. We Help Canadian Businesses Thrive Online with Stunning, User-Friendly Websites, SEO Optimization, and E-commerce Solutions Tailored to Your Industry.
+                    We've helped businesses all over {location ?? "Toronto"} thrive online with proven web design, SEO, and e-commerce solutions tailored for real growth. Let's make it happen for you
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
