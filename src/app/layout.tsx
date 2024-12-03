@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import "./globals.css";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,21 @@ export default function RootLayout({
         <meta name="trustpilot-one-time-domain-verification-id" content="191f1550-4544-41de-8adc-fee18b6bc60e" />
       </head>
       <body className={inter.className}>
+        <NextTopLoader
+          color="#d97706"
+          initialPosition={0.3}
+          crawlSpeed={500}
+          height={6}
+          crawl={true}
+          showSpinner={true}
+          easing="ease"
+          speed={400}
+          shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+          template='<div class="bar" role="bar"><div class="peg"></div></div> 
+  <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+          zIndex={1600}
+          showAtBottom={false}
+        />
         {children}
         {/* <Script
           id="openwidget-script"
