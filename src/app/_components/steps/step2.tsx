@@ -9,8 +9,9 @@ export function Step2() {
                 <div className="flex z-10 flex-col justify-center items-start px-4 py-4 rounded-xl bg-neutral-900">
 
                     <div className="flex md:flex-col flex-col">
-                        <div className=" text-lg font-medium md:leading-8 md:justify-start">
-                            Within 24 hours, you’ll get a full strategy proposal, including an initial website concept tailored to your goals. We’ll break down our approach—from competitor-based keyword research and a custom development plan to design and functionality—to set your business up for measurable success.                        </div>
+                        <div className="m-5 text-md tracking-wide font-medium md:leading-8 md:justify-start">
+                            After our FREE consultation, we will outline our strategy—ranging from competitor-driven keyword research to a customized development plan, ending with design and functionality—to position your business for measurable success.
+                        </div>
                         <div className=" justify-center mt-4 items-center">
                             <SkeletonTwo />
                         </div>
@@ -57,7 +58,7 @@ const SkeletonTwo = () => {
                 className="flex flex-row rounded-full border  border-amber-500 p-2  items-center space-x-2 w-4/5 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-                <div className="w-full px-2 text-xs">Your total comes down to $299. </div>
+                <div className="w-full px-2 text-xs">Your total comes down to $499. </div>
             </motion.div>
             <motion.div
                 variants={variantsSecond}
@@ -71,7 +72,7 @@ const SkeletonTwo = () => {
                 className="flex flex-row rounded-full border  border-amber-500 p-2 items-center space-x-2 w-4/5 bg-black"
             >
                 <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-                <div className="w-full px-2 text-xs">No catch, just pay for what you use. </div>
+                <div className="w-full px-2 text-xs">No catch, just pay for what you need. </div>
             </motion.div>
             <motion.div
                 variants={variantsSecond}

@@ -9,7 +9,7 @@ export function Step1() {
             <div className="flex flex-col justify-center px-0.5 mt-8 w-full ">
                 <div className="flex z-10 flex-col justify-center px-4 py-4 rounded-xl bg-neutral-900 ">
                     <div className="flex flex-col-reverse  relative">
-                        <div className="p-5 text-lg font-medium md:leading-8 w-full ">
+                        <div className="m-5 text-md tracking-wide font-medium md:leading-8 w-full ">
                             <div className="hidden md:block justify-center items-center ">
                                 <SkeletonThree />
                                 {/* <Calen /> */}
@@ -63,7 +63,7 @@ export const SkeletonThree = () => {
 
                 <Image
                     src="/tablet.webp"
-                    alt="Affordable web page design toronto"
+                    alt="Affordable web page design brampton"
                     width={600}
                     loading="lazy"
                     height={600}
@@ -76,7 +76,7 @@ export const SkeletonThree = () => {
                 <motion.div animate={floatAnimation2}>
                     <Image
                         src="/clock.webp"
-                        alt="Affordable web page design toronto"
+                        alt="Affordable web page design etobicoke"
                         width={600}
                         loading="lazy"
                         height={600}

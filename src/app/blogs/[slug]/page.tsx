@@ -8,7 +8,8 @@ import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { Header } from "@/app/_components/header";
 import { Modal, ModalBody, ModalContent, ModalProvider } from "@/app/components/ui/model";
 import { Footer } from "@/app/_components/footer";
-import { Contact } from "@/app/_components/contact";
+import Calen from "@/app/_components/calendly";
+// import { Contact } from "@/app/_components/contact";
 
 // Force dynamic rendering (optional based on your use case)
 export const dynamic = "force-dynamic";
@@ -157,7 +158,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                                     </span>{" "}
                                     Consultation! 📞
                                 </h4>
-                                <Contact />
+                                <Calen />
                             </ModalContent>
                         </ModalBody>
                         <div className="fixed top-0 left-0 right-0 z-50">

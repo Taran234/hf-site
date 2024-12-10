@@ -55,9 +55,9 @@ export function Detail() {
             icon: <FaPaintBrush size={30} />,
         },
         {
-            title: "Improved Brand Visability",
+            title: "Improved Brand Visibility",
             description:
-                "Rank highest on Google searches for your Business Name",
+                "Rank for relavant keywords on Google searches",
             icon: <FaHandshake size={30} />,
         },
     ];
@@ -99,9 +99,9 @@ const Feature = ({
             <div className="mb-4 relative z-10 px-10 text-neutral-300">
                 {icon}
             </div>
-            <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-amber-500 transition-all duration-200 origin-center" />
-                <span className="group-hover/feature:translate-x-2 transition duration-200 font-aclonica md:text-2xl text-xl inline-block text-neutral-100">
+            <div className=" font-bold mb-2 relative z-10 px-10">
+                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-32 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-amber-500 transition-all duration-300 origin-center" />
+                <span className="group-hover/feature:translate-x-2 transition duration-200 font-aclonica md:text-xl text-xl inline-block text-neutral-100">
                     {title}
                 </span>
             </div>

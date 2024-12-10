@@ -8,15 +8,11 @@ import { Hero } from "../_components/hero";
 import { Partners } from "../_components/partners";
 import { Howitworks } from "../_components/howitworks";
 import { Faq } from "../_components/faq";
-import { Blog, BlogsPre } from "../_components/blog-preview";
 import { Footer } from "../_components/footer";
 import Head from "next/head";
 import Gallery from "./Designs";
 import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
-import { Contact } from "./contact";
 import { Detail } from "./details";
-import Testimonials from "./testimonials";
-import CalendlyEmbed from "./calendly";
 import Calen from "./calendly";
 import { TestimonialsVariant1 } from "./reviews";
 
@@ -107,17 +103,17 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                         <Header />
 
                     </motion.div>
+
+                    <div id="hero">
+                        <Hero location={location} service={service} />
+                    </div>
+
                     <AnimatedSection>
-                        <div id="hero">
-                            <Hero location={location} service={service} />
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection delay={0.1}>
                         <div id="partners">
                             <Partners />
                         </div>
                     </AnimatedSection>
-                    <AnimatedSection delay={0.3}>
+                    <AnimatedSection >
                         <div id="detail" className="pt-10">
                             <Detail />
                         </div>

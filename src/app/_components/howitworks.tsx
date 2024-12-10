@@ -43,12 +43,12 @@ export function Howitworks() {
     return (
         <div className="relative z-20 md:p-10 p-4 lg:py-30  max-w-7xl mx-auto">
             <div className="px-8">
-                <h4 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
+                <h3 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
                     How We Work
-                </h4>
+                </h3>
 
                 <p className="text-lg max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
-                    {`We have helped number of businesses in Ontario to get their online journey started and succeed, and here is how we did it.`}
+                    {`We have helped number of businesses in Canada to get their online journey started and succeed, and here is how we did it.`}
                 </p>
             </div>
 

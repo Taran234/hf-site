@@ -21,7 +21,7 @@ export function Pricing() {
                             <div>multiple Payment <br />options</div>
                             <div>and more from standard package</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                        <button aria-label="contact-us" className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
@@ -42,7 +42,7 @@ export function Pricing() {
                             <div>24/7 Developer Support</div>
                             <div>Satisfaction Guaranteed</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                        <button aria-label="contact us link" className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>
@@ -61,7 +61,7 @@ export function Pricing() {
                             <div>SEARCH OPTIMIZATION FOR GOOGLE</div>
                             <div>Free w/ Either Package</div>
                         </div>
-                        <button className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
+                        <button aria-label="contact us link" className="flex justify-center mx-auto mt-7 text-amber-400 text-md font-bold py-2 px-4 rounded-md border-2 border-white border-solid hover:bg-amber-400 hover:text-white shadow-sm">
                             <Link href={'#footer'}>CONTACT US</Link>
                         </button>
                     </div>

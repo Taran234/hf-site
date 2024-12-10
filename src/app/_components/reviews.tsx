@@ -5,6 +5,7 @@ import { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { MdStarRate } from "react-icons/md";
+import { RiDoubleQuotesL, RiQuoteText } from "react-icons/ri";
 
 const testimonials = [
 
@@ -90,27 +91,29 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: any }) => {
                                     <MdStarRate size={36} className=" text-yellow-400" />
                                 </div>
                             </div>
-                            <button className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></button>
+                            <div aria-label="link to our google business profile listing" className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></div>
                         </div>
 
                     </div>
                 </div>
                 <div className="flex justify-end gap-5">
                     <button
+                        aria-label="next review"
                         className="group inline-flex size-16 items-center justify-center rounded-full p-1.5 bg-amber-600"
                         disabled={currentSlide === 0}
                         onClick={handlePreviousSlide}
                         type="button"
                     >
-                        <BsArrowLeft className=" text-white transition-colors group-disabled:stroke-neutral-500/40" />
+                        <BsArrowLeft size={32} className=" text-white transition-colors group-disabled:stroke-neutral-500/40" />
                     </button>
                     <button
+                        aria-label="previous review"
                         className="group inline-flex size-16 items-center justify-center rounded-full p-1.5 bg-amber-600"
                         disabled={currentSlide === testimonials.length - 1}
                         onClick={handleNextSlide}
                         type="button"
                     >
-                        <BsArrowRight className=" text-white transition-colors group-disabled:stroke-neutral-500/40" />
+                        <BsArrowRight size={32} className=" text-white transition-colors group-disabled:stroke-neutral-500/40" />
                     </button>
                 </div>
                 <section className="mt-8 flex w-full gap-2 *:shrink-0">
@@ -126,8 +129,8 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: any }) => {
                                         layout
                                         transition={{ duration: 0.35, ease: "easeInOut" }}
                                     >
-                                        <div className="size-8 rounded-full bg-neutral-100/10" />
-                                        <p className="font-medium  leading-5 tracking-tight text-neutral-400">
+                                        <div className="size-8 rounded-full"><RiDoubleQuotesL size={32} /></div>
+                                        <p className="font-medium  leading-5 tracking-tight text-neutral-400 line-clamp-6">
                                             {testimonial.content}
                                         </p>
                                         <p className="text-xs text-neutral-500">

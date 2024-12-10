@@ -49,6 +49,7 @@ export const ModalTrigger = ({
     const { setOpen } = useModal();
     return (
         <button
+            aria-label="open contact form"
             className={cn(
                 "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
                 className
@@ -194,6 +195,7 @@ const CloseIcon = () => {
     const { setOpen } = useModal();
     return (
         <button
+            aria-label="close contact form"
             onClick={() => setOpen(false)}
             className="absolute top-4 right-4 group"
         >

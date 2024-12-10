@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 export function Faq() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleOpenIndex = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -11,7 +11,7 @@ export function Faq() {
 
   const faqs = [
     {
-      question: "How can you guarantee that my website will meet my expectations?",
+      question: "How can you guarantee that your website design will meet my expectations?",
       answer: "Our primary goal is client satisfaction. We strive to ensure that your website aligns with your vision and requirements. If you are not satisfied with the final product, we will work closely with you to make any necessary changes until you are completely happy. Additionally, if you still unhappy with the results and choose not to keep the website, we offer a money-back guarantee for your peace of mind. Your success is important to us, and we want to be your trusted partner as you grow."
     },
     {
@@ -20,11 +20,11 @@ export function Faq() {
     },
     {
       question: "What type of Clients does Harbourfront Web Designs have worked with?",
-      answer: "Our ideal clients are businesses seeking to scale and enhance their online presence through expertly crafted websites and targeted advertising campaigns. Whether you're a startup, small business, or an established company, we tailor our services to meet your unique needs and growth goals."
+      answer: "Our ideal clients are businesses seeking to scale and enhance their online presence. Whether you're a startup, small business, or an established company, we tailor our services to meet your unique needs and growth goals."
     },
     {
       question: "What sets Harbourfront Web Designs apart from other agencies?",
-      answer: "We stand out through our blend of deep industry expertise, personalized service, and a relentless commitment to excellence. Our team collaborates closely with clients, offering unlimited revisions, real-time project tracking, and data-driven strategies to ensure your website and ads are both visually stunning and highly effective."
+      answer: "We stand out through our blend of deep industry expertise, personalized service, and a relentless commitment to excellence. Our team collaborates closely with clients, offering as many revisions it would need to get you the result you seek, real-time project updates, and competition data-driven strategies to ensure your website and ads are both visually stunning and highly effective."
     },
     {
       question: "Do you offer website hosting?",
@@ -32,7 +32,7 @@ export function Faq() {
     },
     {
       question: "Do you offer custom design options for website?",
-      answer: "Absolutely! Our talented designers collaborate with you to create custom website designs and ad campaigns that reflect your brand identity and meet your specific business needs. From color schemes to layout and functionality, every detail is tailored to your vision and objectives."
+      answer: "Absolutely! Our talented designers collaborate with you to create custom website designs that reflect your brand identity and meet your specific business needs. From color schemes to layout and functionality, every detail is tailored to your vision and objectives."
     },
     {
       question: "How long does it take to complete a website project?",
@@ -46,7 +46,7 @@ export function Faq() {
 
 
   return (
-    <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto sax-w-6xl">
+    <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto max-w-6xl">
       <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto font-aclonica text-center tracking-tight font-medium text-white">
           Frequently Asked Questions

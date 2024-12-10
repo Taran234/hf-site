@@ -91,8 +91,7 @@ const Drawer: React.FC = () => {
                         <Image
                             src="/harbourfront1.png"
                             alt="harbourfront web design agency"
-                            width={300} // equivalent to w-56
-                            height={300} // adjust this based on the image aspect ratio
+                            fill
                             className="rounded-lg my-2"
                         />
                         {/* <Image
@@ -139,6 +138,7 @@ const Drawer: React.FC = () => {
 
             </nav>
             <button
+                aria-label="toggle drawer"
                 onClick={() => setIsOpen(!isOpen)}
                 className=" w-12 h-12 rounded-full bg-transparent p-2.5"
             >

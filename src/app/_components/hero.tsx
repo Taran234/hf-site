@@ -7,7 +7,6 @@ import { TiTick } from "react-icons/ti";
 import { TbBellRingingFilled } from "react-icons/tb";
 import { Spotlight } from "../components/ui/spotlight";
 import { ContainerScroll } from "../components/ui/scroll-container";
-import { TypewriterEffect } from "../components/ui/typewriter";
 
 interface HeroProps {
     location: any;
@@ -37,15 +36,6 @@ export function Hero({ location, service }: HeroProps) {
         return () => clearInterval(blinkInterval);
     }, []);
 
-    // Split the service string into individual words
-    const serviceWords: string[] = service.split(' ');
-
-    // Create words array for the TypewriterEffect, adding each service word separately
-    const words = [
-        ...serviceWords.map((word: string) => ({ text: word.toUpperCase() })), // Create an object for each word
-        { text: "AGENCY." }, // Add "AGENCY." as the last item
-    ];
-
 
     return (
         <div className="flex -z-40 overflow-x-hidden flex-col justify-end items-center px-2 mt-16 text-base font-medium leading-5 ">
@@ -56,23 +46,23 @@ export function Hero({ location, service }: HeroProps) {
                 />
                 <div className="flex flex-col mt-8 justify-center max-w-full p-[1px] shadow-sm bg-gradient-to-r from-gray-800 via-[#e9a43b] to-gray-800 text-md font-bold text-white uppercase rounded-md">
                     <div className="flex gap-1.5 justify-center items-start px-5 py-3 bg-neutral-900">
-                        <TbBellRingingFilled size={22} />
-                        <h3 className="flex-auto my-auto">
-                            To maintain quality work we only accept 5 business per month — Only{' '}
+                        <TbBellRingingFilled size={32} />
+                        <h3 className="flex-auto my-auto text-xs">
+                            To maintain quality work, we only accept 5 business per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
-                            spots left this month!
+                            spots left!
                         </h3>
                     </div>
                 </div>
-                <h1 className="mt-8 md:text-6xl text-4xl text-center md:px-7  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
-                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">All-In-One </span> <br /><TypewriterEffect words={words} />
+                <h1 className="mt-8 md:text-5xl text-4xl text-center md:px-7  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">Top-Rated </span> <br />{service} Agency
                 </h1>
                 <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-4xl text-center">
-                    We've helped businesses all over {location ?? "Toronto"} thrive online with proven web design, SEO, and e-commerce solutions tailored for real growth. Let's make it happen for you
+                    We've helped businesses all over {location ?? "Toronto"} scale online with proven web design, SEO, and e-commerce solutions tailored for real growth. Let's make it happen for you
                 </h2>
-                <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between mt-11 capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
+                <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between  capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">
                         <div className="grow my-auto ">How does it work?</div>
                         <div className="border-2 p-1">
