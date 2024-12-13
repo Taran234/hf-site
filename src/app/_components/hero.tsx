@@ -48,7 +48,7 @@ export function Hero({ location, service }: HeroProps) {
                     <div className="flex gap-1.5 justify-center items-start px-5 py-3 bg-neutral-900">
                         <TbBellRingingFilled size={32} />
                         <h3 className="flex-auto my-auto text-xs">
-                            To maintain quality work, we only accept 5 business per month — Only{' '}
+                            To maintain quality work, we accept 5 clients per month — Only{' '}
                             <span id="spots-number" className="font-extrabold text-yellow-400">
                                 {spots}
                             </span>{' '}
@@ -57,10 +57,10 @@ export function Hero({ location, service }: HeroProps) {
                     </div>
                 </div>
                 <h1 className="mt-8 md:text-5xl text-4xl text-center md:px-7  max-w-6xl bg-gradient-to-r from-[#a2783b] via-[#f1e696] to-[#a2783b] text-transparent bg-clip-text uppercase text-balance">
-                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">Top-Rated </span> <br />{service} Agency
+                    {location ?? "Toronto"}'s <span className="text-[#ff9e0c] uppercase tracking-tighter">Top-Rated </span> <br />{service} Company
                 </h1>
                 <h2 className="mt-7 text-lg text-white md:px-16 px-4 leading-[150%] max-w-4xl text-center">
-                    We've helped businesses all over {location ?? "Toronto"} scale online with proven web design, SEO, and e-commerce solutions tailored for real growth. Let's make it happen for you
+                    We've helped businesses all over {location ?? "Toronto"} scale online with proven web design, SEO, and E-commerce solutions tailored for real growth. Let's make it happen for you
                 </h2>
                 <div className="flex gap-5 justify-center md:px-10 px-4 md:justify-between  capitalize leading-[100%] max-md:flex-wrap max-md:mt-10">
                     <Link href="#how-it-works" className="flex gap-3 justify-end py-1.5 pr-1.5 pl-3 text-black bg-white rounded-md">

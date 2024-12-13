@@ -22,40 +22,91 @@ type Params = {
 type Props = {
     params: Params
 }
+async function fetchBlogDetails(slug: string) {
+    const response = await client.getEntries({
+        content_type: "bloghf",
+        "fields.slug[in]": slug,
+        limit: 1,
+    });
 
-interface BlogFields {
-    title: string;
-    slug: string;
-    body: any; // Adjust the type based on your rich text structure
-    mainImage: {
-        fields: {
-            file: {
-                url: string;
-                details: {
-                    image: {
-                        width: number;
-                        height: number;
-                    };
-                };
-            };
-            title?: string;
-            description?: string;
+    if (response.items.length === 0) {
+        return null;
+    }
+    return response.items[0];
+}
+export async function generateMetadata({ params }: { params: Params }) {
+    const blog = await fetchBlogDetails(params.slug);
+
+    if (!blog) {
+        return {
+            title: "Blog Not Found | Harbourfront Web Designs",
+            description: "The blog post you are looking for has been removed or does not exist.",
+            openGraph: {
+                type: "website",
+                url: "https://harbourfrontwebdesigns.com/blogs",
+                title: "Blog Not Found | Harbourfront Web Designs",
+                description: "The blog post you are looking for has been removed or does not exist.",
+                images: [
+                    {
+                        url: "https://harbourfrontwebdesigns.com/meta.png", // Replace with a default image
+                        width: 1200,
+                        height: 630,
+                        alt: "Default Image",
+                    },
+                ],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title: "Blog Not Found | Harbourfront Web Designs",
+                description: "The blog post you are looking for has been removed or does not exist.",
+                images: ["https://harbourfrontwebdesigns.com/meta.png"], // Replace with a default image
+            },
         };
+    }
+
+    const title = blog.fields.title;
+    const description = blog.fields.description || "Read this amazing blog post!";
+    const imageUrl = `https:${blog.fields.mainImage.fields.file.url}`;
+    const createdAt = new Date(blog.sys.createdAt).toISOString(); // ISO format for structured data
+
+    return {
+        title: `${title} | Harbourfront Web Designs`,
+        description,
+        openGraph: {
+            type: "article", // Set type to "article" for blog content
+            url: `https://harbourfrontwebdesigns.com/blogs/${params.slug}`,
+            title,
+            description,
+            publishedTime: createdAt,
+            images: [
+                {
+                    url: imageUrl,
+                    width: blog.fields.mainImage.fields.file.details.image.width,
+                    height: blog.fields.mainImage.fields.file.details.image.height,
+                    alt: blog.fields.mainImage.fields.title || "Blog Image",
+                },
+            ],
+            site_name: "Harbourfront Web Designs",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [imageUrl],
+        },
+        alternates: {
+            canonical: `https://harbourfrontwebdesigns.com/blogs/${params.slug}`,
+        },
     };
-    // Add other fields as necessary
 }
 
 const BlogDetailPage = async ({ params }: Props) => {
     try {
         // Fetch blog entries from Contentful filtered by the slug
-        const response = await client.getEntries({
-            content_type: 'bloghf',         // Specify the content type
-            'fields.slug[in]': [params.slug],       // Use the correct syntax to query by slug
-            limit: 1                        // Limit to one entry
-        });
+        const response = await fetchBlogDetails(params.slug);
 
         // Check if any entries were returned
-        if (!response.items.length) {
+        if (!response) {
             return (
                 <section>
                     <div className="max-w-3xl mx-auto px-5">
@@ -130,7 +181,7 @@ const BlogDetailPage = async ({ params }: Props) => {
             },
         };
         // Extract the first (and only) blog entry
-        const blogDetailData = response.items[0];
+        const blogDetailData = response;
 
         // Extract image details safely
         const imgURL = blogDetailData.fields.mainImage.fields.file.url;
@@ -224,6 +275,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                             alt={imgDesc}
                             title={imgDesc}
                             className="h-full w-full rounded-xl flex justify-center"
+                            loading="lazy"
                         // Uncomment the next line if you have a placeholder image
                         // placeholder="blur"
                         />

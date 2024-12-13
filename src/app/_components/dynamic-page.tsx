@@ -47,6 +47,18 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
         </motion.div>
     );
 };
+const generateMetaTags = ({ service, location }: { service: string; location: string | undefined }) => ({
+    title: `${service} ${location ? location : "Toronto"} | Best Website Design Agency for Small Businesses ${location ? location : "Toronto"}`,
+    description: `${location ? location : "Toronto"}'s best Top-Rated ${service} agency. Get weekly SEO updates, 24/7 on-call support, affordable payment options, and more...`,
+    keywords: `${service}, ${location ? location : "Toronto"}, website design agency, small business website`,
+    ogTitle: `${service} Services in ${location ? location : "Toronto"}`,
+    ogDescription: `Looking for ${service} in ${location ? location : "Toronto"}? We're the leading website design agency offering tailored solutions for small businesses.`,
+    ogUrl: `https://harbourfrontwebdesigns.com/${service.replace(/\s+/g, "-").toLowerCase()}-${location ? location : "Toronto"}`,
+    ogImage: `/meta.png`,
+    twitterTitle: `Top ${service} Services in ${location ? location : "Toronto"}`,
+    twitterDescription: `The best ${service} agency in ${location ? location : "Toronto"}. Affordable prices, SEO updates, and 24/7 support.`,
+    twitterImage: `/meta.png`,
+});
 
 export default function DynamicPage({ keyword, posts }: { keyword: string, posts: any }) {
     // List of city names with hyphens for multi-word cities
@@ -57,10 +69,10 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
     ];
 
     const serviceMapping: Record<string, string> = {
-        'web-design': 'Business Website Design',
-        'website-development': 'Business Website Design',
+        'website-design': 'Business Website Design',
+        'website-development': 'Business Website Development',
         'ecommerce-website-development': 'E-Commerce Website Development',
-        'ecommerce-website-design': 'E-Commerce Website Designing',
+        'ecommerce-website-design': 'E-Commerce Website Designers',
     };
     const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
         ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
@@ -68,13 +80,26 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
 
     // Find the city from the keyword
     const location = cities.find(city => keyword.includes(city));
+    const meta = generateMetaTags({ service, location });
 
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
-                <title>{service} {location} | Best Website Design Agency for Small Businesses {location}</title>
-                <meta name="description" content={`${location}'s best all-in-one ${service} agency. Get weekly SEO updates, 24/7 on call support, affordable payment options and more...`} />
-                <meta name="keywords" content={service} />
+                <title>{meta.title}</title>
+                <meta name="description" content={meta.description} />
+                <meta name="keywords" content={meta.keywords} />
+                <meta property="og:title" content={meta.ogTitle} />
+                <meta property="og:description" content={meta.ogDescription} />
+                <meta property="og:url" content={meta.ogUrl} />
+                <meta property="og:image" content={meta.ogImage} />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:title" content={meta.twitterTitle} />
+                <meta name="twitter:description" content={meta.twitterDescription} />
+                <meta name="twitter:card" content={meta.twitterImage} />
+                <meta name="twitter:image" content={meta.twitterImage} />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:site_name" content="Harbourfront Web Designs" />
+                <link rel="canonical" href={meta.ogUrl} />
             </Head>
 
             <ModalProvider>
