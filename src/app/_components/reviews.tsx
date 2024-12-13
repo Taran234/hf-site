@@ -36,7 +36,7 @@ const testimonials = [
     },
     {
         content:
-            '"This is a talented and professional web development agency who delivered a high-quality website that exceeded my expectations. They were responsive, knowledgeable, and brought my vision to life. I highly recommend them for their excellent work and dedication."',
+            '"This is a talented and professional web development Company who delivered a high-quality website that exceeded my expectations. They were responsive, knowledgeable, and brought my vision to life. I highly recommend them for their excellent work and dedication."',
         author: "Peter ifeanyi, Fitness Studio and Personal Training Gym Owner",
         imgAlt: "Peter",
     },

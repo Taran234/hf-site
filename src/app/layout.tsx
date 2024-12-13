@@ -8,7 +8,7 @@ import NextTopLoader from "nextjs-toploader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Best Website Design Agency for Small Businesses",
+  title: "Best Website Design Company for Small Businesses",
   description:
     "Grow your Business online. Thousands of website designs to choose from; Get weekly SEO updates, 24/7 on call support, cheapest payment options and more...",
 };

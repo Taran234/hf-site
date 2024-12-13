@@ -90,7 +90,7 @@ const Drawer: React.FC = () => {
                     <div className="flex flex-col md:gap-3 gap-2 relative">
                         <Image
                             src="/harbourfront1.png"
-                            alt="harbourfront web design agency"
+                            alt="harbourfront web design Company"
                             fill
                             className="rounded-lg my-2"
                         />

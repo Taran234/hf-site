@@ -21,7 +21,7 @@ const img = [
 ];
 const products = [
     {
-        title: "Management Company Website Design Agency in Toronto",
+        title: "Management Company Website Design Company in Toronto",
         thumbnail: "/website-design-toronto1.webp",
     },
     {

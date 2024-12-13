@@ -48,15 +48,15 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
     );
 };
 const generateMetaTags = ({ service, location }: { service: string; location: string | undefined }) => ({
-    title: `${service} ${location ? location : "Toronto"} | Best Website Design Agency for Small Businesses ${location ? location : "Toronto"}`,
-    description: `${location ? location : "Toronto"}'s best Top-Rated ${service} agency. Get weekly SEO updates, 24/7 on-call support, affordable payment options, and more...`,
-    keywords: `${service}, ${location ? location : "Toronto"}, website design agency, small business website`,
+    title: `${service} ${location ? location : "Toronto"} | Best Website Design Company for Small Businesses ${location ? location : "Toronto"}`,
+    description: `${location ? location : "Toronto"}'s best Top-Rated ${service} Company. Get weekly SEO updates, 24/7 on-call support, affordable payment options, and more...`,
+    keywords: `${service}, ${location ? location : "Toronto"}, website design Company, small business website`,
     ogTitle: `${service} Services in ${location ? location : "Toronto"}`,
-    ogDescription: `Looking for ${service} in ${location ? location : "Toronto"}? We're the leading website design agency offering tailored solutions for small businesses.`,
+    ogDescription: `Looking for ${service} in ${location ? location : "Toronto"}? We're the leading website design Company offering tailored solutions for small businesses.`,
     ogUrl: `https://harbourfrontwebdesigns.com/${service.replace(/\s+/g, "-").toLowerCase()}-${location ? location : "Toronto"}`,
     ogImage: `/meta.png`,
     twitterTitle: `Top ${service} Services in ${location ? location : "Toronto"}`,
-    twitterDescription: `The best ${service} agency in ${location ? location : "Toronto"}. Affordable prices, SEO updates, and 24/7 support.`,
+    twitterDescription: `The best ${service} Company in ${location ? location : "Toronto"}. Affordable prices, SEO updates, and 24/7 support.`,
     twitterImage: `/meta.png`,
 });
 

@@ -49,7 +49,7 @@ const SkeletonFour = () => {
                 >
                     <Image
                         src={src}
-                        alt="website designing agency Toronto"
+                        alt="website designing Company Toronto"
                         width={600}
                         height={600}
                         loading="lazy"
