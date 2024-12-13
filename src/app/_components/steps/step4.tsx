@@ -37,7 +37,7 @@ const SkeletonFour = () => {
 
     return (
         <div className="flex flex-1 w-full h-full min-h-[6rem] md:flex-row flex-col justify-center m-auto items-center space-x-2">
-            {['/website-design-toronto11.webp', '/website-design-toronto8.webp', '/website-design-toronto12.webp'].map((src, index) => (
+            {['/website-design-company-toronto-11.webp', '/website-design-company-toronto-8.webp', '/website-design-company-toronto-12.webp'].map((src, index) => (
                 <motion.div
                     key={src}
                     initial={getVariants(index).initial}

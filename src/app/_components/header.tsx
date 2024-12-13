@@ -49,7 +49,7 @@ export function Header() {
                     className="rounded-lg my-2"
                 />
                 {/* <Image
-                    src="/web-designs.png"
+                    src="/website-designs.png"
                     alt="web designers near me"
                     width={192} // equivalent to w-48
                     height={192} // adjust this based on the image aspect ratio

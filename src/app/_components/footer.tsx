@@ -16,7 +16,7 @@ export function Footer() {
                         className="rounded-lg my-2"
                     />
                     {/* <Image
-                        src="/web-designs.png"
+                        src="/website-designs.png"
                         alt="web designers near me"
                         width={192} // equivalent to w-48
                         height={192} // adjust this based on the image aspect ratio
@@ -33,7 +33,7 @@ export function Footer() {
             </div>
             <div className="col col1 flex flex-col items-center md:items-start mb-4 md:mb-0">
                 <p className="mb-2 text-xl font-aclonica">Our Services</p>
-                <Link aria-label="link to Toronto website of Harbourfront web designs" href="/web-design-toronto" className="mb-2 text-gray-400">Web Design</Link>
+                <Link aria-label="link to Toronto website of Harbourfront web designs" href="/website-design-toronto" className="mb-2 text-gray-400">Web Design</Link>
                 <div className="mb-2 text-gray-400">SEO Services</div>
                 <div className="mb-2 text-gray-400">Google My Business Profile</div>
                 <div className="mb-2 text-gray-400">Digital Marketing</div>
@@ -44,20 +44,20 @@ export function Footer() {
                 <p className="mb-2 text-xl font-aclonica">Service Areas</p>
                 <div className="flex flex-wrap md:flex-row justify-evenly w-full">
                     <div className="flex flex-col mb-4 md:mr-8">
-                        <Link aria-label="link to Toronto website of Harbourfront web designs" href="/web-design-toronto" className="mb-2 text-gray-400">Toronto</Link>
-                        <Link aria-label="link to Markham website of Harbourfront web designs" href="/web-design-markham" className="mb-2 text-gray-400">Markham</Link>
-                        <Link aria-label="link to Richmond Hill website of Harbourfront web designs" href="/web-design-richmond-hill" className="mb-2 text-gray-400">Richmond Hill</Link>
-                        <Link aria-label="link to Kitchener website of Harbourfront web designs" href="/web-design-vaughan" className="mb-2 text-gray-400">Kitchener</Link>
-                        <Link aria-label="link to Hamilton website of Harbourfront web designs" href="/web-design-hamilton" className="mb-2 text-gray-400">Hamilton</Link>
-                        <Link aria-label="link to London website of Harbourfront web designs" href="/web-design-london" className="mb-2 text-gray-400">London</Link>
+                        <Link aria-label="link to Toronto website of Harbourfront web designs" href="/website-design-toronto" className="mb-2 text-gray-400">Toronto</Link>
+                        <Link aria-label="link to Markham website of Harbourfront web designs" href="/website-design-markham" className="mb-2 text-gray-400">Markham</Link>
+                        <Link aria-label="link to Richmond Hill website of Harbourfront web designs" href="/website-design-richmond-hill" className="mb-2 text-gray-400">Richmond Hill</Link>
+                        <Link aria-label="link to Kitchener website of Harbourfront web designs" href="/website-design-vaughan" className="mb-2 text-gray-400">Kitchener</Link>
+                        <Link aria-label="link to Hamilton website of Harbourfront web designs" href="/website-design-hamilton" className="mb-2 text-gray-400">Hamilton</Link>
+                        <Link aria-label="link to London website of Harbourfront web designs" href="/website-design-london" className="mb-2 text-gray-400">London</Link>
                     </div>
                     <div className="flex flex-col">
-                        <Link aria-label="link to Scarbourough website of Harbourfront web designs" href="/web-design-scarborough" className="mb-2 text-gray-400">Scarborough</Link>
-                        <Link aria-label="link to Waterloo website of Harbourfront web designs" href="/web-design-waterloo" className="mb-2 text-gray-400">Waterloo</Link>
-                        <Link aria-label="link to Cambridge website of Harbourfront web designs" href="/web-design-cambridge" className="mb-2 text-gray-400">Cambridge</Link>
-                        <Link aria-label="link to Oshawa website of Harbourfront web designs" href="/web-design-oshawa" className="mb-2 text-gray-400">Oshawa</Link>
-                        <Link aria-label="link to Etobicoke website of Harbourfront web designs" href="/web-design-etobicoke" className="mb-2 text-gray-400">Etobicoke</Link>
-                        <Link aria-label="link to Mississauga website of Harbourfront web designs" href="/web-design-mississauga" className="mb-2 text-gray-400">Mississauga</Link>
+                        <Link aria-label="link to Scarbourough website of Harbourfront web designs" href="/website-design-scarborough" className="mb-2 text-gray-400">Scarborough</Link>
+                        <Link aria-label="link to Waterloo website of Harbourfront web designs" href="/website-design-waterloo" className="mb-2 text-gray-400">Waterloo</Link>
+                        <Link aria-label="link to Cambridge website of Harbourfront web designs" href="/website-design-cambridge" className="mb-2 text-gray-400">Cambridge</Link>
+                        <Link aria-label="link to Oshawa website of Harbourfront web designs" href="/website-design-oshawa" className="mb-2 text-gray-400">Oshawa</Link>
+                        <Link aria-label="link to Etobicoke website of Harbourfront web designs" href="/website-design-etobicoke" className="mb-2 text-gray-400">Etobicoke</Link>
+                        <Link aria-label="link to Mississauga website of Harbourfront web designs" href="/website-design-mississauga" className="mb-2 text-gray-400">Mississauga</Link>
                     </div>
                 </div>
             </div>

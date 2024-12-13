@@ -133,11 +133,11 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                         <Hero location={location} service={service} />
                     </div>
 
-                    <AnimatedSection>
-                        <div id="partners">
-                            <Partners />
-                        </div>
-                    </AnimatedSection>
+
+                    <div id="partners">
+                        <Partners />
+                    </div>
+
                     <AnimatedSection >
                         <div id="detail" className="pt-10">
                             <Detail />

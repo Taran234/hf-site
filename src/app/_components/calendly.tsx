@@ -9,7 +9,7 @@ export default function Calen() {
         })();
     }, [])
     return <Cal namespace="30min"
-        calLink="harbourfront-web-designs/30min"
+        calLink="harbourfront-website-designs/30min"
         style={{ width: "100%", height: "100%", overflow: "scroll" }}
         config={{ "layout": "month_view" }}
 

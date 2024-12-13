@@ -4,69 +4,69 @@ import { HeroParallax } from './pdesign';
 
 // Array with image sources
 const img = [
-    "/website-design-toronto1.webp",
-    "/website-design-toronto2.webp",
-    "/website-design-toronto3.webp",
-    "/website-design-toronto4.webp",
-    "/website-design-toronto5.webp",
-    "/website-design-toronto6.webp",
-    "/website-design-toronto7.webp",
-    "/website-design-toronto8.webp",
-    "/website-design-toronto9.webp",
-    "/website-design-toronto10.webp",
-    "/website-design-toronto11.webp",
-    "/website-design-toronto12.webp",
-    "/website-design-toronto13.webp"
+    "/website-design-company-toronto-1.webp",
+    "/website-design-company-toronto-2.webp",
+    "/website-design-company-toronto-3.webp",
+    "/website-design-company-toronto-4.webp",
+    "/website-design-company-toronto-5.webp",
+    "/website-design-company-toronto-6.webp",
+    "/website-design-company-toronto-7.webp",
+    "/website-design-company-toronto-8.webp",
+    "/website-design-company-toronto-9.webp",
+    "/website-design-company-toronto-10.webp",
+    "/website-design-company-toronto-11.webp",
+    "/website-design-company-toronto-12.webp",
+    "/website-design-company-toronto-13.webp"
     // Add more image URLs as needed
 ];
 const products = [
     {
         title: "Management Company Website Design Company in Toronto",
-        thumbnail: "/website-design-toronto1.webp",
+        thumbnail: "/website-design-company-toronto-1.webp",
     },
     {
         title: "Restaurant Website Design Services in Toronto | Harbourfront Web Designs",
-        thumbnail: "/website-design-toronto2.webp",
+        thumbnail: "/website-design-company-toronto-2.webp",
     },
     {
         title: "Custom E-commerce Website Design in Toronto",
-        thumbnail: "/website-design-toronto3.webp",
+        thumbnail: "/website-design-company-toronto-3.webp",
     },
     {
         title: "Editorial Website Design Services in Toronto",
-        thumbnail: "/website-design-toronto4.webp",
+        thumbnail: "/website-design-company-toronto-4.webp",
     },
     {
         title: "High-Converting Product Landing Page Design in Toronto",
-        thumbnail: "/website-design-toronto5.webp",
+        thumbnail: "/website-design-company-toronto-5.webp",
     },
     {
         title: "Photography Portfolio Website Design in Toronto",
-        thumbnail: "/website-design-toronto6.webp",
+        thumbnail: "/website-design-company-toronto-6.webp",
     },
     {
         title: "Restaurant & Bar Website Design in Toronto | Custom Solutions",
-        thumbnail: "/website-design-toronto8.webp",
+        thumbnail: "/website-design-company-toronto-8.webp",
     },
     {
         title: "E-Commerce Website Redesign & Optimization in Toronto",
-        thumbnail: "/website-design-toronto9.webp",
+        thumbnail: "/website-design-company-toronto-9.webp",
     },
     {
         title: "Bakery Website Design in High-Resolution | Toronto",
-        thumbnail: "/website-design-toronto10.webp",
+        thumbnail: "/website-design-company-toronto-10.webp",
     },
     {
         title: "Professional Movers Website Design in Toronto",
-        thumbnail: "/website-design-toronto11.webp",
+        thumbnail: "/website-design-company-toronto-11.webp",
     },
     {
         title: "Custom Real Estate Website Design in Toronto",
-        thumbnail: "/website-design-toronto12.webp",
+        thumbnail: "/website-design-company-toronto-12.webp",
     },
     {
         title: "Real Estate Listing Website Design Services in Toronto",
-        thumbnail: "/website-design-toronto13.webp",
+        thumbnail: "/website-design-company-toronto-13.webp",
     },
 ];
 
