@@ -10,7 +10,12 @@ import {
 } from "react-icons/fa";
 import { cn } from "../lib/utils";
 
-export function Detail() {
+interface Loc {
+    location: string;
+}
+export function Detail(location: Loc) {
+    var currentLocation = location.location || "your City";
+    currentLocation = currentLocation.charAt(0).toUpperCase() + currentLocation.slice(1);
     const features = [
         {
             title: "Fully Customized solution",
@@ -51,13 +56,13 @@ export function Detail() {
         {
             title: "GMB Profile Optimization",
             description:
-                "Boost local search visibility and attract more customers in your area.",
+                `Boost local search visibility and attract more customers in ${currentLocation}.`,
             icon: <FaPaintBrush size={30} />,
         },
         {
             title: "Improved Brand Visibility",
             description:
-                "Rank for relavant keywords on Google searches",
+                `Increase brand visibility and rankings for relevant keywords in ${currentLocation}.`,
             icon: <FaHandshake size={30} />,
         },
     ];

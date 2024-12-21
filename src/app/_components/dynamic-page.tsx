@@ -64,8 +64,9 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
     // List of city names with hyphens for multi-word cities
     const cities = [
         'toronto', 'markham', 'richmond-hill',
-        'etobicoke', 'oshawa', 'kitchener', 'hamilton', 'london',
-        'waterloo', 'cambridge', 'mississauga'
+        'etobicoke', 'oshawa', 'kitchener', 'hamilton',
+        'london', 'waterloo', 'cambridge', 'mississauga',
+        'brampton', 'oakville', 'burlington'
     ];
 
     const serviceMapping: Record<string, string> = {
@@ -79,7 +80,8 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
         : 'Business Website Design';
 
     // Find the city from the keyword
-    const location = cities.find(city => keyword.includes(city));
+    let location = ""
+    location = (cities?.find(city => keyword.includes(city)))?.toString() || "";
     const meta = generateMetaTags({ service, location });
 
     return (
@@ -140,7 +142,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
 
                     <AnimatedSection >
                         <div id="detail" className="pt-10">
-                            <Detail />
+                            <Detail location={location} />
                         </div>
                     </AnimatedSection>
                     <div id="how-it-works">

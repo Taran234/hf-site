@@ -9,7 +9,7 @@ import { Spotlight } from "../components/ui/spotlight";
 import { ContainerScroll } from "../components/ui/scroll-container";
 
 interface HeroProps {
-    location: any;
+    location: string | undefined;
     service: string;
 }
 
