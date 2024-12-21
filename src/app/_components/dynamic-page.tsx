@@ -81,7 +81,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
 
     // Find the city from the keyword
     let location = ""
-    location = (cities?.find(city => keyword.includes(city)))?.toString() || "";
+    location = (cities?.find(city => keyword.includes(city)))?.toString() || "Toronto";
     const meta = generateMetaTags({ service, location });
 
     return (
