@@ -128,10 +128,10 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full  left-0 top-0">
             <p className="max-w-2xl text-base  font-semiBold  mt-8 text-neutral-200">
-                Website design Company Toronto
+                Website Design Company Toronto
             </p>
-            <div className="text-2xl md:text-4xl font-aclonica mt-2 font-bold text-white md:w-3/5 w-5/6">
-                We Don't Just Build Websites, We Build Websites That Guarantee Results And Better Business.
+            <div className="text-2xl md:text-4xl font-inknut mt-2 font-bold text-white md:w-3/5 w-5/6">
+                We Don't Just Build Websites,<br /> We Build Websites That Guarantee Results And Better Business.
             </div>
             <p className="max-w-2xl text-base  font-semiBold md:text-xl mt-8 text-neutral-200">
                 We build beautiful products with the latest technologies and frameworks.

@@ -56,7 +56,7 @@ export function Header() {
                     className="rounded-lg ml-4 -mt-7"
                 /> */}
             </div>
-            <div className={`md:flex md:flex-row md:relative md:justify-evenly flex-1 gap-12 md:mx-auto hidden md:top-2 inset-x-0 md:text-lg my-6 pl-16  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+            <div className={`md:flex md:flex-row md:relative md:justify-evenly font-inknut flex-1 gap-12 md:mx-auto hidden md:top-2 inset-x-0 md:text-lg my-6 pl-16  text-white ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
                 <Link href="/#how-it-works" className="relative group">
                     <span className="pb-1">How We Work</span>
                     <video

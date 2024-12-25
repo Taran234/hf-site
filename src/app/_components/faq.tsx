@@ -48,7 +48,7 @@ export function Faq() {
   return (
     <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto max-w-6xl">
       <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto font-aclonica text-center tracking-tight font-medium text-white">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto font-inknut text-center tracking-tight font-medium text-white">
           Frequently Asked Questions
         </h4>
         <br />

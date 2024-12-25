@@ -12,16 +12,14 @@ export function Step5() {
                             Alongside either package, we provide FREE technical maintenance to keep your site fast, secure, and always performing at its best.
                         </div>
                         <div className="flex md:flex-row flex-col flex-1 justify-evenly items-center mt-2">
-                            <ModalTrigger className="bg-amber-500  justify-center items-center flex mx-auto px-16 md:my-8 my-4 text-white  group/modal-btn">
+                            <ModalTrigger className="bg-amber-600  justify-center items-center flex mx-auto px-16 md:my-8 my-4 text-white  group/modal-btn">
                                 <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
-                                    📞 Book a Call!
+                                    📞 Get a Free Quote!
                                 </span>
                                 <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
                                     Contact Now!
                                 </div>
                             </ModalTrigger>
-                            <span>OR</span>
-                            <button aria-label="go to our google business profile page" className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex mx-auto px-16 md:my-8 my-4 text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Check our Reviews!</Link></button>
 
                         </div>
 

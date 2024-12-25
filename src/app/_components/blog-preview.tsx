@@ -29,7 +29,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
                     <p className="max-w-2xl text-base font-semiBold mt-8 text-neutral-200">
                         Stay Ahead with Our Industry Secrets for Easier Google Rankings
                     </p>
-                    <div className="text-2xl md:text-4xl font-aclonica mt-2 font-bold text-white">
+                    <div className="text-2xl md:text-4xl font-inknut mt-2 font-bold text-white">
                         Learn How to Optimize Your Own Rankings with Our Blogs and Case Studies
                     </div>
                     <p className="max-w-2xl text-base font-semiBold md:text-xl mt-8 text-neutral-200">

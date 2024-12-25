@@ -7,6 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import { MdStarRate } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import AvatarCircles from "./avatars";
+import Image from "next/image";
 
 // Function to shuffle the testimonials array
 const shuffleArray = (array: any[]) => {
@@ -27,27 +28,27 @@ const insertLocationIntoReview = (content: string, location: string) => {
 const avatars = [
     {
         imageUrl: "https://avatars.githubusercontent.com/u/16860528",
-        profileUrl: "https://github.com/dillionverma",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6..",
     },
     {
         imageUrl: "https://avatars.githubusercontent.com/u/20110627",
-        profileUrl: "https://github.com/tomonarifeehan",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6",
     },
     {
         imageUrl: "https://avatars.githubusercontent.com/u/106103625",
-        profileUrl: "https://github.com/BankkRoll",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6",
     },
     {
         imageUrl: "https://avatars.githubusercontent.com/u/59228569",
-        profileUrl: "https://github.com/safethecode",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6",
     },
     {
         imageUrl: "https://avatars.githubusercontent.com/u/59442788",
-        profileUrl: "https://github.com/sanjay-mali",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6",
     },
     {
         imageUrl: "https://avatars.githubusercontent.com/u/89768406",
-        profileUrl: "https://github.com/itsarghyadas",
+        profileUrl: "https://maps.app.goo.gl/U8AEH1ut9YatNpBi6",
     },
 ];
 
@@ -55,7 +56,7 @@ const testimonials = [
     {
         content:
             '"Look no further if you need a good web design company in {location}! Harbourfront did a great job for our 2 websites and we always use them when we need a new website set up"',
-        author: "Matt Evans, Owner of a Gourmet Food Truck Service",
+        author: "Matt Evans, Owner of a Gourmet Food Service",
         imgAlt: "Peter",
     },
     {
@@ -67,7 +68,7 @@ const testimonials = [
     {
         content:
             '"I couldn’t be happier with the work Harbourfront Web Designs did for my business here in {location}. They completely redesigned my website and within a couple of months I noticed a huge improvement in my Google rankings thanks to their SEO efforts. The team is super easy to work with, and they really understand how to help local businesses grow online."',
-        author: "Berke .A, Owner of a Niche Consulting Firm",
+        author: "Berke .A, Owner of Niche Consulting Firm",
         imgAlt: "John",
     },
     {
@@ -117,21 +118,21 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
             <div className="w-full overflow-hidden rounded-2xl grid grid-cols-1 md:px-20">
                 <div className="flex md:flex-row flex-col">
                     <div className="text-left md:w-1/2 md:text-6xl mx-8 font-semibold leading-normal my-10">
-                        <div className="md:text-xl text-base font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-gray-500">
+                        <div className="md:text-xl text-base font-inknut lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-gray-500">
                             Website Design {location ? location : "Toronto"}
                         </div>
-                        <div className="md:text-4xl text-2xl font-aclonica lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
+                        <div className="md:text-4xl text-2xl font-inknut lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                             Anyone can make promises we give you proof.
                         </div>
 
-                        <div className="md:text-2xl text-sm font-aclonica lg:leading-tight mt-4 justify-start md:mx-20 text-left tracking-tight font-medium text-white">
+                        <div className="md:text-2xl text-sm font-inknut lg:leading-tight mt-4 justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                             We asked some of our clients to write an honest review about their experience working with us. Here's what they had to say:
                         </div>
 
                     </div>
 
                     <div className="flex flex-col gap-6 items-center mx-auto md:w-1/2 justify-center ">
-                        <AvatarCircles numPeople={35} avatarUrls={avatars} />
+                        <AvatarCircles numPeople={30} avatarUrls={avatars} />
                         <div className="flex flex-col items-center space-x-2 w-full mx-4 md:w-auto bg-[#222222] rounded-3xl p-8">
                             {/* Rating Info */}
                             <div className="flex flex-row gap-2">
@@ -146,7 +147,7 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
                                     <MdStarRate size={36} className=" text-yellow-400" />
                                 </div>
                             </div>
-                            <div aria-label="link to our google business profile listing" className="bg-amber-500 p-2 m-2 rounded-lg font-aclonica font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></div>
+                            <div aria-label="link to our google business profile listing" className="bg-amber-500 p-2 m-2 rounded-lg font-inknut font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></div>
                         </div>
                     </div>
                 </div>
@@ -177,19 +178,20 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
                                 {index >= currentSlide && (
                                     <motion.div
                                         animate={{ opacity: 1, x: 0, scale: 1 }}
-                                        className="flex h-60 w-[24rem] flex-col justify-between rounded-lg  p-4 shadow-sm bg-neutral-800"
+                                        className="flex h-80 w-[24rem] flex-col justify-between rounded-lg  p-4 shadow-sm bg-neutral-800"
                                         exit={{ opacity: 0, x: 0, scale: 0.8, rotate: 3 }}
                                         initial={{ opacity: 0, x: 0, scale: 0.8 }}
                                         layout
                                         transition={{ duration: 0.35, ease: "easeInOut" }}
                                     >
-                                        <div className="size-8 rounded-full"><RiDoubleQuotesL size={32} /></div>
+                                        <div className="size-8 rounded-full"><RiDoubleQuotesL size={100} className="relative -top-12 -left-6" /></div>
                                         <p className="font-medium  leading-5 tracking-tight text-neutral-400 line-clamp-6">
                                             {testimonial.content}
                                         </p>
                                         <p className="text-xs text-neutral-500">
                                             {testimonial.author}
                                         </p>
+                                        <Link href={"https://maps.app.goo.gl/U8AEH1ut9YatNpBi6"}><Image src={"/reviews.png"} alt="reviews google" width={200} height={100} className="relative justify-center mx-auto" /></Link>
                                     </motion.div>
                                 )}
                             </AnimatePresence>

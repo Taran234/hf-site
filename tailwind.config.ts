@@ -1,3 +1,4 @@
+import { Inknut_Antiqua } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -66,6 +67,7 @@ const config: Config = {
       },
       fontFamily: {
         aclonica: ["aclonica"],
+        inknut: ["inknut-Antiqua"]
       },
     },
   },

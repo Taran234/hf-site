@@ -43,7 +43,7 @@ export function Howitworks() {
     return (
         <div className="relative z-20 md:p-10 p-4 lg:py-30  max-w-7xl mx-auto">
             <div className="px-8">
-                <h3 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-aclonica mx-auto text-center tracking-tight font-medium text-white">
+                <h3 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-inknut mx-auto text-center tracking-tight font-medium text-white">
                     How We Work
                 </h3>
 
@@ -77,7 +77,7 @@ const FeatureCard = ({ children, className }: { children?: React.ReactNode; clas
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="max-w-5xl mx-auto text-left tracking-tight font-aclonica text-white text-3xl md:leading-snug">
+        <p className="max-w-5xl mx-auto text-left tracking-tight font-inknut text-white text-3xl md:leading-snug">
             {children}
         </p>
     );
@@ -85,7 +85,7 @@ const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
 
 const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="text-xl max-w-4xl text-left mx-auto font-normal text-neutral-300">
+        <p className="text-xl max-w-4xl text-left mx-auto font-sans text-neutral-300">
             {children}
         </p>
     );
