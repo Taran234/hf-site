@@ -14,8 +14,6 @@ interface Loc {
     location: string;
 }
 export function Detail(location: Loc) {
-    var currentLocation = location.location || "your City";
-    currentLocation = currentLocation.charAt(0).toUpperCase() + currentLocation.slice(1);
     const features = [
         {
             title: "Fully Customized solution",
@@ -56,13 +54,13 @@ export function Detail(location: Loc) {
         {
             title: "GMB Profile Optimization",
             description:
-                `Boost local search visibility and attract more customers in ${currentLocation}.`,
+                `Boost local search visibility and attract more customers in ${location}.`,
             icon: <FaPaintBrush size={30} />,
         },
         {
             title: "Improved Brand Visibility",
             description:
-                `Increase brand visibility and rankings for relevant keywords in ${currentLocation}.`,
+                `Increase brand visibility and rankings for relevant keywords in ${location}.`,
             icon: <FaHandshake size={30} />,
         },
     ];

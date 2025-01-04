@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import { RiMenu4Line } from "react-icons/ri";
+import { RiCloseFill, RiMenu4Line } from "react-icons/ri";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { ModalTrigger } from "../components/ui/model";
 import Link from "next/link";
@@ -75,38 +75,54 @@ function useMenuAnimation(isOpen: boolean) {
 }
 
 const Drawer: React.FC = () => {
+    const drawerRef = useRef<HTMLDivElement>(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const scope = useMenuAnimation(isOpen);
+
+    useEffect(() => {
+        const handleTouchOutside = (event: TouchEvent) => {
+            if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener("touchstart", handleTouchOutside);
+        } else {
+            document.removeEventListener("touchstart", handleTouchOutside);
+        }
+
+        return () => document.removeEventListener("touchstart", handleTouchOutside);
+    }, [isOpen]);
     const toggleDrawer = () => {
         setIsOpen(!isOpen);
     };
-    const [isOpen, setIsOpen] = useState(false);
-    const scope = useMenuAnimation(isOpen);
+
     return (
         <div
             ref={scope}
             className="relative bg-transparent z-50 overflow-hidden pb-24"
         >
             <nav className="fixed top-0 -left-10 h-screen w-11/12 bg-stone-950 transform -translate-x-full will-change-transform">
-                <div className="flex flex-col relative z-40 pt-4 pl-10 font-oswald text-center  text-stone-400 ">
-                    <div className="flex flex-col md:gap-3 gap-2 relative">
-                        <Image
+                <div className="flex flex-col relative  text-stone-400 ">
+                    <div className="flex relative flex-col ">
+                        {/* <Image
                             src="/harbourfront1.png"
                             alt="harbourfront web design Company"
                             fill
                             className="rounded-lg my-2"
-                        />
-                        {/* <Image
-                            src="/website-designs.png"
-                            alt="web designers near me"
-                            width={192} // equivalent to w-48
-                            height={192} // adjust this based on the image aspect ratio
-                            className="rounded-lg ml-4 -mt-7"
                         /> */}
+                        <Image
+                            src="/harbourfront1.png"
+                            alt="web designers near me"
+                            width={275} // equivalent to w-48
+                            height={250} // adjust this based on the image aspect ratio
+                            className="rounded-lg justify-center mx-auto items-center mt-4 pl-4"
+                        />
                     </div>
                 </div>
-                <ul className="flex flex-col gap-5 pt-10 pl-10 text-white font-bold text-2xl border-l-[0.5px] m-5 ">
-                    <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
-                        <a href="tel:+11234567890" className="text-white hover:underline">+1 (647) 556-6986</a>
-                    </li>
+                <ul className="flex flex-col gap-5 pt-4 pl-10 text-white font-bold font-inknut text-xl border-l-[0.5px] m-5 ">
+
 
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
                         <Link aria-label="link to how it works section" href="/#how-it-works" onClick={toggleDrawer}>How we Work</Link>
@@ -122,6 +138,9 @@ const Drawer: React.FC = () => {
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
                         <Link aria-label="Frequently asked Questions" href="/#faq" onClick={toggleDrawer}>FAQs</Link>
+                    </li>
+                    <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
+                        <Link href="tel:+11234567890" className="text-white hover:underline">+1 (647) 556-6986</Link>
                     </li>
                     <li className="p-2.5 transform-origin-left-5 will-change-transform-opacity-filter">
                         <ModalTrigger className="bg-amber-500  justify-center items-center flex text-white  group/modal-btn">
@@ -140,9 +159,9 @@ const Drawer: React.FC = () => {
             <button
                 aria-label="toggle drawer"
                 onClick={() => setIsOpen(!isOpen)}
-                className=" w-12 h-12 rounded-full bg-transparent p-2.5"
+                className=" w-12 h-12 rounded-full bg-transparent p-2 "
             >
-                <RiMenu4Line size={40} />
+                {isOpen ? <RiCloseFill size={40} /> : <RiMenu4Line size={40} />}
             </button>
         </div>
     );

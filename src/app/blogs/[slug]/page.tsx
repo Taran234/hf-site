@@ -3,12 +3,13 @@ import { client } from "@/app/lib/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { Header } from "@/app/_components/header";
 import { Modal, ModalBody, ModalContent, ModalProvider } from "@/app/components/ui/model";
 import { Footer } from "@/app/_components/footer";
 import Calen from "@/app/_components/calendly";
+import TableOfContents from "@/app/_components/toc";
 // import { Contact } from "@/app/_components/contact";
 
 // Force dynamic rendering (optional based on your use case)
@@ -39,12 +40,12 @@ export async function generateMetadata({ params }: { params: Params }) {
 
     if (!blog) {
         return {
-            title: "Blog Not Found | Harbourfront Web Designs",
+            title: "Blog Not Found | Harbourfront Website Designs",
             description: "The blog post you are looking for has been removed or does not exist.",
             openGraph: {
                 type: "website",
                 url: "https://harbourfrontwebdesigns.com/blogs",
-                title: "Blog Not Found | Harbourfront Web Designs",
+                title: "Blog Not Found | Harbourfront Website Designs",
                 description: "The blog post you are looking for has been removed or does not exist.",
                 images: [
                     {
@@ -112,7 +113,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                     <div className="max-w-3xl mx-auto px-5">
                         <p className="text-center mt-20 text-xl">Blog post not found.</p>
                         <div className="flex justify-center mt-4">
-                            <Link href="/" className="text-amber-400 hover:text-[#719b8f]">
+                            <Link href="/" className="text-amber-500 hover:text-[#719b8f]">
                                 ← Back to home
                             </Link>
                         </div>
@@ -122,15 +123,30 @@ const BlogDetailPage = async ({ params }: Props) => {
         }
         const renderOptions = {
             renderNode: {
-                [BLOCKS.HEADING_1]: (node: any, children: React.ReactNode) => (
-                    <h1 className="text-4xl font-bold text-white">{children}</h1>
-                ),
-                [BLOCKS.HEADING_2]: (node: any, children: React.ReactNode) => (
-                    <h2 className="text-3xl font-semibold text-white">{children}</h2>
-                ),
-                [BLOCKS.HEADING_3]: (node: any, children: React.ReactNode) => (
-                    <h3 className="text-2xl font-medium text-white">{children}</h3>
-                ),
+                [BLOCKS.HEADING_1]: (node: any, children: any) => {
+                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    return (
+                        <h1 id={headingText} className="text-4xl font-bold font-inknut p-6 text-white">
+                            {children}
+                        </h1>
+                    );
+                },
+                [BLOCKS.HEADING_2]: (node: any, children: any) => {
+                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    return (
+                        <h2 id={headingText} className="text-3xl font-semibold font-inknut p-4 text-center text-white">
+                            {children}
+                        </h2>
+                    );
+                },
+                [BLOCKS.HEADING_3]: (node: any, children: any) => {
+                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    return (
+                        <h3 id={headingText} className="text-2xl font-medium font-inknut p-2 text-white">
+                            {children}
+                        </h3>
+                    );
+                },
                 [BLOCKS.PARAGRAPH]: (node: any, children: React.ReactNode) => (
                     <p className="mb-4 text-white">{children}</p>
                 ),
@@ -204,7 +220,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                             <ModalContent>
                                 <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
                                     Get a {" "}
-                                    <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
+                                    <span className="px-1 py-0.5 rounded-md bg-amber-500 border-neutral-700 border">
                                         FREE
                                     </span>{" "}
                                     Consultation! 📞
@@ -217,12 +233,13 @@ const BlogDetailPage = async ({ params }: Props) => {
                         </div>
                     </Modal>
                 </ModalProvider>
-                <div className="max-w-4xl mt-20 mx-auto px-5 overflow-x-hidden scroll-smooth  ">
+                <div className="absolute top-0 justify-center w-full bg-slate-700/50 h-[80vh] -z-40"> </div>
+                <div className="max-w-5xl mt-20 mx-auto px-5 overflow-x-hidden scroll-smooth  ">
                     {/* Back to Home Link */}
                     <div className="flex">
                         <Link
                             href="/"
-                            className="flex items-center gap-2 mt-10 hover:text-[#719b8f] text-sm md:text-base text-amber-400"
+                            className="flex items-center gap-2 mt-10 hover:text-[#719b8f] text-sm md:text-base text-amber-500"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -246,11 +263,11 @@ const BlogDetailPage = async ({ params }: Props) => {
                     <div className="flex justify-between md:mt-10 mt-8">
                         <div className="text-gray-500">{createdAt}</div>
                         <div className="flex gap-5">
-                            <a href="https://www.linkedin.com/in/taranjeet-bhatia/" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedinIn className="h-6 w-6 text-amber-400" title="LinkedIn" />
+                            <a href="https://www.linkedin.com/company/harbourfrontwebdesigns/" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedinIn className="h-6 w-6 text-amber-500" title="LinkedIn" />
                             </a>
-                            <a href="https://github.com/Taran234" target="_blank" rel="noopener noreferrer">
-                                <FaGithub className="h-6 w-6 text-amber-400" title="GitHub" />
+                            <a href="https://www.instagram.com/harbourfrontwebdesigns/" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram className="h-6 w-6 text-amber-500" title="Instagram" />
                             </a>
                         </div>
 
@@ -258,16 +275,16 @@ const BlogDetailPage = async ({ params }: Props) => {
 
                     {/* Blog Title and Author */}
                     <div className="flex flex-col items-center">
-                        <h1 className="text-center md:text-4xl text-xl font-bold md:mt-10 mt-8 mb-4">
+                        <h1 className="text-center md:text-4xl font-inknut text-xl font-bold md:mt-10 mt-8 mb-4">
                             {blogDetailData.fields.title}
                         </h1>
-                        <div className="text-left mb-4 md:text-base text-sm text-amber-400 font-bold px-4">
-                            <span className="text-amber-400 font-normal">Written by</span> | Taranjeet Singh
-                        </div>
+                        {/* <div className="text-left mb-4 md:text-base text-sm text-amber-500 font-bold px-4">
+                            <span className="text-amber-500 font-normal">Written by</span>
+                        </div> */}
                     </div>
 
                     {/* Blog Image */}
-                    <div>
+                    <div className="border-b-[0.1px] pb-10 border-amber-500">
                         <Image
                             src={`https:${imgURL}`}
                             width={imgWidth}
@@ -282,15 +299,23 @@ const BlogDetailPage = async ({ params }: Props) => {
                     </div>
 
                     {/* Blog Content */}
-                    <div className="prose text-white max-w-full mb-10 md:text-justify lg:px-5 md:mt-10 mt-5">
-                        {documentToReactComponents(blogDetailData.fields.blogContent, renderOptions)}
+                    <div className="max-w-6xl flex flex-row  mx-auto  overflow-x-hidden scroll-smooth">
+                        {/* Table of Contents */}
+                        <div className="w-1/4">
+                            <TableOfContents content={blogDetailData.fields.blogContent} />
+                        </div>
+
+                        {/* Blog Metadata, Title, Image, Content */}
+                        <div className="prose w-3/4 text-white max-w-full mb-10 md:text-justify lg:px-5 md:mt-10 mt-5">
+                            {documentToReactComponents(blogDetailData.fields.blogContent, renderOptions)}
+                        </div>
                     </div>
 
                     {/* Back to Home Link */}
                     <div className="flex">
                         <Link
                             href="/"
-                            className="flex items-center gap-2 mt-2 hover:text-[#719b8f] text-sm md:text-base text-amber-400 mb-10"
+                            className="flex items-center gap-2 mt-2 hover:text-[#719b8f] text-sm md:text-base text-amber-500 mb-10"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +346,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                 <div className="max-w-3xl mx-auto px-5">
                     <p className="text-center mt-20 text-xl">An error occurred while fetching the blog post.</p>
                     <div className="flex justify-center mt-4">
-                        <Link href="/" className="text-amber-400 hover:text-[#719b8f]">
+                        <Link href="/" className="text-amber-500 hover:text-[#719b8f]">
                             ← Back to home
                         </Link>
                     </div>

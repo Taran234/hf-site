@@ -80,10 +80,9 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
         : 'Business Website Design';
 
     // Find the city from the keyword
-    let location = ""
-    location = (cities?.find(city => keyword.includes(city)))?.toString() || "Toronto";
+    let location = (cities?.find(city => keyword.includes(city)))?.toString() || "Toronto";
+    location = location.charAt(0).toUpperCase() + location.slice(1);
     const meta = generateMetaTags({ service, location });
-
     return (
         <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
             <Head>
@@ -110,7 +109,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                         <ModalContent>
                             <h4 className="text-lg md:text-2xl z-50 text-neutral-100 font-bold text-center mb-8">
                                 Get a {" "}
-                                <span className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border">
+                                <span className="px-1 py-0.5 rounded-md bg-amber-600 border-neutral-700 border">
                                     FREE
                                 </span>{" "}
                                 Consultation! 📞

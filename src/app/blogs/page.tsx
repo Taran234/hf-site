@@ -1,9 +1,5 @@
 import { client } from "../lib/contentful";
-import { Blog, BlogsPre } from "../_components/blog-preview";
-import { Header } from "../_components/header";
-import { Modal, ModalBody, ModalContent, ModalProvider } from "../components/ui/model";
-import Calen from "../_components/calendly";
-import { useAnimation, motion } from "framer-motion";
+import { Blog } from "../_components/blog-preview";
 import BlogsList from "../_components/blog-list";
 
 

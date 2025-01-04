@@ -88,20 +88,15 @@ const testimonials = [
 export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [shuffledTestimonials, setShuffledTestimonials] = useState(testimonials);
-
-    const location = (keyword ? keyword.charAt(0).toUpperCase() + keyword.slice(1) : "Toronto"); // Default to "Toronto" if no location keyword is provided
-
     useEffect(() => {
         // Shuffle testimonials and insert location into each review
         let randomizedTestimonials = shuffleArray(testimonials);
-
         randomizedTestimonials = randomizedTestimonials.map((testimonial) => ({
             ...testimonial,
-            content: insertLocationIntoReview(testimonial.content, location),
+            content: insertLocationIntoReview(testimonial.content, keyword),
         }));
-
         setShuffledTestimonials(randomizedTestimonials);
-    }, [keyword, location]);
+    }, [keyword]);
 
     function handleNextSlide() {
         setCurrentSlide((prev) => (prev + 1) % shuffledTestimonials.length);
@@ -119,18 +114,15 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
                 <div className="flex md:flex-row flex-col">
                     <div className="text-left md:w-1/2 md:text-6xl mx-8 font-semibold leading-normal my-10">
                         <div className="md:text-xl text-base font-inknut lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-gray-500">
-                            Website Design {location ? location : "Toronto"}
+                            Website Design {keyword ? keyword : "Toronto"}
                         </div>
                         <div className="md:text-4xl text-2xl font-inknut lg:leading-tight  justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                             Anyone can make promises we give you proof.
                         </div>
-
                         <div className="md:text-2xl text-sm font-inknut lg:leading-tight mt-4 justify-start md:mx-20 text-left tracking-tight font-medium text-white">
                             We asked some of our clients to write an honest review about their experience working with us. Here's what they had to say:
                         </div>
-
                     </div>
-
                     <div className="flex flex-col gap-6 items-center mx-auto md:w-1/2 justify-center ">
                         <AvatarCircles numPeople={30} avatarUrls={avatars} />
                         <div className="flex flex-col items-center space-x-2 w-full mx-4 md:w-auto bg-[#222222] rounded-3xl p-8">
@@ -140,14 +132,14 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
                                 <div className="text-2xl font-bold p-1">5.0</div>
                                 <div className="flex space-x-1">
                                     {/* Rating Stars */}
-                                    <MdStarRate size={36} className=" text-yellow-400" />
-                                    <MdStarRate size={36} className=" text-yellow-400" />
-                                    <MdStarRate size={36} className=" text-yellow-400" />
-                                    <MdStarRate size={36} className=" text-yellow-400" />
-                                    <MdStarRate size={36} className=" text-yellow-400" />
+                                    <MdStarRate size={36} className="text-yellow-400" />
+                                    <MdStarRate size={36} className="text-yellow-400" />
+                                    <MdStarRate size={36} className="text-yellow-400" />
+                                    <MdStarRate size={36} className="text-yellow-400" />
+                                    <MdStarRate size={36} className="text-yellow-400" />
                                 </div>
                             </div>
-                            <div aria-label="link to our google business profile listing" className="bg-amber-500 p-2 m-2 rounded-lg font-inknut font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></div>
+                            <div aria-label="link to our google business profile listing" className="bg-amber-600 p-2 m-2 rounded-lg font-inknut font-extrabold justify-center items-center flex  text-white" ><Link href={`https://maps.app.goo.gl/U8AEH1ut9YatNpBi6`}> Review us on Google</Link></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +160,7 @@ export const TestimonialsVariant1 = ({ keyword }: { keyword: string }) => {
                         onClick={handleNextSlide}
                         type="button"
                     >
-                        <BsArrowRight size={32} className=" text-white transition-colors group-disabled:stroke-neutral-500/40" />
+                        <BsArrowRight size={32} className="text-white transition-colors group-disabled:stroke-neutral-500/40" />
                     </button>
                 </div>
                 <section className="mt-8 flex w-full gap-2 *:shrink-0">
