@@ -124,7 +124,13 @@ const BlogDetailPage = async ({ params }: Props) => {
         const renderOptions = {
             renderNode: {
                 [BLOCKS.HEADING_1]: (node: any, children: any) => {
-                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    const headingText = children
+                        .toString()
+                        .replace(/\[.*?\]|\(.*?\)/g, '')
+                        .replace(/[^a-z0-9\s-]/gi, '')
+                        .replace(/[\s-]+/g, '-')
+                        .replace(/^-+|-+$/g, '')
+                        .toLowerCase();
                     return (
                         <h1 id={headingText} className="text-4xl font-bold font-inknut p-6 text-white">
                             {children}
@@ -132,7 +138,13 @@ const BlogDetailPage = async ({ params }: Props) => {
                     );
                 },
                 [BLOCKS.HEADING_2]: (node: any, children: any) => {
-                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    const headingText = children
+                        .toString()
+                        .replace(/\[.*?\]|\(.*?\)/g, '')
+                        .replace(/[^a-z0-9\s-]/gi, '')
+                        .replace(/[\s-]+/g, '-')
+                        .replace(/^-+|-+$/g, '')
+                        .toLowerCase();
                     return (
                         <h2 id={headingText} className="text-3xl font-semibold font-inknut p-4 text-center text-white">
                             {children}
@@ -140,7 +152,13 @@ const BlogDetailPage = async ({ params }: Props) => {
                     );
                 },
                 [BLOCKS.HEADING_3]: (node: any, children: any) => {
-                    const headingText = children.toString().replace(/\s+/g, '-').toLowerCase(); // Convert text to id format
+                    const headingText = children
+                        .toString()
+                        .replace(/\[.*?\]|\(.*?\)/g, '')
+                        .replace(/[^a-z0-9\s-]/gi, '')
+                        .replace(/[\s-]+/g, '-')
+                        .replace(/^-+|-+$/g, '')
+                        .toLowerCase();
                     return (
                         <h3 id={headingText} className="text-2xl font-medium font-inknut p-2 text-white">
                             {children}
@@ -233,7 +251,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                         </div>
                     </Modal>
                 </ModalProvider>
-                <div className="absolute top-0 justify-center w-full bg-slate-700/50 h-[80vh] -z-40"> </div>
+                <div className="absolute top-0 justify-center w-full bg-slate-700/50 md:h-[75vh] h-[50vh] -z-40"> </div>
                 <div className="max-w-5xl mt-20 mx-auto px-5 overflow-x-hidden scroll-smooth  ">
                     {/* Back to Home Link */}
                     <div className="flex">
@@ -299,14 +317,14 @@ const BlogDetailPage = async ({ params }: Props) => {
                     </div>
 
                     {/* Blog Content */}
-                    <div className="max-w-6xl flex flex-row  mx-auto  overflow-x-hidden scroll-smooth">
+                    <div className="max-w-6xl flex md:flex-row flex-col mx-auto  overflow-x-hidden scroll-smooth">
                         {/* Table of Contents */}
-                        <div className="w-1/4">
+                        <div className="md:w-1/4">
                             <TableOfContents content={blogDetailData.fields.blogContent} />
                         </div>
 
                         {/* Blog Metadata, Title, Image, Content */}
-                        <div className="prose w-3/4 text-white max-w-full mb-10 md:text-justify lg:px-5 md:mt-10 mt-5">
+                        <div className="prose md:w-3/4 w-full text-white max-w-full mb-10 text-left lg:px-5 md:mt-10 mt-5">
                             {documentToReactComponents(blogDetailData.fields.blogContent, renderOptions)}
                         </div>
                     </div>

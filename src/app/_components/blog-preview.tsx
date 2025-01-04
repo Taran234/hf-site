@@ -39,7 +39,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
     useEffect(() => {
         const onScroll = () => {
             // Check if the user is near the bottom
-            const nearBottom = window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 150;
+            const nearBottom = window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 500;
 
             if (nearBottom) {
                 loadMoreBlogs();
@@ -54,7 +54,7 @@ export function BlogsPre({ blogs }: BlogsPreProps) {
 
     return (
         <>
-            <div className="container mx-auto justify-center grid grid-cols-1 md:grid-cols-2 overflow-hidden gap-8 py-10">
+            <div className="container mx-auto justify-center grid grid-cols-1 md:grid-cols-3 overflow-hidden gap-8 py-10">
                 {visibleBlogs.map((blog, index) => (
                     <Link
                         href={blog.link}

@@ -25,12 +25,13 @@ const TableOfContents = ({ content }: TableOfContentsProps) => {
                 headingsArray.push({ id, text: headingText, level });
             }
         });
+        console.log(headingsArray);
 
         setHeadings(headingsArray);
     }, [content]);
 
     return (
-        <div className="mb-8  border-amber-500 border-r-[0.1px] border-b-[0.1px] p-4 ">
+        <div className="mb-8  border-amber-500 border-r-[0.1px] md:border-l-0 border-l-[0.1px] border-b-[0.1px] p-4 ">
             {headings.length > 0 && (
                 <>
                     <h3 className="text-xl font-bold mb-4 font-inknut text-white text-let">Table of Contents</h3>
