@@ -1,7 +1,5 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Script from "next/script";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 
@@ -16,6 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <GoogleAnalytics gaId="G-T7E1EDK0RD" />
+        <meta name="p:domain_verify" content="f903c26a3d0b6ac3480611f9156333d2" />
       </head>
       <body className={inter.className}>
         <NextTopLoader
