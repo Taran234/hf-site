@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Params) {
     const service = 'Website Design';
 
     // Find the city from the keyword
-    let location = (cities.find(city => topic.includes(city))) || "Canada";
+    let location = (cities.find(city => topic.includes(city))) || "Toronto";
     location = location.charAt(0).toUpperCase() + location.slice(1);
 
     return {
@@ -85,7 +85,7 @@ export default async function KeywordPage({ params }: Params) {
     const service = 'Website Design';
 
     // Find the city from the keyword
-    let location = (cities?.find(city => topic.includes(city)))?.toString() || "Canada";
+    let location = (cities?.find(city => topic.includes(city)))?.toString() || "Toronto";
     location = location.charAt(0).toUpperCase() + location.slice(1);
     const meta = generateMetaTags({ service, location });
     const res = await client.getEntries({ content_type: 'bloghf' });

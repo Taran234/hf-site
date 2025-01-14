@@ -26,5 +26,5 @@ export default async function Home() {
     };
   });
 
-  return <DynamicPage keyword="Canada" posts={blogs} />;
+  return <DynamicPage keyword="Toronto" posts={blogs} />;
 }
