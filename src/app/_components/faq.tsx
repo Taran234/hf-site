@@ -46,9 +46,9 @@ export function Faq() {
 
 
   return (
-    <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto max-w-6xl">
+    <div className="flex flex-col p-10 text-xl font-medium leading-8 justify-center items-center mx-auto max-w-4xl">
       <div className="text-center text-3xl md:text-6xl font-semibold leading-normal mb-10">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto font-inknut text-center tracking-tight font-medium text-white">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto font-inknut text-center tracking-tight font-medium text-amber-500">
           Frequently Asked Questions
         </h4>
         <br />
@@ -56,7 +56,7 @@ export function Faq() {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-inherit border-b-[0.1px] border-l-[0.1px] border-r-[0.1px] border-amber-300 transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
+          className="flex flex-col gap-5 justify-center px-10 py-8 mt-8 w-full rounded-xl bg-neutral-950 border-b-[4px] border-l-[0.01px] border-r-[4px] border-amber-400 transition-colors duration-300 ease-in-out shadow-lg max-md:flex-wrap max-md:px-5"
           onClick={() => toggleOpenIndex(index)}
         >
           <div className="flex justify-between items-center text-gray-50 w-full cursor-pointer">

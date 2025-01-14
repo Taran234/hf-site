@@ -43,12 +43,12 @@ export function Howitworks() {
     return (
         <div className="relative z-20 md:p-10 p-4 lg:py-30  max-w-7xl mx-auto">
             <div className="px-8">
-                <h3 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-inknut mx-auto text-center tracking-tight font-medium text-white">
+                <h3 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl font-inknut mx-auto text-center tracking-tight font-medium text-amber-500">
                     How We Work
                 </h3>
 
-                <p className="text-lg max-w-2xl my-4 mx-auto  text-center font-normal text-neutral-300">
-                    {`We have helped number of businesses in Canada to get their online journey started and succeed, and here is how we did it.`}
+                <p className="text-lg max-w-2xl my-4 mx-auto font-inknut text-center font-normal text-white">
+                    {`We’ve helped countless people create their first website and grow their online presence. From stunning designs to fast-loading pages, our websites are built to attract visitors and deliver real results.`}
                 </p>
             </div>
 
@@ -77,7 +77,7 @@ const FeatureCard = ({ children, className }: { children?: React.ReactNode; clas
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
     return (
-        <p className="max-w-5xl mx-auto text-left tracking-tight font-inknut text-white text-3xl md:leading-snug">
+        <p className="max-w-5xl mx-auto text-left tracking-tight font-inknut text-amber-500 font-semibold text-3xl md:leading-snug">
             {children}
         </p>
     );

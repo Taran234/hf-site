@@ -277,7 +277,7 @@ const BlogDetailPage = async ({ params }: Props) => {
                         </Link>
                     </div>
 
-                    {/* Blog Metadata */}
+
                     <div className="flex justify-between md:mt-10 mt-8">
                         <div className="text-gray-500">{createdAt}</div>
                         <div className="flex gap-5">
@@ -322,8 +322,6 @@ const BlogDetailPage = async ({ params }: Props) => {
                         <div className="md:w-1/4">
                             <TableOfContents content={blogDetailData.fields.blogContent} />
                         </div>
-
-                        {/* Blog Metadata, Title, Image, Content */}
                         <div className="prose md:w-3/4 w-full text-white max-w-full mb-10 text-left lg:px-5 md:mt-10 mt-5">
                             {documentToReactComponents(blogDetailData.fields.blogContent, renderOptions)}
                         </div>

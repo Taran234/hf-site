@@ -47,61 +47,14 @@ const AnimatedSection = ({ children, delay = 0 }: any) => {
         </motion.div>
     );
 };
-const generateMetaTags = ({ service, location }: { service: string; location: string | undefined }) => ({
-    title: `${service} ${location ? location : "Toronto"} | Best Website Design Company for Small Businesses ${location ? location : "Toronto"}`,
-    description: `${location ? location : "Toronto"}'s best Top-Rated ${service} Company. Get weekly SEO updates, 24/7 on-call support, affordable payment options, and more...`,
-    keywords: `${service}, ${location ? location : "Toronto"}, website design Company, small business website`,
-    ogTitle: `${service} Services in ${location ? location : "Toronto"}`,
-    ogDescription: `Looking for ${service} in ${location ? location : "Toronto"}? We're the leading website design Company offering tailored solutions for small businesses.`,
-    ogUrl: `https://harbourfrontwebdesigns.com/${service.replace(/\s+/g, "-").toLowerCase()}-${location ? location : "Toronto"}`,
-    ogImage: `/meta.png`,
-    twitterTitle: `Top ${service} Services in ${location ? location : "Toronto"}`,
-    twitterDescription: `The best ${service} Company in ${location ? location : "Toronto"}. Affordable prices, SEO updates, and 24/7 support.`,
-    twitterImage: `/meta.png`,
-});
+
 
 export default function DynamicPage({ keyword, posts }: { keyword: string, posts: any }) {
     // List of city names with hyphens for multi-word cities
-    const cities = [
-        'toronto', 'markham', 'richmond-hill',
-        'etobicoke', 'oshawa', 'kitchener', 'hamilton',
-        'london', 'waterloo', 'cambridge', 'mississauga',
-        'brampton', 'oakville', 'burlington'
-    ];
-
-    const serviceMapping: Record<string, string> = {
-        'website-design': 'Business Website Design',
-        'website-development': 'Business Website Development',
-        'ecommerce-website-development': 'E-Commerce Website Development',
-        'ecommerce-website-design': 'E-Commerce Website Designers',
-    };
-    const service = Object.keys(serviceMapping).find(key => keyword.includes(key))
-        ? serviceMapping[Object.keys(serviceMapping).find(key => keyword.includes(key))!]
-        : 'Business Website Design';
-
-    // Find the city from the keyword
-    let location = (cities?.find(city => keyword.includes(city)))?.toString() || "Toronto";
-    location = location.charAt(0).toUpperCase() + location.slice(1);
-    const meta = generateMetaTags({ service, location });
+    const service = 'Website Design';
     return (
-        <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-slate-50/10">
-            <Head>
-                <title>{meta.title}</title>
-                <meta name="description" content={meta.description} />
-                <meta name="keywords" content={meta.keywords} />
-                <meta property="og:title" content={meta.ogTitle} />
-                <meta property="og:description" content={meta.ogDescription} />
-                <meta property="og:url" content={meta.ogUrl} />
-                <meta property="og:image" content={meta.ogImage} />
-                <meta property="og:type" content="website" />
-                <meta name="twitter:title" content={meta.twitterTitle} />
-                <meta name="twitter:description" content={meta.twitterDescription} />
-                <meta name="twitter:card" content={meta.twitterImage} />
-                <meta name="twitter:image" content={meta.twitterImage} />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:site_name" content="Harbourfront Web Designs" />
-                <link rel="canonical" href={meta.ogUrl} />
-            </Head>
+        <main className="overflow-x-hidden scroll-smooth bg-[#000000] bg-dot-white/15">
+
 
             <ModalProvider>
                 <Modal>
@@ -131,7 +84,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                     </motion.div>
 
                     <div id="hero">
-                        <Hero location={location} service={service} />
+                        <Hero location={keyword} service={service} />
                     </div>
 
 
@@ -141,7 +94,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
 
                     <AnimatedSection >
                         <div id="detail" className="pt-10">
-                            <Detail location={location} />
+                            <Detail location={keyword} />
                         </div>
                     </AnimatedSection>
                     <div id="how-it-works">
@@ -149,7 +102,7 @@ export default function DynamicPage({ keyword, posts }: { keyword: string, posts
                     </div>
                     <div id="reviews">
                         {/* <Testimonials keyword={location} /> */}
-                        <TestimonialsVariant1 keyword={location} />
+                        <TestimonialsVariant1 keyword={keyword} />
                     </div>
                     <AnimatedSection delay={0}>
                         <div id="our-work">

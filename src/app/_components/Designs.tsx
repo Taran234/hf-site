@@ -94,7 +94,7 @@ const Gallery = () => {
     return (
         <>
             <div className="text-center text-3xl md:text-6xl font-semibold leading-normal my-10">
-                <div className="text-3xl lg:text-5xl font-inknut lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
+                <div className="text-3xl lg:text-5xl font-inknut lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-amber-500">
                     Our Designs
                 </div>
                 <br />

@@ -2,8 +2,14 @@ import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: 'Website Design Agency | Best Website Design Company',
+  description: 'Top-rated design agency specializing in custom website solutions, offering services such as website development, website redesign, portfolio design, and building a business website.',
+}
 
 export default function RootLayout({
   children,

@@ -26,15 +26,15 @@ const AvatarCircles = ({
                 <a
                     key={index}
                     href={url.profileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+
                 >
                     <img
                         key={index}
-                        className="h-12 w-12 rounded-full border-2 border-white dark:border-gray-800"
+                        className="h-12 w-12 rounded-full border-2 border-gray-800"
                         src={url.imageUrl}
                         width={40}
                         height={40}
+                        loading="lazy"
                         alt={`Avatar ${index + 1}`}
                     />
                 </a>

@@ -39,7 +39,7 @@ export function Header() {
     }, [handleScroll]);
 
     return (
-        <div className={`flex flex-row justify-between z-30 md:px-4 md:py-0 p-1 font-medium leading-4 w-full capitalize transition-transform duration-700 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+        <div className={`flex flex-row justify-between z-30 md:px-4 md:py-0 px-1 font-medium leading-4 w-full capitalize transition-transform duration-700 ${scrollDirection === 'down' ? '-translate-y-0' : 'translate-y-0'} ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex flex-col md:gap-3 gap-2 relative">
                 <Link href="/">
                     <Image
@@ -105,7 +105,7 @@ export function Header() {
 
                 <ModalTrigger className="bg-amber-600  justify-center items-center flex  text-white  group/modal-btn">
                     <span className="group-hover/modal-btn:-translate-y-40 text-center transition duration-500">
-                        Book a Call!
+                        Get a Quote!
                     </span>
                     <div className="translate-y-40 group-hover/modal-btn:translate-y-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
                         Contact Now!
